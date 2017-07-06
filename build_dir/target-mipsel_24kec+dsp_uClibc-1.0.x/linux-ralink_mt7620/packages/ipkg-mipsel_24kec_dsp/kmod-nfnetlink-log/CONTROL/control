@@ -1,0 +1,12 @@
+Package: kmod-nfnetlink-log
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-nfnetlink
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 6343
+Description:  Kernel modules support for logging packets via NFNETLINK
+ Includes:
+ - NFLOG

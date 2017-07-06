@@ -1,0 +1,83 @@
+#!/bin/sh
+# Copyright (c) 2013 OpenWrt
+# Copyright (C) 2016 D-Team Technology Co.,Ltd. ShenZhen
+# Copyright (c) 2005-2016, lintel <lintel.huang@gmail.com>
+#
+#
+#     警告:对着屏幕的哥们,我们允许你使用此脚本，但不允许你抹去作者的信息,请保留这段话。
+#
+
+. /lib/functions.sh
+. /lib/ralink.sh
+. /lib/functions/uci-defaults.sh
+. /lib/functions/system.sh
+
+ap7620a_setup_wwan()
+{
+uci set network.wwan=interface
+uci set network.wwan.proto=3g
+uci set network.wwan.device=/dev/ttyUSB0
+uci set network.wwan.service=umts_only
+uci set network.wwan.apn=3gnet
+uci set network.wwan.dialnumber="*99#"
+uci set network.wwan.pincode=1234
+uci set network.wwan.username=card
+uci set network.wwan.password=card
+
+uci set firewall.@zone[1].network="wan wwan"
+uci commit firewall
+}
+
+vg100_setup_wwan()
+{
+uci set network.wwan=interface
+uci set network.wwan.proto=3g
+uci set network.wwan.device=/dev/ttyUSB3
+uci set network.wwan.service=umts
+uci set network.wwan.apn=cmnet
+uci set network.wwan.dialnumber="*99#"
+#uci set network.wwan.metric=5
+uci set firewall.@zone[1].network="wan wwan"
+uci commit firewall
+}
+
+w3_setup_wwan()
+{
+uci set network.wwan="interface"
+uci set network.wwan.proto="3g"
+uci set network.wwan.device="/dev/ttyUSB0"
+uci set network.wwan.service="umts"
+uci set network.wwan.apn="cmnet"
+uci set network.wwan.dialnumber="*99#"
+uci set firewall.@zone[1].network="wan wwan"
+uci commit firewall
+}
+
+ralink_setup_wwan()
+{
+	local board="$1"
+	
+	ucidef_set_interface_loopback
+	
+	case $board in
+	dm06 |\
+	pbr-c1) 
+		vg100_setup_wwan
+		;;
+	vg100)
+		vg100_setup_wwan
+		;;
+	ap7620a)
+		ap7620a_setup_wwan
+		;;
+	pbr-w3)
+		w3_setup_wwan
+		;;
+	esac
+}
+
+board=$(ralink_board_name)
+
+ralink_setup_wwan $board
+uci commit network
+exit 0

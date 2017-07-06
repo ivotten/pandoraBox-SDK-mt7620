@@ -1,0 +1,10 @@
+Package: kmod-eeprom-93cx6
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1)
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 1740
+Description:  Kernel module for EEPROM 93CX6 support

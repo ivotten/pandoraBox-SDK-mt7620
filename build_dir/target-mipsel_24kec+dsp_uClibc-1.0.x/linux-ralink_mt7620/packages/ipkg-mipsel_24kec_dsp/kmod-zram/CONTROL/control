@@ -1,0 +1,10 @@
+Package: kmod-zram
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-lib-lzo
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 10477
+Description:  Compressed RAM block device support

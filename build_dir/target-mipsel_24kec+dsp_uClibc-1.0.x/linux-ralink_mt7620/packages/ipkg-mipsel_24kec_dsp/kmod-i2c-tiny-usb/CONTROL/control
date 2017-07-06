@@ -1,0 +1,11 @@
+Package: kmod-i2c-tiny-usb
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-i2c-core, kmod-usb-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 2652
+Description:  Kernel module for the I2C Tiny USB adaptor developed
+ by Till Harbaum (http://www.harbaum.org/till/i2c_tiny_usb)

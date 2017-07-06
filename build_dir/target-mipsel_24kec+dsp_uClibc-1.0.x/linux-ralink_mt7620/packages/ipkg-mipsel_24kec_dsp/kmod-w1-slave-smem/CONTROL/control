@@ -1,0 +1,10 @@
+Package: kmod-w1-slave-smem
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-w1
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 925
+Description:  Kernel module for 1-wire simple 64bit memory rom(ds2401/ds2411/ds1990*)

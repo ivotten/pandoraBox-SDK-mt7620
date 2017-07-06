@@ -1,0 +1,10 @@
+Package: kmod-pppoe
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-ppp, kmod-pppox
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 6747
+Description:  Kernel module for PPPoE (PPP over Ethernet) support

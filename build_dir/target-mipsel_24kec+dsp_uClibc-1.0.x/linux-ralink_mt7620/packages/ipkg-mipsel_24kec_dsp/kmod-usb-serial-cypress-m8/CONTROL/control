@@ -1,0 +1,13 @@
+Package: kmod-usb-serial-cypress-m8
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-serial
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 6711
+Description:  Kernel support for devices with Cypress M8 USB to Serial chip
+ (for example, the Delorme Earthmate LT-20 GPS)
+ Supported microcontrollers in the CY4601 family are:
+ CY7C63741 CY7C63742 CY7C63743 CY7C64013

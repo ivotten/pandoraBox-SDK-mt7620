@@ -1,0 +1,10 @@
+Package: kmod-video-gspca-sunplus
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-video-gspca-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 6546
+Description:  The SUNPLUS USB Camera Driver (sunplus) kernel module

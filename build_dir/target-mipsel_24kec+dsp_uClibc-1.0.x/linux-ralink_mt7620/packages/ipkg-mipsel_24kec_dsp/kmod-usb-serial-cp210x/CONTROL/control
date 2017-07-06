@@ -1,0 +1,10 @@
+Package: kmod-usb-serial-cp210x
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-serial
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4269
+Description:  Kernel support for Silicon Labs cp210x USB-to-Serial converters

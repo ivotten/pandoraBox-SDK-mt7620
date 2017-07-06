@@ -1,0 +1,10 @@
+Package: kmod-crypto-fcrypt
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-crypto-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 3949
+Description:  FCRYPT cipher CryptoAPI module

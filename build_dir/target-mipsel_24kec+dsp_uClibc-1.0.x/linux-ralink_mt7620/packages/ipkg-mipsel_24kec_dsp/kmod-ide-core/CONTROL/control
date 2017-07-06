@@ -1,0 +1,13 @@
+Package: kmod-ide-core
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1)
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 41093
+Description:  Kernel support for IDE, useful for usb mass storage devices (e.g. on WL-HDD)
+ Includes:
+ - ide-core
+ - ide-gd_mod

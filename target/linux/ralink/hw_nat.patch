@@ -1,0 +1,604 @@
+diff --git a/Makefile b/Makefile
+index 80e92b3..a09c1cc 100644
+--- a/Makefile
++++ b/Makefile
+@@ -73,3 +73,8 @@ obj-$(CONFIG_VSOCKETS)	+= vmw_vsock/
+ obj-$(CONFIG_PANDORA_FAST_PATH)	+= fast_path/
+ obj-$(CONFIG_NET_MPLS_GSO)	+= mpls/
+ obj-$(CONFIG_HSR)		+= hsr/
++ifneq ($(CONFIG_RA_NAT_NONE),y)
++#obj-y                           += nat/foe_hook/
++endif
++
++obj-$(CONFIG_RA_HW_NAT)         += nat/hw_nat/
+diff --git a/core/skbuff.c b/core/skbuff.c
+index 990507a..dc14704 100644
+--- a/core/skbuff.c
++++ b/core/skbuff.c
+@@ -77,6 +77,10 @@
+ #include <linux/proc_fs.h>
+ #include <linux/highmem.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../net/nat/hw_nat/ra_nat.h"
++#endif
++ 
+ struct kmem_cache *skbuff_head_cache __read_mostly;
+ static struct kmem_cache *skbuff_fclone_cache __read_mostly;
+ #if defined(CONFIG_IMQ) || defined(CONFIG_IMQ_MODULE)
+@@ -350,6 +354,11 @@ struct sk_buff *__alloc_skb(unsigned int size, gfp_t gfp_mask,
+ 		child->pfmemalloc = pfmemalloc;
+ 	}
+ out:
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(HNAT_USE_HEADROOM)
++	DO_FAST_CLEAR_FOE(skb); // fast clear FoE info header (headroom)
++#endif
++#endif
+ 	return skb;
+ nodata:
+ 	kmem_cache_free(cache, skb);
+@@ -1193,7 +1202,12 @@ int pskb_expand_head(struct sk_buff *skb, int nhead, int ntail,
+ 	u8 *data;
+ 	int size = nhead + skb_end_offset(skb) + ntail;
+ 	long off;
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(HNAT_USE_TAILROOM)
++	ntail += FOE_INFO_LEN;
++	size  += FOE_INFO_LEN;
++#endif
++#endif
+ 	BUG_ON(nhead < 0);
+ 
+ 	if (skb_shared(skb))
+@@ -1217,7 +1231,13 @@ int pskb_expand_head(struct sk_buff *skb, int nhead, int ntail,
+ 	memcpy((struct skb_shared_info *)(data + size),
+ 	       skb_shinfo(skb),
+ 	       offsetof(struct skb_shared_info, frags[skb_shinfo(skb)->nr_frags]));
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(HNAT_USE_HEADROOM)
++	memcpy(data, FOE_INFO_START_ADDR(skb), FOE_INFO_LEN); // copy FoE Info to headroom
++#elif defined(HNAT_USE_TAILROOM)
++	memcpy((data + size - FOE_INFO_LEN), FOE_INFO_START_ADDR(skb), FOE_INFO_LEN); // copy FoE Info to tailroom
++#endif
++#endif
+ 	/*
+ 	 * if shinfo is shared we must drop the old head gracefully, but if it
+ 	 * is not we can just drop the old head and let the existing refcount
+diff --git a/ipv4/ip_input.c b/ipv4/ip_input.c
+index 8983f08..fd6cd2d 100644
+--- a/ipv4/ip_input.c
++++ b/ipv4/ip_input.c
+@@ -150,6 +150,11 @@
+ #ifdef CONFIG_PANDORA_FAST_PATH
+ #include <linux/fast_path.h>
+ #endif
++
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../nat/hw_nat/ra_nat.h"
++#endif
++
+ /*
+  *	Process Router Attention IP option (RFC 2113)
+  */
+@@ -255,7 +260,13 @@ int ip_local_deliver(struct sk_buff *skb)
+ 		if (ip_defrag(skb, IP_DEFRAG_LOCAL_DELIVER))
+ 			return 0;
+ 	}
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(CONFIG_HNAT_V2)
++	/* skip SIT tunnels */
++	if (ip_hdr(skb)->protocol != IPPROTO_IPV6)
++#endif
++	FOE_ALG_MARK(skb);
++#endif
+ #ifdef CONFIG_PANDORA_FAST_PATH
+ 	if (fast_path_nf_filter_port(skb))
+ 		return ip_local_deliver_finish(skb);
+diff --git a/ipv4/ip_output.c b/ipv4/ip_output.c
+index 5590c3d..07e14e2 100644
+--- a/ipv4/ip_output.c
++++ b/ipv4/ip_output.c
+@@ -80,6 +80,11 @@
+ #include <linux/netlink.h>
+ #include <linux/tcp.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../../net/nat/hw_nat/ra_nat.h"
++#include "../../net/nat/hw_nat/frame_engine.h"
++#endif
++
+ #ifdef CONFIG_PANDORA_FAST_PATH
+ #include <linux/fast_path.h>
+ #endif
+@@ -98,7 +103,9 @@ EXPORT_SYMBOL(ip_send_check);
+ int __ip_local_out(struct sk_buff *skb)
+ {
+ 	struct iphdr *iph = ip_hdr(skb);
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++	FOE_AI_UNHIT(skb);
++#endif
+ 	iph->tot_len = htons(skb->len);
+ 	ip_send_check(iph);
+ #ifdef CONFIG_PANDORA_FAST_PATH
+diff --git a/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c b/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c
+index 57832f0..0855771 100644
+--- a/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c
++++ b/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c
+@@ -31,6 +31,10 @@
+ #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
+ #include <net/netfilter/nf_log.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../../nat/hw_nat/ra_nat.h"
++#endif
++
+ static bool ipv4_pkt_to_tuple(const struct sk_buff *skb, unsigned int nhoff,
+ 			      struct nf_conntrack_tuple *tuple)
+ {
+@@ -111,7 +115,9 @@ static unsigned int ipv4_helper(const struct nf_hook_ops *ops,
+ 	help = nfct_help(ct);
+ 	if (!help)
+ 		return NF_ACCEPT;
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++	FOE_ALG_MARK(skb);
++#endif
+ 	/* rcu_read_lock()ed by nf_hook_slow */
+ 	helper = rcu_dereference(help->helper);
+ 	if (!helper)
+diff --git a/ipv6/ip6_input.c b/ipv6/ip6_input.c
+index 05c94d9..e14fe34 100644
+--- a/ipv6/ip6_input.c
++++ b/ipv6/ip6_input.c
+@@ -46,6 +46,11 @@
+ #include <net/xfrm.h>
+ #include <net/inet_ecn.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(CONFIG_RA_HW_NAT_IPV6)
++#include "../nat/hw_nat/ra_nat.h"
++#endif
++#endif
+ 
+ int ip6_rcv_finish(struct sk_buff *skb)
+ {
+@@ -276,6 +281,11 @@ discard:
+ 
+ int ip6_input(struct sk_buff *skb)
+ {
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(CONFIG_RA_HW_NAT_IPV6)
++	FOE_ALG_MARK(skb);
++#endif
++#endif
+ 	return NF_HOOK(NFPROTO_IPV6, NF_INET_LOCAL_IN, skb, skb->dev, NULL,
+ 		       ip6_input_finish);
+ }
+diff --git a/ipv6/netfilter/nf_conntrack_l3proto_ipv6.c b/ipv6/netfilter/nf_conntrack_l3proto_ipv6.c
+index 4cbc6b2..65b7f2a 100644
+--- a/ipv6/netfilter/nf_conntrack_l3proto_ipv6.c
++++ b/ipv6/netfilter/nf_conntrack_l3proto_ipv6.c
+@@ -34,6 +34,10 @@
+ #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
+ #include <net/netfilter/nf_log.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../../nat/hw_nat/ra_nat.h"
++#endif
++
+ static bool ipv6_pkt_to_tuple(const struct sk_buff *skb, unsigned int nhoff,
+ 			      struct nf_conntrack_tuple *tuple)
+ {
+@@ -129,7 +133,9 @@ static unsigned int ipv6_helper(const struct nf_hook_ops *ops,
+ 		pr_debug("proto header not found\n");
+ 		return NF_ACCEPT;
+ 	}
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++	FOE_ALG_MARK(skb);
++#endif
+ 	return helper->help(skb, protoff, ct, ctinfo);
+ }
+ 
+diff --git a/ipv6/output_core.c b/ipv6/output_core.c
+index ae4a06b..9273194 100644
+--- a/ipv6/output_core.c
++++ b/ipv6/output_core.c
+@@ -8,6 +8,13 @@
+ #include <net/ip6_fib.h>
+ #include <net/addrconf.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(CONFIG_RA_HW_NAT_IPV6)
++#include "../../net/nat/hw_nat/ra_nat.h"
++#include "../../net/nat/hw_nat/frame_engine.h"
++#endif
++#endif
++
+ /* This function exists only for tap drivers that must support broken
+  * clients requesting UFO without specifying an IPv6 fragment ID.
+  *
+@@ -111,7 +118,11 @@ int __ip6_local_out(struct sk_buff *skb)
+ 	if (len > IPV6_MAXPLEN)
+ 		len = 0;
+ 	ipv6_hdr(skb)->payload_len = htons(len);
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if defined(CONFIG_RA_HW_NAT_IPV6)
++	FOE_AI_UNHIT(skb);
++#endif
++#endif
+ 	return nf_hook(NFPROTO_IPV6, NF_INET_LOCAL_OUT, skb, NULL,
+ 		       skb_dst(skb)->dev, dst_output);
+ }
+diff --git a/netfilter/nf_conntrack_core.c b/netfilter/nf_conntrack_core.c
+index c117546..08c624e 100644
+--- a/netfilter/nf_conntrack_core.c
++++ b/netfilter/nf_conntrack_core.c
+@@ -54,6 +54,14 @@
+ #include <net/netfilter/nf_nat_helper.h>
+ 
+ #define NF_CONNTRACK_VERSION	"0.5.0"
++#if defined (CONFIG_NAT_FCONE) || defined (CONFIG_NAT_RCONE)
++extern char wan_name[IFNAMSIZ];
++#endif
++
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../nat/hw_nat/ra_nat.h"
++extern int (*ra_sw_nat_hook_tx)(struct sk_buff *skb, int gmac_no);
++#endif
+ 
+ int (*nfnetlink_parse_nat_setup_hook)(struct nf_conn *ct,
+ 				      enum nf_nat_manip_type manip,
+@@ -75,10 +83,43 @@ EXPORT_PER_CPU_SYMBOL(nf_conntrack_untracked);
+ unsigned int nf_conntrack_hash_rnd __read_mostly;
+ EXPORT_SYMBOL_GPL(nf_conntrack_hash_rnd);
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++static inline bool is_local_svc(u_int8_t protonm)
++{
++	/* Local gre/esp/ah/ip-ip/ipv6_in_ipv4/icmp proto must be skip from hw/sw offload
++	    and mark as interested by ALG  for correct tracking this */
++	switch (protonm) {
++	case IPPROTO_IPIP:
++#if !defined(CONFIG_RA_HW_NAT_IPV6) || !defined(CONFIG_HNAT_V2)
++	case IPPROTO_IPV6:
++#endif
++	case IPPROTO_GRE:
++	case IPPROTO_ICMP:
++	case IPPROTO_ESP:
++	case IPPROTO_AH:
++		return true;
++	}
++
++	return false;
++};
++#endif
++
+ static u32 hash_conntrack_raw(const struct nf_conntrack_tuple *tuple, u16 zone)
+ {
+ 	unsigned int n;
+-
++	u32 h;
++
++#if defined (CONFIG_NAT_FCONE) /* Full Cone */
++        n = jhash((void *)tuple->dst.u3.all, sizeof(tuple->dst.u3.all),
++                   tuple->dst.u.all); // dst ip, dst port
++        return jhash((void *)tuple->dst.u3.all, sizeof(tuple->dst.u3.all),
++                   tuple->dst.protonum); //dst ip, & dst ip protocol
++#elif defined (CONFIG_NAT_RCONE) /* Restricted Cone */
++        n = jhash((void *)tuple->src.u3.all, sizeof(tuple->src.u3.all), //src ip
++                   (tuple->src.l3num << 16) | tuple->dst.protonum);
++        return jhash((void *)tuple->dst.u3.all, sizeof(tuple->dst.u3.all), //dst ip & dst port
++                  (tuple->dst.u.all << 16) | tuple->dst.protonum);
++#else /* CONFIG_NAT_LINUX */
+ 	/* The direction must be ignored, so we hash everything up to the
+ 	 * destination ports (which is a multiple of 4) and treat the last
+ 	 * three bytes manually.
+@@ -87,6 +128,8 @@ static u32 hash_conntrack_raw(const struct nf_conntrack_tuple *tuple, u16 zone)
+ 	return jhash2((u32 *)tuple, n, zone ^ nf_conntrack_hash_rnd ^
+ 		      (((__force __u16)tuple->dst.u.all << 16) |
+ 		      tuple->dst.protonum));
++#endif
++
+ }
+ 
+ static u32 __hash_bucket(u32 hash, unsigned int size)
+@@ -376,6 +419,76 @@ begin:
+ 	return NULL;
+ }
+ 
++#if defined (CONFIG_NAT_FCONE) || defined (CONFIG_NAT_RCONE)
++
++struct nf_conntrack_tuple_hash *
++	__nf_cone_conntrack_find(struct net *net, u16 zone,
++		    const struct nf_conntrack_tuple *tuple)
++{
++    struct nf_conntrack_tuple_hash *h;
++    struct hlist_nulls_node *n;
++    unsigned int hash = hash_conntrack(net, zone, tuple);
++
++    /* Disable BHs the entire time since we normally need to disable them
++     * at least once for the stats anyway.
++     */
++    local_bh_disable();
++begin:
++    hlist_nulls_for_each_entry_rcu(h, n, &net->ct.hash[hash], hnnode) {
++	if (nf_ct_cone_tuple_equal(tuple, &h->tuple) &&
++		nf_ct_zone(nf_ct_tuplehash_to_ctrack(h)) == zone) {
++	    NF_CT_STAT_INC(net, found);
++	    local_bh_enable();
++	    return h;
++	}
++	NF_CT_STAT_INC(net, searched);
++    }
++    /*
++     * if the nulls value we got at the end of this lookup is
++     * not the expected one, we must restart lookup.
++     * We probably met an item that was moved to another chain.
++     */
++    if (get_nulls_value(n) != hash) {
++	NF_CT_STAT_INC(net, search_restart);
++	goto begin;
++    }
++    local_bh_enable();
++
++    return NULL;
++
++}
++
++/* Find a connection corresponding to a tuple. */
++struct nf_conntrack_tuple_hash *
++nf_cone_conntrack_find_get(struct net *net, u16 zone,
++		      const struct nf_conntrack_tuple *tuple)
++{
++    struct nf_conntrack_tuple_hash *h;
++    struct nf_conn *ct;
++
++    rcu_read_lock();
++begin:
++    h = __nf_cone_conntrack_find(net, zone, tuple);
++    if (h) {
++	ct = nf_ct_tuplehash_to_ctrack(h);
++	if (unlikely(nf_ct_is_dying(ct) ||
++		    !atomic_inc_not_zero(&ct->ct_general.use)))
++	    h = NULL;
++	else {
++	    if (unlikely(!nf_ct_cone_tuple_equal(tuple, &h->tuple) ||
++			nf_ct_zone(ct) != zone)) {
++		nf_ct_put(ct);
++		goto begin;
++	    }
++	}
++    }
++    rcu_read_unlock();
++
++    return h;
++}
++EXPORT_SYMBOL_GPL(nf_cone_conntrack_find_get);
++
++#endif
+ /* Find a connection corresponding to a tuple. */
+ static struct nf_conntrack_tuple_hash *
+ __nf_conntrack_find_get(struct net *net, u16 zone,
+@@ -928,8 +1041,69 @@ resolve_normal_ct(struct net *net, struct nf_conn *tmpl,
+ 	}
+ 
+ 	/* look for tuple match */
++#if defined (CONFIG_NAT_FCONE) || defined (CONFIG_NAT_RCONE)
++        /*
++         * Based on NAT treatments of UDP in RFC3489:
++         *
++         * 1)Full Cone: A full cone NAT is one where all requests from the
++         * same internal IP address and port are mapped to the same external
++         * IP address and port.  Furthermore, any external host can send a
++         * packet to the internal host, by sending a packet to the mapped
++         * external address.
++         *
++         * 2)Restricted Cone: A restricted cone NAT is one where all requests
++         * from the same internal IP address and port are mapped to the same
++         * external IP address and port.  Unlike a full cone NAT, an external
++         * host (with IP address X) can send a packet to the internal host
++         * only if the internal host had previously sent a packet to IP
++         * address X.
++         *
++         * 3)Port Restricted Cone: A port restricted cone NAT is like a
++         * restricted cone NAT, but the restriction includes port numbers.
++         * Specifically, an external host can send a packet, with source IP
++         * address X and source port P, to the internal host only if the
++         * internal host had previously sent a packet to IP address X and
++         * port P.
++         *
++         * 4)Symmetric: A symmetric NAT is one where all requests from the
++         * same internal IP address and port, to a specific destination IP
++         * address and port, are mapped to the same external IP address and
++         * port.  If the same host sends a packet with the same source
++         * address and port, but to a different destination, a different
++         * mapping is used.  Furthermore, only the external host that
++         * receives a packet can send a UDP packet back to the internal host.
++         *
++         *
++         *
++         *
++         * Original Linux NAT type is hybrid 'port restricted cone' and
++         * 'symmetric'. XBOX certificate recommands NAT type is 'fully cone'
++         * or 'restricted cone', so i patch the linux kernel to support
++         * this feature
++         * Tradition scenario from LAN->WAN:
++         *
++         *        (LAN)     (WAN)
++         * Client------>AP---------> Server
++         * -------------> (I)
++         *              -------------->(II)
++         *              <--------------(III)
++         * <------------- (IV)
++         *
++         */
++	/* CASE III */
++	//if( (skb->dev!=NULL) && (strcmp(skb->dev->name, wan_name)==0) && 
++	if( (skb->dev!=NULL) && (strcmp(skb->dev->name, "eth0.1")==0 || strcmp(skb->dev->name, "pppoe-wan")==0) && 
++	    (l4proto->l4proto == IPPROTO_UDP) ) {
++	    h = nf_cone_conntrack_find_get(net, zone, &tuple);
++        }else{ /* CASE I.II.IV */
++		hash = hash_conntrack_raw(&tuple, zone);
++	    h = __nf_conntrack_find_get(net, zone, &tuple, hash);
++        }
++#else //CONFIG_NAT_LINUX
++
+ 	hash = hash_conntrack_raw(&tuple, zone);
+ 	h = __nf_conntrack_find_get(net, zone, &tuple, hash);
++#endif
+ 	if (!h) {
+ 		h = init_conntrack(net, tmpl, &tuple, l3proto, l4proto,
+ 				   skb, dataoff, hash);
+@@ -978,7 +1152,11 @@ nf_conntrack_in(struct net *net, u_int8_t pf, unsigned int hooknum,
+ 	u_int8_t protonum;
+ 	int set_reply = 0;
+ 	int ret;
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++	struct nf_conn_help *help;
++	int skip_offload = 0;
++#endif
++	
+ 	if (skb->nfct) {
+ 		/* Previously seen (loopback or untracked)?  Ignore. */
+ 		tmpl = (struct nf_conn *)skb->nfct;
+@@ -1054,6 +1232,51 @@ nf_conntrack_in(struct net *net, u_int8_t pf, unsigned int hooknum,
+ 		ret = -ret;
+ 		goto out;
+ 	}
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++	if (hooknum == NF_INET_LOCAL_OUT || FOE_ALG(skb))
++		goto skip_alg_mark;
++
++	/*
++	 * skip ALG marked packets from all fastpaths
++	 */
++	help = nfct_help(ct);
++	if (help && help->helper) {
++		skip_offload = 1;
++		goto skip_pkt_check;
++	}
++
++	/* this code section may be used for skip some types traffic,
++	    only if hardware nat support enabled or software fastnat support enabled */
++	if (ra_sw_nat_hook_tx != NULL) {
++#if IS_ENABLED(CONFIG_NETFILTER_XT_MATCH_WEBSTR)
++		/* skip xt_webstr HTTP headers */
++		if (web_str_loaded &&
++		    pf == PF_INET && protonum == IPPROTO_TCP && CTINFO2DIR(ctinfo) == IP_CT_DIR_ORIGINAL) {
++			struct tcphdr _tcph, *tcph;
++			unsigned char _data[2], *data;
++			
++			/* For URL filter; RFC-HTTP: GET, POST, HEAD */
++			if ((tcph = skb_header_pointer(skb, dataoff, sizeof(_tcph), &_tcph)) &&
++				(data = skb_header_pointer(skb, dataoff + tcph->doff*4, sizeof(_data), &_data)) &&
++				((data[0] == 'G' && data[1] == 'E') ||
++				 (data[0] == 'P' && data[1] == 'O') ||
++				 (data[0] == 'H' && data[1] == 'E'))) {
++				/* skip http post/get/head traffic for correct webstr work */
++				skip_offload = 1;
++				goto skip_pkt_check;
++			}
++		}
++#endif
++	}
++
++skip_pkt_check:
++
++	/* skip several proto only from hw_nat */
++	if (skip_offload || (pf == PF_INET && is_local_svc(protonum)))
++		FOE_ALG_MARK(skb);
++
++skip_alg_mark:
++#endif
+ 
+ 	if (set_reply && !test_and_set_bit(IPS_SEEN_REPLY_BIT, &ct->status))
+ 		nf_conntrack_event_cache(IPCT_REPLY, ct);
+diff --git a/netfilter/xt_connmark.c b/netfilter/xt_connmark.c
+index 69f78e9..ef708a7 100644
+--- a/netfilter/xt_connmark.c
++++ b/netfilter/xt_connmark.c
+@@ -27,6 +27,10 @@
+ #include <linux/netfilter/x_tables.h>
+ #include <linux/netfilter/xt_connmark.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../nat/hw_nat/ra_nat.h"
++#endif
++
+ MODULE_AUTHOR("Henrik Nordstrom <hno@marasystems.com>");
+ MODULE_DESCRIPTION("Xtables: connection mark operations");
+ MODULE_LICENSE("GPL");
+@@ -51,6 +55,11 @@ connmark_tg(struct sk_buff *skb, const struct xt_action_param *par)
+ 	case XT_CONNMARK_SET:
+ 		newmark = (ct->mark & ~info->ctmask) ^ info->ctmark;
+ 		if (ct->mark != newmark) {
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if !defined(CONFIG_RA_HW_NAT_QDMA)
++			FOE_ALG_MARK(skb);
++#endif
++#endif
+ 			ct->mark = newmark;
+ 			nf_conntrack_event_cache(IPCT_MARK, ct);
+ 		}
+diff --git a/netfilter/xt_mark.c b/netfilter/xt_mark.c
+index 2334523..57da18c 100644
+--- a/netfilter/xt_mark.c
++++ b/netfilter/xt_mark.c
+@@ -16,6 +16,10 @@
+ #include <linux/netfilter/xt_mark.h>
+ #include <linux/netfilter/x_tables.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../nat/hw_nat/ra_nat.h"
++#endif
++
+ MODULE_LICENSE("GPL");
+ MODULE_AUTHOR("Marc Boucher <marc@mbsi.ca>");
+ MODULE_DESCRIPTION("Xtables: packet mark operations");
+@@ -28,7 +32,11 @@ static unsigned int
+ mark_tg(struct sk_buff *skb, const struct xt_action_param *par)
+ {
+ 	const struct xt_mark_tginfo2 *info = par->targinfo;
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#if !defined(CONFIG_RA_HW_NAT_QDMA)
++	FOE_ALG_MARK(skb);
++#endif
++#endif
+ 	skb->mark = (skb->mark & ~info->mask) ^ info->mark;
+ 	return XT_CONTINUE;
+ }
+diff --git a/xfrm/xfrm_output.c b/xfrm/xfrm_output.c
+index 3bb2cdc..148bd05 100644
+--- a/xfrm/xfrm_output.c
++++ b/xfrm/xfrm_output.c
+@@ -19,6 +19,10 @@
+ #include <net/dst.h>
+ #include <net/xfrm.h>
+ 
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++#include "../nat/hw_nat/ra_nat.h"
++#endif
++
+ static int xfrm_output2(struct sk_buff *skb);
+ 
+ static int xfrm_skb_check_space(struct sk_buff *skb)
+@@ -86,7 +90,9 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
+ 		spin_unlock_bh(&x->lock);
+ 
+ 		skb_dst_force(skb);
+-
++#if IS_ENABLED(CONFIG_RA_HW_NAT)
++		FOE_ALG_MARK(skb);
++#endif
+ 		err = x->type->output(x, skb);
+ 		if (err == -EINPROGRESS)
+ 			goto out;

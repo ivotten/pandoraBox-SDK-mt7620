@@ -1,0 +1,10 @@
+Package: kmod-rxrpc
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-crypto-core, kmod-crypto-manager, kmod-crypto-pcbc, kmod-crypto-fcrypt
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 53015
+Description:  Kernel support for AF_RXRPC; required for AFS client

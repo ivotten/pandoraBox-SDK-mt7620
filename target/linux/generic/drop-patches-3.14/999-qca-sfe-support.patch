@@ -1,0 +1,107 @@
+diff --git a/include/linux/skbuff.h b/include/linux/skbuff.h
+index 8e7182d..5f5489f 100644
+--- a/include/linux/skbuff.h
++++ b/include/linux/skbuff.h
+@@ -525,6 +525,9 @@ struct sk_buff {
+ 	 * headers if needed
+ 	 */
+ 	__u8			encapsulation:1;
++#ifdef CONFIG_FAST_NAT_SUPPORT
++	__u8			fast_forwarded:1;
++#endif
+ 	/* 6/8 bit hole (depending on ndisc_nodetype presence) */
+ 	kmemcheck_bitfield_end(flags2);
+ 
+diff --git a/net/Kconfig b/net/Kconfig
+index 0ca3523..7c2d4b0 100644
+--- a/net/Kconfig
++++ b/net/Kconfig
+@@ -49,6 +49,12 @@ config COMPAT_NETLINK_MESSAGES
+ 
+ 	  Newly written code should NEVER need this option but do
+ 	  compat-independent messages instead!
++	  
++config FAST_NAT_SUPPORT
++	bool "Enable PandoraBox FastNAT Support"
++	default n
++	help
++	  This option can be enable PandoraBox FastNAT support
+ 
+ menu "Networking options"
+ 
+diff --git a/net/core/dev.c b/net/core/dev.c
+index 9a43e42..bf14531 100644
+--- a/net/core/dev.c
++++ b/net/core/dev.c
+@@ -3540,6 +3540,11 @@ void netdev_rx_handler_unregister(struct net_device *dev)
+ }
+ EXPORT_SYMBOL_GPL(netdev_rx_handler_unregister);
+ 
++#ifdef CONFIG_FAST_NAT_SUPPORT
++int (*athrs_fast_nat_recv)(struct sk_buff *skb) __rcu __read_mostly;
++EXPORT_SYMBOL_GPL(athrs_fast_nat_recv);
++#endif
++
+ /*
+  * Limit the use of PFMEMALLOC reserves to those protocols that implement
+  * the special handling of PFMEMALLOC skbs.
+@@ -3567,7 +3572,9 @@ static int __netif_receive_skb_core(struct sk_buff *skb, bool pfmemalloc)
+ 	bool deliver_exact = false;
+ 	int ret = NET_RX_DROP;
+ 	__be16 type;
+-
++#ifdef CONFIG_FAST_NAT_SUPPORT
++	int (*fast_recv)(struct sk_buff *skb);
++#endif
+ 	net_timestamp_check(!netdev_tstamp_prequeue, skb);
+ 
+ 	trace_netif_receive_skb(skb);
+@@ -3583,9 +3590,21 @@ static int __netif_receive_skb_core(struct sk_buff *skb, bool pfmemalloc)
+ 		skb_reset_transport_header(skb);
+ 	skb_reset_mac_len(skb);
+ 
++#ifdef CONFIG_FAST_NAT_SUPPORT
++	fast_recv = rcu_dereference(athrs_fast_nat_recv);
++	if (fast_recv) {
++		if (fast_recv(skb)) {
++			rcu_read_unlock();
++			return NET_RX_SUCCESS;
++		}
++	}
++	
++	pt_prev = NULL;
++#else
+ 	pt_prev = NULL;
+ 
+ 	rcu_read_lock();
++#endif
+ 
+ another_round:
+ 	skb->skb_iif = skb->dev->ifindex;
+diff --git a/net/netfilter/nf_conntrack_proto_tcp.c b/net/netfilter/nf_conntrack_proto_tcp.c
+index 9964f8e..52073d0 100644
+--- a/net/netfilter/nf_conntrack_proto_tcp.c
++++ b/net/netfilter/nf_conntrack_proto_tcp.c
+@@ -34,12 +34,22 @@
+ #include <net/netfilter/ipv6/nf_conntrack_ipv6.h>
+ 
+ /* Do not check the TCP window for incoming packets  */
++#ifdef CONFIG_FAST_NAT_SUPPORT
++int nf_ct_tcp_no_window_check __read_mostly = 0;
++EXPORT_SYMBOL_GPL(nf_ct_tcp_no_window_check);
++#else
+ static int nf_ct_tcp_no_window_check __read_mostly = 1;
++#endif
+ 
+ /* "Be conservative in what you do,
+     be liberal in what you accept from others."
+     If it's non-zero, we mark only out of window RST segments as INVALID. */
++#ifdef CONFIG_FAST_NAT_SUPPORT
++int nf_ct_tcp_be_liberal __read_mostly = 0;
++EXPORT_SYMBOL_GPL(nf_ct_tcp_be_liberal);
++#else
+ static int nf_ct_tcp_be_liberal __read_mostly = 0;
++#endif
+ 
+ /* If it is set to zero, we disable picking up already established
+    connections. */

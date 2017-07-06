@@ -1,0 +1,10 @@
+Package: ldd
+Version: 1.0.20-1
+Source: package/toolchain
+Section: utils
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4728
+Description:  LDD trace utility

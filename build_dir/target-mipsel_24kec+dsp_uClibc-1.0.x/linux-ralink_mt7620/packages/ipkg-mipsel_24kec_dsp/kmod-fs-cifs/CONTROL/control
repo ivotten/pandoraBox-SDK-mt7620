@@ -1,0 +1,10 @@
+Package: kmod-fs-cifs
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-nls-base, kmod-crypto-arc4, kmod-crypto-hmac, kmod-crypto-md5, kmod-crypto-md4, kmod-crypto-des, kmod-crypto-ecb, kmod-crypto-sha256
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 116233
+Description:  Kernel module for CIFS support

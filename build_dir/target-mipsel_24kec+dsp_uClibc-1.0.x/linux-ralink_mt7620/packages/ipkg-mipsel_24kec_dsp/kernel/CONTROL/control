@@ -1,0 +1,10 @@
+Package: kernel
+Version: 3.14.79-1
+Depends: libc
+Source: package/linux
+License: GPLv2
+Section: sys
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 106
+Description:  Virtual kernel package

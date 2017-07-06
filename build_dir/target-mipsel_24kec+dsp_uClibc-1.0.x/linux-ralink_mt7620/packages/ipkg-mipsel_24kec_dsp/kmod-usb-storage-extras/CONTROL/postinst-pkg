@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -z "$IPKG_INSTROOT" ] || exit 0
+. /lib/functions.sh
+insert_modules ums-alauda ums-cypress ums-datafab ums-freecom ums-isd200 ums-jumpshot ums-karma ums-sddr09 ums-sddr55 ums-usbat

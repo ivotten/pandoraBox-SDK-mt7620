@@ -1,0 +1,4 @@
+evdev.ko
+input-core.ko
+rc-core.ko
+rc-lirc.ko

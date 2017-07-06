@@ -1,0 +1,213 @@
+#!/bin/sh
+# Copyright (C) 2016 D-Team Technology Co.,Ltd. ShenZhen
+# Copyright (c) 2016, lintel <lintel.huang@gmail.com>
+# Copyright (c) 2016, GuoGuo <gch981213@gmail.com>
+#
+#
+#     警告:对着屏幕的哥们,我们允许你使用此脚本，但不允许你抹去作者的信息,请保留这段话。
+#
+
+. /lib/functions/uci-defaults-new.sh
+. /lib/ralink.sh
+
+set_usb_led() {
+	ucidef_set_led_usbdev "usb" "USB" "${1}" "${2:-1-1}"
+}
+
+set_usb_led_ports() {
+	local sysfs="$1";shift
+	ucidef_set_led_usbport "usb" "USB" "${sysfs}" $@
+}
+
+set_wifi_led() {
+	ucidef_set_led_netdev "wifi_led" "wifi" "${1}" "${2:-ra0}"
+}
+
+set_wifi_led_5g() {
+	ucidef_set_led_netdev "wifi_led_5g" "wifi_5g" "${1}" "${2:-rai0}"
+}
+
+set_internet_led() {
+	local sysfs="$1"
+	json_select_object led
+	json_select_object "led_internet"
+	json_add_string name "pb_internet"
+	json_add_string sysfs "$sysfs"
+	json_add_string trigger "pb_internet"
+	json_select ..
+	json_select ..
+}
+
+set_led_heartbeat() {
+	local cfg="led_$1"
+	local name="$2"
+	local sysfs="$3"
+
+	json_select_object led
+
+	json_select_object "$1"
+	json_add_string name "$name"
+	json_add_string sysfs "$sysfs"
+	json_add_string trigger heartbeat
+	json_select ..
+
+	json_select ..
+}
+
+set_led_breath() {
+	local cfg="led_$1"
+	local name="$2"
+	local sysfs="$3"
+
+	json_select_object led
+
+	json_select_object "$1"
+	json_add_string name "$name"
+	json_add_string sysfs "$sysfs"
+	json_add_string trigger breath
+	json_select ..
+
+	json_select ..
+}
+
+board=$(ralink_board_name)
+
+board_config_update
+
+case $board in
+	fonera20n)
+		set_usb_led "fonera20n:amber:usb"
+		;;
+	mtall| \
+	superdisk_mini| \
+	vg100)
+		set_wifi_led "wifi"
+		;;
+	hc5661)
+		set_wifi_led "hc5661:blue:wlan"
+		set_internet_led "hc5661:blue:internet"
+		;;
+	hc5761 | \
+	hc5861)
+		set_wifi_led "${board}:blue:wlan2g"
+		set_wifi_led_5g "${board}:blue:wlan5g"
+		set_internet_led "${board}:blue:internet"
+		;;
+	wr8305rt)
+		set_wifi_led "wr8305rt:wifi"
+		set_usb_led "wr8305rt:usb"
+		;;
+	yk1)
+		set_wifi_led "wifi:blue"
+		set_usb_led_ports "acc:blue" "usb1-port1" "usb2-port1"
+		set_internet_led "internet:blue"
+		;;
+	wrtnode)
+		set_wifi_led "wrtnode:sys"
+		;;
+	abox)
+		ucidef_set_led_usbdev "usb2" "USB2" "usb2:green" "1-2"
+		ucidef_set_led_usbdev "usb3" "USB3" "usb3:green" "2-1"
+		;;
+	pbr-m2 | \
+	pbr-m1)
+		set_wifi_led "2g:blue"
+		set_wifi_led_5g "5g:blue"
+		set_internet_led "internet:blue"
+		;;
+	creativebox)
+		set_wifi_led "2g"
+		set_wifi_led_5g "5g"
+		;;
+	pbr-w3)
+		set_wifi_led "2g:blue"
+		;;
+	pbr-bhu)
+		set_wifi_led "wifi:2.4g"
+		set_led_heartbeat "sys_hb" "sys_hb" "sys"
+		;;
+	pbr-c1)
+		set_wifi_led "wifi:2.4g"
+		set_internet_led "internet"
+		;;
+	pbr-d1)
+		set_usb_led "usb"
+		;;
+	dm06)
+		set_wifi_led "wifi:2.4g"
+		set_usb_led "usb"
+		;;
+	q7)
+		set_wifi_led "zte_q7:wifi"
+		;;
+	dir620)
+		set_wifi_led "d-link:green:wifi"
+		set_usb_led "d-link:green:usb"
+		;;
+	ry1)
+		set_wifi_led "ry1:wifi"
+		set_usb_led "ry1:usb"
+		;;
+	360safe-p2)
+		set_usb_led "usb"
+		;;
+	y1s)
+		set_usb_led_ports "y1s:blue:usb" "1-1-port2" "1-1-port3" "1-1-port4"
+		ucidef_set_led_netdev "wifi_led" "wifi" "y1s:yellow:wifi" "ra0" "link tx"
+		ucidef_set_led_netdev "wifi_led_5g" "wifi_5g" "y1s:blue:wifi" "rai0" "link tx"
+		ucidef_set_led_switch "lan4" "LAN4" "y1s:yellow:lan4" "switch0" "0x02"
+		ucidef_set_led_switch "lan3" "LAN3" "y1s:yellow:lan3" "switch0" "0x04"
+		set_led_breath "breath1" "breath1" "y1s:blue:logo1"
+		set_led_breath "breath2" "breath2" "y1s:blue:logo2"
+		set_led_breath "breath3" "breath3" "y1s:blue:logo3"
+		set_led_breath "breath4" "breath4" "y1s:blue:logo4"
+		set_internet_led "y1s:blue:internet"
+		;;
+	d1|\
+	xiaomi-mini|\
+	xiaomi-r1cl|\
+	k2)
+		set_internet_led "$board:blue:status"
+		;;
+	y1)
+		set_usb_led_ports "y1:blue:usb" "usb1-port1" "usb2-port1"
+		ucidef_set_led_netdev "wifi_led" "wifi" "y1:blue:2.4g" "ra0" "link tx"
+		ucidef_set_led_netdev "wifi_led_5g" "wifi_5g" "y1:blue:5g" "rai0" "link tx"
+		ucidef_set_led_switch "lan" "LAN" "y1:blue:lan" "switch0" "0x03"
+		set_internet_led "y1:blue:internet"
+		;;
+	d2)
+		ucidef_set_led_netdev "wifi_led" "wifi" "2g:blue" "ra0" "link tx"
+		ucidef_set_led_netdev "wifi_led_5g" "wifi_5g" "5g:blue" "rai0" "link tx"
+		set_internet_led "internet:blue"
+		;;
+	a3004ns)
+		set_usb_led "a3004ns:blue:usb" "2-1"
+		;;
+	mt7620a-evb)
+		set_wifi_led "wifi"
+		set_usb_led "usb"
+		;;
+	ap7620a)
+		set_wifi_led "wifi"
+		set_usb_led "usb"
+		;;
+	nw718)
+		set_usb_led "nw718:amber:usb"
+		;;
+	hg255d)
+		set_usb_led "hg255d:usb"
+		ucidef_set_led_netdev "wifi_led" "wifi" "hg255d:wlan" "ra0" "link tx"
+		set_internet_led "hg255d:internet"
+		;;
+	oye-0001)
+		set_wifi_led "oye:green:wlan"
+		;;
+	k1)
+		set_wifi_led "k1:white:wlan"
+		;;
+esac
+
+board_config_flush
+
+exit 0

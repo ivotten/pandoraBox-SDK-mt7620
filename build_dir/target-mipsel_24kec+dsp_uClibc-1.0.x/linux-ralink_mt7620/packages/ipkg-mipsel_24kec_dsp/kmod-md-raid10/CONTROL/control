@@ -1,0 +1,10 @@
+Package: kmod-md-raid10
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-md-mod
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 28644
+Description:  RAID Level 10 (Mirroring+Striping) driver module (raid10.ko)

@@ -1,0 +1,6 @@
+auth_rpcgss.ko
+exportfs.ko
+lockd.ko
+nfsd.ko
+oid_registry.ko
+sunrpc.ko

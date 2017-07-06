@@ -1,0 +1,10 @@
+Package: kmod-bluetooth
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-core, kmod-crypto-hash, kmod-6lowpan-iphc, kmod-lib-crc16, kmod-hid
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 180791
+Description:  Kernel support for Bluetooth devices

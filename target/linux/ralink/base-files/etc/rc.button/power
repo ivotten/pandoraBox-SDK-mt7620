@@ -1,0 +1,30 @@
+#!/bin/sh
+
+[ "${ACTION}" = "released" ] || exit 0
+
+#exec /sbin/poweroff
+
+. /lib/functions.sh
+
+. /lib/ralink.sh
+
+logger "$BUTTON pressed for $SEEN seconds"
+
+
+case $(ralink_board_name) in
+	pbr-m2)
+        flag=`cat /sys/class/leds/power:blue/brightness`
+        [ $flag == 0 ] && echo 1 > /sys/class/leds/power:blue/brightness
+        [ $flag == 1 ] && echo 0 > /sys/class/leds/power:blue/brightness
+        ;;
+	d1)
+		echo "Power Pressed" > /dev/console
+		echo 1 > /sys/class/leds/jd-led-blue-flush/brightness
+		sleep 2
+
+		sync && reboot
+		;;
+	*)
+		exec /sbin/poweroff
+		;;
+esac

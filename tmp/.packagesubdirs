@@ -1,0 +1,11 @@
+Package/ldconfig/subdir = base
+Package/ldd/subdir = base
+Package/libc/subdir = base
+Package/libgcc/subdir = base
+Package/libgfortran/subdir = base
+Package/libgo/subdir = base
+Package/libpthread/subdir = base
+Package/librt/subdir = base
+Package/libssp/subdir = base
+Package/libstdcpp/subdir = base
+Package/libthread-db/subdir = base

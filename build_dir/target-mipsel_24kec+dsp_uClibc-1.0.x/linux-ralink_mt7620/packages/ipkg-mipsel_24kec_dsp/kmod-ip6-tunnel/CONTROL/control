@@ -1,0 +1,10 @@
+Package: kmod-ip6-tunnel
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-ipv6, kmod-iptunnel6
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 13402
+Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling

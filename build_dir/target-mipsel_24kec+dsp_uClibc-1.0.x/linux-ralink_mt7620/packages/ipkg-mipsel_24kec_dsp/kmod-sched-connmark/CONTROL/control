@@ -1,0 +1,10 @@
+Package: kmod-sched-connmark
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-sched-core, kmod-ipt-core, kmod-ipt-conntrack-extra
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 1471
+Description:  Traffic shaper conntrack mark support

@@ -1,0 +1,10 @@
+Package: kmod-usb-serial-oti6858
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-serial
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4792
+Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converters

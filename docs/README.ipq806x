@@ -1,0 +1,11 @@
+This document is to tell you about how to make image for ipq806x.
+
+1. rm -rf tmp
+2. cp def_config/ipq806x_newifi.config .config
+3. make package/symlinks V=s
+4. make defconfig
+5. make V=s
+
+
+    www.pandorabox.org.cn
+        D-Team @ China

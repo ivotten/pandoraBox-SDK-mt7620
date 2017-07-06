@@ -1,0 +1,16 @@
+Package: kmod-ipt-extra
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-ipt-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4844
+Description:  Other Netfilter (IPv4) kernel modules
+ Includes:
+ - addrtype
+ - owner
+ - physdev (if bridge support was enabled in kernel)
+ - pkttype
+ - quota

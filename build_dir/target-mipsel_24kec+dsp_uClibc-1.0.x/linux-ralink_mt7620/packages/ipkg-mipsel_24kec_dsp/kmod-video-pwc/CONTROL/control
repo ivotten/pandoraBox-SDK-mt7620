@@ -1,0 +1,10 @@
+Package: kmod-video-pwc
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-core, kmod-video-videobuf2, kmod-video-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 23289
+Description:  Kernel modules for supporting Philips USB based cameras

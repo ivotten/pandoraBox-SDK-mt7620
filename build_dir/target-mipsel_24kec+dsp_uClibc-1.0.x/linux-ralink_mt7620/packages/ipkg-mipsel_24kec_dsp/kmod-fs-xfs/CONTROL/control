@@ -1,0 +1,10 @@
+Package: kmod-fs-xfs
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-fs-exportfs, kmod-lib-crc32c
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 284383
+Description:  Kernel module for XFS support

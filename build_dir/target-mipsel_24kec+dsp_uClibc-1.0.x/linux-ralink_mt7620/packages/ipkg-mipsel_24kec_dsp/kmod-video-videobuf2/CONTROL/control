@@ -1,0 +1,10 @@
+Package: kmod-video-videobuf2
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-video-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 19541
+Description:  Kernel modules that implements three basic types of media buffers.

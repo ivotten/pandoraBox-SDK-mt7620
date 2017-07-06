@@ -1,0 +1,107 @@
+Package: ldconfig
+Version: 1.0.20-1
+Source: package/toolchain
+Section: utils
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 8327
+Filename: ldconfig_1.0.20-1_mipsel_24kec_dsp.ipk
+Size: 9091
+MD5Sum: 67102d0cc6f3694cb9860863df14cd56
+SHA256sum: 34d2a37b0d647ea27f1f431241a47b46f70a30655621fc935ac2a44c577cbdde
+Description:  Shared library path configuration
+
+Package: ldd
+Version: 1.0.20-1
+Source: package/toolchain
+Section: utils
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4728
+Filename: ldd_1.0.20-1_mipsel_24kec_dsp.ipk
+Size: 5397
+MD5Sum: 06d052cdbac1897b4daacb3e19b46c48
+SHA256sum: a6c84ab518141a83331e4c35e3557319f35c694d7b56acc7133625241f9c0373
+Description:  LDD trace utility
+
+Package: libgcc
+Version: 4.8-linaro-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 31145
+Filename: libgcc_4.8-linaro-1_mipsel_24kec_dsp.ipk
+Size: 31825
+MD5Sum: 5bfc5114cd58a2c6e93e2bbc29dd7dd8
+SHA256sum: c233d1eb94513732d2cfa64d7b7dbe4236a59b4834c6f3ee327e7a86d2fcaeb4
+Description:  GCC support library
+
+Package: libpthread
+Version: 1.0.20-1
+Depends: libgcc
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 123
+Filename: libpthread_1.0.20-1_mipsel_24kec_dsp.ipk
+Size: 835
+MD5Sum: a7d48a16d367591dc282ac8dbbd918ac
+SHA256sum: e0507d0cbd0e03f3d77508ab3ee1f5bfee290da83580cb8fe3234460d7240b80
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.0.20-1
+Depends: libpthread
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 123
+Filename: librt_1.0.20-1_mipsel_24kec_dsp.ipk
+Size: 845
+MD5Sum: bbe6ddd91aab7e1c05f346bb3755ff63
+SHA256sum: 887e72df30fc4164e37ffb596e63b430c8bbbe70b10fbc5a10935bc1005fdfa3
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp
+Version: 4.8-linaro-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 245004
+Filename: libstdcpp_4.8-linaro-1_mipsel_24kec_dsp.ipk
+Size: 244343
+MD5Sum: d56a8a7ceaf1dd442d7aaa335e1e7bb5
+SHA256sum: c46d30e17952f8491d86611337891ad9f2d21273fcd92b9d89388c91d032c9ff
+Description:  GNU Standard C++ Library v3
+
+Package: libthread-db
+Version: 1.0.20-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 190
+Filename: libthread-db_1.0.20-1_mipsel_24kec_dsp.ipk
+Size: 914
+MD5Sum: 0fb34b842c2da332af50a582242d2d3a
+SHA256sum: 8a075dad317a4ed25bec17618edc2051cb3b6faecc445b98043c19105c4d585b
+Description:  POSIX thread library debugging support
+

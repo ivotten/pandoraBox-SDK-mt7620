@@ -1,0 +1,12 @@
+Package: kmod-can-slcan
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-can
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4852
+Description:  CAN driver for several 'low cost' CAN interfaces that are attached
+ via serial lines or via USB-to-serial adapters using the LAWICEL
+ ASCII protocol.

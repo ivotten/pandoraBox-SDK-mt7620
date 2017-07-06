@@ -1,0 +1,10 @@
+Package: kmod-crypto-sha256
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-crypto-hash, kmod-crypto-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4764
+Description:  SHA224 SHA256 digest CryptoAPI module

@@ -1,0 +1,10 @@
+Package: kmod-l2tp-ip
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-l2tp
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4939
+Description:  Kernel modules for L2TP IP encapsulation for L2TPv3

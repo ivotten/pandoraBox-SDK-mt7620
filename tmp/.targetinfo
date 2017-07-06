@@ -1,0 +1,464 @@
+Source-Makefile: target/linux/ralink/Makefile
+Target: ralink
+Target-Board: ralink
+Target-Name: Ralink SoC
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: jff2 squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target: ralink/rt305x
+Target-Board: ralink
+Target-Name: RT305x based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_24kec_dsp
+Target-Features: gpio jff2 squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kec -mdsp
+CPU-Type: 24kec+dsp
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb-dwc2 kmod-ledtrig-usbdev 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target: ralink/rt3350
+Target-Board: ralink
+Target-Name: Ralink SoC
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: jff2 squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target: ralink/rt5350
+Target-Board: ralink
+Target-Name: RT5350 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_24kec_dsp
+Target-Features: gpio jff2 pci squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kec -mdsp
+CPU-Type: 24kec+dsp
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb2 kmod-ledtrig-usbdev 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target: ralink/rt3352
+Target-Board: ralink
+Target-Name: RT3352 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_mips32
+Target-Features: jff2 squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mips32r2 -mtune=24kec -mdsp -mabi=32 -funit-at-a-time -fno-caller-saves
+CPU-Type: mips32
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb2 kmod-ledtrig-usbdev 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target: ralink/rt3883
+Target-Board: ralink
+Target-Name: RT3883 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_24kec_dsp2
+Target-Features: jff2 squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kec -mdspr2
+CPU-Type: 24kec+dsp2
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb-rt305x-dwc_otg kmod-ledtrig-usbdev 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target: ralink/mt7620
+Target-Board: ralink
+Target-Name: MT7620 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_24kec_dsp
+Target-Features: gpio jff2 pci rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kec -mdsp
+CPU-Type: 24kec+dsp
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-ledtrig-usbdev kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-cp437 kmod-nls-utf8 kmod-fs-ext4  kmod-fs-vfat uhttpd iwinfo libiwinfo-lua luci luci-mod-admin-full luci-app-firewall luci-app-upnp luci-theme-bootstrap kmod-mt76x2e block-mount 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_mt7620a-evb
+Target-Profile-Name: MediaTek MT7620a Evaluation Board
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for MediaTek MT7620a Evaluation Board
+@@
+
+Target-Profile: DEVICE_mw305r
+Target-Profile-Name: Mercury MW305R
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for Mercury MW305R
+@@
+
+Target-Profile: DEVICE_wr8305rt
+Target-Profile-Name: ZBT WR8305RT
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for ZBT WR8305RT
+@@
+
+Target-Profile: DEVICE_wrtnode1
+Target-Profile-Name: WRTnode 1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for WRTnode 1
+@@
+
+Target-Profile: DEVICE_microwrt
+Target-Profile-Name: Microduino MicroWRT
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for Microduino MicroWRT
+@@
+
+Target-Profile: DEVICE_q7
+Target-Profile-Name: ZTE Q7
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for ZTE Q7
+@@
+
+Target-Profile: DEVICE_phicomm-k1
+Target-Profile-Name: Phicomm K1
+Target-Profile-Packages: detect_internet kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for Phicomm K1
+@@
+
+Target-Profile: DEVICE_phicomm-k2
+Target-Profile-Name: Phicomm K2
+Target-Profile-Packages: detect_internet kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for Phicomm K2
+@@
+
+Target-Profile: DEVICE_newifi-mini
+Target-Profile-Name: Newifi mini
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for Newifi mini
+@@
+
+Target-Profile: DEVICE_newifi-y1s
+Target-Profile-Name: Newifi Y1S
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e kmod-i2c-core kmod-ralink-i2c kmod-leds-tca6507 kmod-ledtrig-breath
+Target-Profile-Description:
+Build firmware images for Newifi Y1S
+@@
+
+Target-Profile: DEVICE_ap7620a
+Target-Profile-Name: AP7620A
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for AP7620A
+@@
+
+Target-Profile: DEVICE_yk-l1
+Target-Profile-Name: YouKu_YK-L1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for YouKu_YK-L1
+@@
+
+Target-Profile: DEVICE_ry-1
+Target-Profile-Name: xCloud RY-1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for xCloud RY-1
+@@
+
+Target-Profile: DEVICE_br100
+Target-Profile-Name: Aigale Ai-BR100
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for Aigale Ai-BR100
+@@
+
+Target-Profile: DEVICE_xiaomi-mini
+Target-Profile-Name: Xiaomi Mini
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for Xiaomi Mini
+@@
+
+Target-Profile: DEVICE_hc5661
+Target-Profile-Name: HiWiFi HC5661
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-rt2860v2 kmod-mt76x2e
+Target-Profile-Description:
+Build firmware images for HiWiFi HC5661
+@@
+
+Target-Profile: DEVICE_hc5761
+Target-Profile-Name: HiWiFi HC5761
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt7610e
+Target-Profile-Description:
+Build firmware images for HiWiFi HC5761
+@@
+
+Target-Profile: DEVICE_hc5861
+Target-Profile-Name: HiWiFi HC5861
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 kmod-mt76x2e luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn 
+Target-Profile-Description:
+Build firmware images for HiWiFi HC5861
+@@
+
+Target-Profile: DEVICE_oye-0001
+Target-Profile-Name: OYE-0001
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2 luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn 
+Target-Profile-Description:
+Build firmware images for OYE-0001
+@@
+
+Target-Profile: DEVICE_mtall
+Target-Profile-Name: MTALL
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-relay luci luci-mod-admin-full luci-i18n-base-zh-cn luci-proto-ppp luci-theme-material luci-theme-bootstrap luci-app-bandwidth luci-i18n-bandwidth-zh-cn luci-app-firewall luci-i18n-firewall-zh-cn luci-app-ddns luci-i18n-ddns-zh-cn luci-app-hwacc luci-i18n-hwacc-zh-cn luci-app-upnp luci-i18n-upnp-zh-cn luci-app-arpbind luci-i18n-arpbind-zh-cn  luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-rt2860v2
+Target-Profile-Description:
+Build firmware images for MTALL
+@@
+
+Target: ralink/mt7628
+Target-Board: ralink
+Target-Name: MT7628 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_24kec_dsp
+Target-Features: gpio jff2 pci rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kec -mdsp
+CPU-Type: 24kec+dsp
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-ledtrig-usbdev kmod-mt7628 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_mt7628a-evb
+Target-Profile-Name: MediaTek MT7628a Evaluation Board
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628 kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for MediaTek MT7628a Evaluation Board
+@@
+
+Target-Profile: DEVICE_xiaomi-r1cl
+Target-Profile-Name: Xiaomi R1CL
+Target-Profile-Packages: kmod-mt7628 detect_internet
+Target-Profile-Description:
+Build firmware images for Xiaomi R1CL
+@@
+
+Target-Profile: DEVICE_pbr-w3
+Target-Profile-Name: PBR-W3
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628 kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for PBR-W3
+@@
+
+Target-Profile: DEVICE_pbr-bhu
+Target-Profile-Name: PBR-BHU
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628
+Target-Profile-Description:
+Build firmware images for PBR-BHU
+@@
+
+Target-Profile: DEVICE_360safe-p2
+Target-Profile-Name: 360Safe-P2
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628 kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for 360Safe-P2
+@@
+
+Target-Profile: DEVICE_pbr-c1
+Target-Profile-Name: PBR-C1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628
+Target-Profile-Description:
+Build firmware images for PBR-C1
+@@
+
+Target-Profile: DEVICE_pbr-d1
+Target-Profile-Name: PBR-D1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba3-pandorabox pbmsa-utils luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7628
+Target-Profile-Description:
+Build firmware images for PBR-D1
+@@
+
+Target: ralink/mt7621
+Target-Board: ralink
+Target-Name: MT7621 based boards
+Target-Arch: mipsel
+Target-Arch-Packages: mipsel_1004kc_dsp
+Target-Features: gpio jff2 nand pci rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=1004kc -mdsp
+CPU-Type: 1004kc+dsp
+Linux-Version: 3.14.79
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Ralink/MTK APSoC Boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd dnsmasq iptables ip6tables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall odhcpd odhcp6c ralink-utils  swconfig wireless-tools maccalc gpioctl kmod-gpio-dev kmod-leds-gpio kmod-ledtrig-gpio kmod-ledtrig-timer kmod-ledtrig-netdev kmod-gpio-button-pandorabox kmod-gre 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages: kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-ledtrig-usbdev kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-cp437 kmod-nls-utf8 kmod-fs-ext4  kmod-fs-vfat uhttpd iwinfo libiwinfo-lua luci luci-mod-admin-full luci-app-firewall luci-app-upnp luci-theme-bootstrap kmod-mt76x2e kmod-mt7603e block-mount pbmsa-utils 
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_mt7621a-evb
+Target-Profile-Name: MediaTek MT7621 EVB
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-mt7603e kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for MediaTek MT7621 EVB
+@@
+
+Target-Profile: DEVICE_pbr-m1
+Target-Profile-Name: PandoraBox PBR-M1
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-mt7603e kmod-mt76x2e kmod-i2c-core kmod-ralink-i2c kmod-rtc-pcf8563 kmod-gpio-pcf857x 
+Target-Profile-Description:
+Build firmware images for PandoraBox PBR-M1
+@@
+
+Target-Profile: DEVICE_pbr-m2
+Target-Profile-Name: PandoraBox PBR-M2
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet  kmod-mt7603e kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for PandoraBox PBR-M2
+@@
+
+Target-Profile: DEVICE_pbr-aps
+Target-Profile-Name: PandoraBox PBR-APS512
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-i2c-core kmod-ralink-i2c kmod-rtc-pcf8563 kmod-gpio-pcf857x
+Target-Profile-Description:
+Build firmware images for PandoraBox PBR-APS512
+@@
+
+Target-Profile: DEVICE_a3004ns
+Target-Profile-Name: TOTOLINK A3004NS
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for TOTOLINK A3004NS
+@@
+
+Target-Profile: DEVICE_amazingbox
+Target-Profile-Name: AmazingBox Lite
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for AmazingBox Lite
+@@
+
+Target-Profile: DEVICE_timecloud
+Target-Profile-Name: Thunder TimeCloud
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  
+Target-Profile-Description:
+Build firmware images for Thunder TimeCloud
+@@
+
+Target-Profile: DEVICE_timecloud2
+Target-Profile-Name: Thunder TimeCloud 2
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  
+Target-Profile-Description:
+Build firmware images for Thunder TimeCloud 2
+@@
+
+Target-Profile: DEVICE_newifi-2
+Target-Profile-Name: Newifi 2
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7603e kmod-mt76x2e  kmod-ledtrig-lightflow
+Target-Profile-Description:
+Build firmware images for Newifi 2
+@@
+
+Target-Profile: DEVICE_newifi-3
+Target-Profile-Name: Newifi 3
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-ata-core kmod-ata-ahci  kmod-mt7603e kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for Newifi 3
+@@
+
+Target-Profile: DEVICE_yk-l2
+Target-Profile-Name: YouKu L2
+Target-Profile-Packages: kmod-mt762x-mmc kmod-usb-core kmod-usb3 kmod-usb-storage kmod-usb-storage-extras kmod-scsi-core kmod-scsi-cdrom kmod-ledtrig-usbport kmod-nls-cp437 kmod-nls-cp936 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-ufsd kmod-fs-vfat kmod-fs-ext4 kmod-fs-exfat fdisk hdparm ufsd-tools mkdosfs dosfsck exfat-utils libext2fs e2fsprogs cfdisk parted vsftpd samba4-server pbr-optimizer luci-proto-ppp luci-app-samba luci-i18n-samba-zh-cn luci-app-vsftpd luci-i18n-vsftpd-zh-cn luci-proto-3g comgt kmod-usb-net  kmod-usb-net-rndis kmod-usb-net-sierrawireless kmod-usb-net-qmi-wwan kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-wwan chat luci-app-usb-printer luci-i18n-usb-printer-zh-cn kmod-usb-printer p910nd  detect_internet kmod-mt7603e kmod-mt76x2e 
+Target-Profile-Description:
+Build firmware images for YouKu L2
+@@
+
+

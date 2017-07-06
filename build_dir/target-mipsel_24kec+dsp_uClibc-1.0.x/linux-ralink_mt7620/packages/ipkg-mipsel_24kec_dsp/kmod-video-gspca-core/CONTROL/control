@@ -1,0 +1,11 @@
+Package: kmod-video-gspca-core
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-core, kmod-input-core, kmod-video-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 14824
+Description:  Kernel modules for supporting GSPCA based webcam devices. Note this is just
+ the core of the driver, please select a submodule that supports your webcam.

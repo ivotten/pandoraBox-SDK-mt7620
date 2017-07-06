@@ -1,0 +1,10 @@
+Package: kmod-spi-gpio
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-spi-bitbang
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 3028
+Description:  This package contains the GPIO-based bitbanging SPI Master

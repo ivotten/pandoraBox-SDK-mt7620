@@ -1,0 +1,10 @@
+Package: kmod-fs-sunrpc-auth-rpcgss
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-fs-nfs-common
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 25535
+Description:  GSS authentication for SUN RPC

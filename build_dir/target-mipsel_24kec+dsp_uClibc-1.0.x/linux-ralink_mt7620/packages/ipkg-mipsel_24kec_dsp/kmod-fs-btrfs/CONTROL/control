@@ -1,0 +1,10 @@
+Package: kmod-fs-btrfs
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-lib-crc32c, kmod-lib-lzo, kmod-lib-zlib, kmod-lib-raid6, kmod-lib-xor
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 457653
+Description:  Kernel module for BTRFS support

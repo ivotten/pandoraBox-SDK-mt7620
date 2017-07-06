@@ -1,0 +1,10 @@
+Package: kmod-mt762x-mmc
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-mmc
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 9699
+Description:  This package contains the MT762x MMC driver,use for SDXC/MMC.

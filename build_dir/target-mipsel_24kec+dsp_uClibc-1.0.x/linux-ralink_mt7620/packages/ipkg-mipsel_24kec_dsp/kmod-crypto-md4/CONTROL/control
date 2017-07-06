@@ -1,0 +1,10 @@
+Package: kmod-crypto-md4
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-crypto-hash, kmod-crypto-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 2342
+Description:  MD4 digest CryptoAPI module

@@ -1,0 +1,5 @@
+evdev.ko
+input-core.ko
+ir-nec-decoder.ko
+lirc_dev.ko
+rc-core.ko

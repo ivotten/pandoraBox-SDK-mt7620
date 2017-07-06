@@ -1,0 +1,11 @@
+Package: kmod-i2c-gpio
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-i2c-algo-bit
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 2280
+Description:  Kernel modules for a very simple bitbanging I2C driver utilizing the
+ arch-neutral GPIO API to control the SCL and SDA lines.

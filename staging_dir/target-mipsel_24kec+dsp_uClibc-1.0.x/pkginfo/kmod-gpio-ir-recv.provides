@@ -1,0 +1,4 @@
+evdev.ko
+gpio-ir-recv.ko
+input-core.ko
+rc-core.ko

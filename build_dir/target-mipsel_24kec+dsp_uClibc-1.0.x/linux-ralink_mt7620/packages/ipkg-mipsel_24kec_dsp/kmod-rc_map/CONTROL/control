@@ -1,0 +1,10 @@
+Package: kmod-rc_map
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-rc-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 872
+Description:  (Remote control) LIRC GPIO driver; Linux Version>3.4

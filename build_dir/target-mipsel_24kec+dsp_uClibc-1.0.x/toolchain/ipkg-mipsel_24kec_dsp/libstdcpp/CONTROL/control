@@ -1,0 +1,10 @@
+Package: libstdcpp
+Version: 4.8-linaro-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 245004
+Description:  GNU Standard C++ Library v3

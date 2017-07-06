@@ -1,0 +1,46 @@
+#!/bin/sh
+. /lib/functions.sh
+. /lib/functions/network.sh
+. /lib/functions/leds.sh
+. /lib/ralink.sh
+
+board="$(ralink_board_name)"
+
+check_cfg_nonexist() {
+	[ $(grep sysfs /etc/config/system | grep -c "$1") -eq 0 ]
+}
+
+if [ "$INET_STAT" = "CONNECTED" ]
+then
+	network_find_wan wan_net_name
+	network_get_device wan_dev "$wan_net_name"
+	case "$board" in
+	y1s)
+		check_cfg_nonexist "y1s:yellow:internet" || exit 0
+		led_off "y1s:yellow:internet"
+		;;
+	d1|\
+	xiaomi-mini|\
+	xiaomi-r1cl|\
+	k2)
+		check_cfg_nonexist "$board:yellow:status" || exit 0
+		led_off "$board:yellow:status"
+		;;
+	esac
+else
+	case "$board" in
+	y1s)
+		check_cfg_nonexist "y1s:yellow:internet" || exit 0
+		led_set_attr "y1s:yellow:internet" "trigger" "switch0"
+		led_set_attr "y1s:yellow:internet" "port_mask" "0x01"
+		;;
+	d1|\
+	xiaomi-mini|\
+	xiaomi-r1cl|\
+	k2)
+		check_cfg_nonexist "$board:yellow:status" || exit 0
+		led_timer "$board:yellow:status" 500 500
+		;;
+	esac
+fi
+

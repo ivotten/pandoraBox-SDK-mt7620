@@ -1,0 +1,10 @@
+Package: kmod-usb-serial-qualcomm
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-serial, kmod-usb-serial-wwan
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 2276
+Description:  Kernel support for Qualcomm USB Serial devices (Gobi)

@@ -1,0 +1,11 @@
+Package: kmod-usb-storage-extras
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-storage
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 33300
+Description:  Say Y here if you want to have some more drivers,
+ such as for SmartMedia card readers

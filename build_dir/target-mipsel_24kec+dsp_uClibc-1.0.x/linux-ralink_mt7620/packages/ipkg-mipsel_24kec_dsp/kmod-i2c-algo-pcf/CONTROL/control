@@ -1,0 +1,10 @@
+Package: kmod-i2c-algo-pcf
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-i2c-core
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 3408
+Description:  Kernel modules for I2C PCF 8584 interfaces

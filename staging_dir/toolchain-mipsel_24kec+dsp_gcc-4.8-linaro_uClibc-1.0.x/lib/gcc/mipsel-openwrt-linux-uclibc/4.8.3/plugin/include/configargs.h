@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "/home/lintel/PandoraBox-MT7620/build_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/gcc-linaro-4.8-2014.04/configure --with-bugurl=https://dev.openwrt.org/ --with-pkgversion='PandoraBox/Linaro GCC 4.8-2014.04 2017-01-03-git-6c24a7a' --prefix=/home/lintel/PandoraBox-MT7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mipsel-openwrt-linux-uclibc --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-nls --with-host-libstdcxx=-lstdc++ --with-float=soft --with-gmp=/home/lintel/PandoraBox-MT7620/staging_dir/host --with-mpfr=/home/lintel/PandoraBox-MT7620/staging_dir/host --with-mpc=/home/lintel/PandoraBox-MT7620/staging_dir/host --disable-decimal-float --with-mips-plt --disable-libssp --disable-__cxa_atexit --with-headers=/home/lintel/PandoraBox-MT7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include --disable-libsanitizer --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/home/lintel/PandoraBox-MT7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib";
+static const char thread_model[] = "posix";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "float", "soft" }, { "llsc", "llsc" }, { "mips-plt", "plt" } };

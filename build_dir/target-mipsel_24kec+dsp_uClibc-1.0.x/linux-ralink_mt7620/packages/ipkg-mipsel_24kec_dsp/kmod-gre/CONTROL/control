@@ -1,0 +1,10 @@
+Package: kmod-gre
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-ipv6, kmod-iptunnel
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 8197
+Description:  Generic Routing Encapsulation support

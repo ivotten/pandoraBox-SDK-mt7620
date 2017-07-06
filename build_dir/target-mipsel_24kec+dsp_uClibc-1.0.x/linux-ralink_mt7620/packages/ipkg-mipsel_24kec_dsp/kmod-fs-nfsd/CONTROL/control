@@ -1,0 +1,10 @@
+Package: kmod-fs-nfsd
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-fs-nfs-common, kmod-fs-exportfs, kmod-fs-sunrpc-auth-rpcgss
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 110387
+Description:  Kernel module for NFS kernel server support

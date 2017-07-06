@@ -1,0 +1,10 @@
+Package: kmod-usb-net-asix
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-libphy, kmod-usb-net
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 10489
+Description:  Kernel module for USB-to-Ethernet Asix convertors

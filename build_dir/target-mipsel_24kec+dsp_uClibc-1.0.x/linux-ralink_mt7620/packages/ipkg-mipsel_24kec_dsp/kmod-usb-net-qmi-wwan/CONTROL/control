@@ -1,0 +1,10 @@
+Package: kmod-usb-net-qmi-wwan
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-usb-net, kmod-usb-wdm
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4897
+Description:  QMI WWAN driver for Qualcomm MSM based 3G and LTE modems

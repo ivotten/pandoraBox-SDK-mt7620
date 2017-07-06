@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -z "$IPKG_INSTROOT" ] || exit 0
+. /lib/functions.sh
+insert_modules ebtables ebtable_broute ebtable_filter ebtable_nat ebt_802_3 ebt_among ebt_limit ebt_mark_m ebt_pkttype ebt_stp ebt_vlan ebt_mark ebt_redirect ebt_arpnat

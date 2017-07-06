@@ -1,0 +1,10 @@
+Package: libthread-db
+Version: 1.0.20-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 190
+Description:  POSIX thread library debugging support

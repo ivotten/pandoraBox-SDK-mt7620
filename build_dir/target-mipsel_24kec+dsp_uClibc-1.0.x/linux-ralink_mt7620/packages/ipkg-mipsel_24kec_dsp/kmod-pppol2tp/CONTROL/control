@@ -1,0 +1,10 @@
+Package: kmod-pppol2tp
+Version: 3.14.79-1
+Depends: kernel (=3.14.79-1), kmod-ppp, kmod-pppox, kmod-l2tp
+Source: package/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: mipsel_24kec_dsp
+Installed-Size: 9801
+Description:  Kernel modules for PPPoL2TP (PPP over L2TP) support
