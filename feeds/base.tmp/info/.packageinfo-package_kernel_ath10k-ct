@@ -1,0 +1,20 @@
+Source-Makefile: feeds/base/package/kernel/ath10k-ct/Makefile
+Package: kmod-ath10k-ct
+Submenu: Wireless Drivers
+Version: <LINUX_VERSION>-1
+Depends: +kmod-mac80211 +kmod-ath +@DRIVER_11N_SUPPORT +@DRIVER_11AC_SUPPORT @PCI_SUPPORT +@KERNEL_RELAY +kmod-hwmon-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: ath10k-ct driver optimized for CT ath10k firmware
+Maintainer: Ben Greear <greearb@candelatech.com>
+Source: 
+License: GPLv2
+Type: ipkg
+Description: ath10k-ct driver optimized for CT ath10k firmware
+Ben Greear <greearb@candelatech.com>
+@@
+
+

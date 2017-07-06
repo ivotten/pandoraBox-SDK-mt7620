@@ -1,0 +1,20 @@
+Source-Makefile: feeds/base/package/network/services/omcproxy/Makefile
+Package: omcproxy
+Version: 3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libubus
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: IGMPv3 and MLDv2 Multicast Proxy
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: IGMPv3 and MLDv2 Multicast Proxy
+Steven Barth <cyrus@openwrt.org>
+@@
+
+

@@ -11806,3 +11806,188 @@ Config:
 @@
 
 
+Source-Makefile: package/feeds/base/mbedtls/Makefile
+Package: libmbedtls
+Submenu: SSL
+Version: 2.4.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Embedded SSL (library)
+Maintainer: 
+Source: mbedtls-2.4.2-gpl.tgz
+License: GPL-2.0+
+Type: ipkg
+Description: The aim of the mbedtls project is to provide a quality, open-source
+cryptographic library written in C and targeted at embedded systems.
+This package contains the mbedtls library.
+https://tls.mbed.org
+
+@@
+
+
+Source-Makefile: package/feeds/base/openssl/Makefile
+Package: libopenssl
+Menu: 1
+Submenu: SSL
+Version: 1.0.2k-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +OPENSSL_WITH_COMPRESSION:zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Open source SSL toolkit (libraries)
+Maintainer: 
+Source: openssl-1.0.2k.tar.gz
+License: OpenSSL
+LicenseFiles: LICENSE
+Type: ipkg
+Description: The OpenSSL Project is a collaborative effort to develop a robust,
+commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+as a full-strength general purpose cryptography library.
+This package contains the OpenSSL shared libraries, needed by other programs.
+http://www.openssl.org/
+
+@@
+Config:
+source "feeds/base/package/libs/openssl/Config.in"
+@@
+
+Package: openssl-util
+Version: 1.0.2k-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Open source SSL toolkit (utility)
+Maintainer: 
+Source: openssl-1.0.2k.tar.gz
+License: OpenSSL
+LicenseFiles: LICENSE
+Type: ipkg
+Description: The OpenSSL Project is a collaborative effort to develop a robust,
+commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+as a full-strength general purpose cryptography library.
+This package contains the OpenSSL command-line utility.
+http://www.openssl.org/
+
+@@
+
+
+Source-Makefile: package/feeds/base/zlib/Makefile
+Package: zlib
+Version: 1.2.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Library implementing the deflate compression method
+Maintainer: 
+Source: zlib-1.2.11.tar.xz
+License: Zlib
+LicenseFiles: README
+Type: ipkg
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+http://www.zlib.net/
+
+@@
+
+Package: zlib-dev
+Submenu: Libraries
+Version: 1.2.11-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: Development files for the zlib library
+Maintainer: 
+Source: zlib-1.2.11.tar.xz
+License: Zlib
+LicenseFiles: README
+Type: ipkg
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.
+
+@@
+
+
+Source-Makefile: package/feeds/packages/pcre/Makefile
+Package: libpcre
+Version: 8.40-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: A Perl Compatible Regular Expression library
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.40.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: A Perl Compatible Regular Expression library
+http://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+Package: libpcre16
+Version: 8.40-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: A Perl Compatible Regular Expression library (16bit support)
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.40.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: A Perl Compatible Regular Expression library (16bit support)
+http://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+Package: libpcrecpp
+Version: 8.40-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcre +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: C++ wrapper for Perl Compatible Regular Expression library
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.40.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: C++ wrapper for Perl Compatible Regular Expression library
+http://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+

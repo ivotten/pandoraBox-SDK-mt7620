@@ -1,0 +1,11 @@
+Package: zlib-dev
+Version: 1.2.11-1
+Depends: libc, zlib
+Source: feeds/base/package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: devel
+Architecture: mipsel_24kec_dsp
+Installed-Size: 79460
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.

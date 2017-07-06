@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.2k
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Libs.private: -L/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/lib -L/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/lib -L/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/usr/lib -L/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib -Wl,--gc-sections -ldl -ldl
+Cflags: -I${includedir} 

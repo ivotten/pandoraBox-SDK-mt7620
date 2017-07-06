@@ -1,0 +1,7 @@
+custom-package/shadowsocksr-libev
+linux
+toolchain
+feeds/base/mbedtls
+feeds/base/openssl
+feeds/base/zlib
+feeds/packages/pcre

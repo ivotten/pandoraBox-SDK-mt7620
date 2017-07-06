@@ -1,0 +1,11 @@
+Package: libpcrecpp
+Version: 8.40-2
+Depends: libc, libpcre, libstdcpp
+Source: feeds/packages/libs/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 11363
+Description:  C++ wrapper for Perl Compatible Regular Expression library

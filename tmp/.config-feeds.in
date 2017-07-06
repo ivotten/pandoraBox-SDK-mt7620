@@ -1,0 +1,35 @@
+	config FEED_base
+		bool "Enable feed base"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"base\" feed at https://git.lede-project.org/source.git;v17.01.2.
+
+	config FEED_packages
+		bool "Enable feed packages"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"packages\" feed at https://git.lede-project.org/feed/packages.git^dc558eaa296686603c1730c1aab01f3ea69d7831.
+
+	config FEED_luci
+		bool "Enable feed luci"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"luci\" feed at https://git.lede-project.org/project/luci.git^7f6fc1681f7becc514a58082e871f3855d3a123f.
+
+	config FEED_routing
+		bool "Enable feed routing"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"routing\" feed at https://git.lede-project.org/feed/routing.git^dbbad8472288498c17825303d834da3ee5030806.
+
+	config FEED_telephony
+		bool "Enable feed telephony"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"telephony\" feed at https://git.lede-project.org/feed/telephony.git^1f0fb2538ba6fc306198fe2a9a4b976d63adb304.
+

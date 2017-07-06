@@ -242,6 +242,26 @@ menu "Base system"
 
 endmenu
 
+menu "Development"
+
+menu "Libraries"
+	config PACKAGE_zlib-dev
+		tristate "zlib-dev.......................... Development files for the zlib library"
+		default y if DEFAULT_zlib-dev
+		default m if ALL
+		select PACKAGE_libssp if SSP_SUPPORT
+		depends on PACKAGE_zlib
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 zlib is a lossless data-compression library.
+		  This package includes the development support files.
+		 
+
+endmenu
+endmenu
+
 menu "Kernel modules"
 
 menu "Block Devices"
@@ -294,20 +314,117 @@ menu "Wireless Drivers"
 endmenu
 endmenu
 
+menu "Libraries"
+
+menu "SSL"
+	config PACKAGE_libmbedtls
+		tristate "libmbedtls........................................ Embedded SSL (library)"
+		default y if DEFAULT_libmbedtls
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 The aim of the mbedtls project is to provide a quality, open-source
+		 cryptographic library written in C and targeted at embedded systems.
+		 This package contains the mbedtls library.
+		 https://tls.mbed.org
+		 
+
+	menuconfig PACKAGE_libopenssl
+		tristate "libopenssl........................... Open source SSL toolkit (libraries)"
+		default y if DEFAULT_libopenssl
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_zlib if OPENSSL_WITH_COMPRESSION
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 The OpenSSL Project is a collaborative effort to develop a robust,
+		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+		 Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+		 as a full-strength general purpose cryptography library.
+		 This package contains the OpenSSL shared libraries, needed by other programs.
+		 http://www.openssl.org/
+		 
+
+
+	source "feeds/base/package/libs/openssl/Config.in"
+
+endmenu
+	config PACKAGE_libpcre
+		tristate "libpcre..................... A Perl Compatible Regular Expression library"
+		default y if DEFAULT_libpcre
+		default m if ALL
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 A Perl Compatible Regular Expression library
+		 http://www.pcre.org/
+		 Thomas Heil <heil@terminal-consulting.de>
+
+	config PACKAGE_libpcre16
+		tristate "libpcre16... A Perl Compatible Regular Expression library (16bit support)"
+		default y if DEFAULT_libpcre16
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		help
+		 A Perl Compatible Regular Expression library (16bit support)
+		 http://www.pcre.org/
+		 Thomas Heil <heil@terminal-consulting.de>
+
+	config PACKAGE_libpcrecpp
+		tristate "libpcrecpp.... C++ wrapper for Perl Compatible Regular Expression library"
+		default y if DEFAULT_libpcrecpp
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libstdcpp
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpcre
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 C++ wrapper for Perl Compatible Regular Expression library
+		 http://www.pcre.org/
+		 Thomas Heil <heil@terminal-consulting.de>
+
+	config PACKAGE_zlib
+		tristate "zlib................. Library implementing the deflate compression method"
+		default y if DEFAULT_zlib
+		default m if ALL
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 zlib is a lossless data-compression library.
+		  This package includes the shared library.
+		 http://www.zlib.net/
+		 
+
+endmenu
+
 menu "Network"
 
 	config PACKAGE_shadowsocksr-libev
 		tristate "shadowsocksr-libev............ Lightweight Secured Socks5 Proxy (OpenSSL)"
 		default y if DEFAULT_shadowsocksr-libev
 		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libopenssl
+		select PACKAGE_libc
+		select PACKAGE_libpcre
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_zlib
 		select PACKAGE_libpthread
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libc
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpcre
-		select PACKAGE_libopenssl
-		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -317,13 +434,13 @@ menu "Network"
 		tristate "shadowsocksr-libev-mbedtls.... Lightweight Secured Socks5 Proxy (mbedTLS)"
 		default y if DEFAULT_shadowsocksr-libev-mbedtls
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libmbedtls
 		select PACKAGE_libpcre
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
 		select PACKAGE_libpthread
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libmbedtls
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -333,13 +450,13 @@ menu "Network"
 		tristate "shadowsocksr-libev-polarssl.. Lightweight Secured Socks5 Proxy (PolarSSL)"
 		default y if DEFAULT_shadowsocksr-libev-polarssl
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpcre
+		select PACKAGE_libc
+		select PACKAGE_libpthread
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpolarssl
-		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libpthread
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -349,14 +466,14 @@ menu "Network"
 		tristate "shadowsocksr-libev-server..... Lightweight Secured Socks5 Proxy (OpenSSL)"
 		default y if DEFAULT_shadowsocksr-libev-server
 		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libopenssl
+		select PACKAGE_libpcre
+		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_zlib
 		select PACKAGE_libpthread
-		select PACKAGE_libc
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpcre
-		select PACKAGE_libopenssl
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -367,12 +484,12 @@ menu "Network"
 		default y if DEFAULT_shadowsocksr-libev-server-mbedtls
 		default m if ALL
 		select PACKAGE_libpcre
-		select PACKAGE_libmbedtls
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpthread
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpthread
+		select PACKAGE_libmbedtls
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -382,13 +499,13 @@ menu "Network"
 		tristate "shadowsocksr-libev-server-polarssl"
 		default y if DEFAULT_shadowsocksr-libev-server-polarssl
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libpolarssl
-		select PACKAGE_libc
-		select PACKAGE_libpthread
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpcre
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpthread
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpolarssl
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -453,6 +570,24 @@ menu "Utilities"
 			default "./usr/bin/ldd"
 	
 		endmenu
+
+	config PACKAGE_openssl-util
+		tristate "openssl-util........................... Open source SSL toolkit (utility)"
+		default y if DEFAULT_openssl-util
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libopenssl
+		help
+		 The OpenSSL Project is a collaborative effort to develop a robust,
+		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+		 Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+		 as a full-strength general purpose cryptography library.
+		 This package contains the OpenSSL command-line utility.
+		 http://www.openssl.org/
+		 
 
 endmenu
 

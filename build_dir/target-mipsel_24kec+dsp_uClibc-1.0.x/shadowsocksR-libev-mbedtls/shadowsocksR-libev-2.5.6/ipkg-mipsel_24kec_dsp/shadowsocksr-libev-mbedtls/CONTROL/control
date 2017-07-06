@@ -1,0 +1,9 @@
+Package: shadowsocksr-libev-mbedtls
+Version: 2.5.6-1
+Depends: libc, libpthread, libpcre, libmbedtls
+Source: package/custom-package/shadowsocksr-libev
+Section: net
+Maintainer: breakwa11
+Architecture: mipsel_24kec_dsp
+Installed-Size: 257899
+Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.

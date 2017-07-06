@@ -1,0 +1,21 @@
+Source-Makefile: feeds/base/package/system/lede-keyring/Makefile
+Package: lede-keyring
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Repository: base
+Title: LEDE Developer Keyring
+Maintainer: John Crispin <john@phrozen.org>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   The keyring of with the developer using and gpg public keys.
+http://www.lede-project.org
+John Crispin <john@phrozen.org>
+@@
+
+

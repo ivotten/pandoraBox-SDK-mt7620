@@ -1,0 +1,20 @@
+Source-Makefile: feeds/base/package/network/services/authsae/Makefile
+Package: authsae
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libconfig +libnl-tiny +@OPENSSL_WITH_EC
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: 80211s mesh security
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: 
+License: BSD-4-Clause
+Type: ipkg
+Description: 80211s mesh security
+Felix Fietkau <nbd@nbd.name>
+@@
+
+

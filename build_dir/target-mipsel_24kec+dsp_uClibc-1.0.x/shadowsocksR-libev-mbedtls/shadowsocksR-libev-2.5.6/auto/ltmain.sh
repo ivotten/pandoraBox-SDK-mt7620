@@ -1,0 +1,1 @@
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/../host/share/libtool/config/ltmain.sh
