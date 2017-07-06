@@ -294,6 +294,108 @@ menu "Wireless Drivers"
 endmenu
 endmenu
 
+menu "Network"
+
+	config PACKAGE_shadowsocksr-libev
+		tristate "shadowsocksr-libev............ Lightweight Secured Socks5 Proxy (OpenSSL)"
+		default y if DEFAULT_shadowsocksr-libev
+		default m if ALL
+		select PACKAGE_zlib
+		select PACKAGE_libpthread
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpcre
+		select PACKAGE_libopenssl
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+	config PACKAGE_shadowsocksr-libev-mbedtls
+		tristate "shadowsocksr-libev-mbedtls.... Lightweight Secured Socks5 Proxy (mbedTLS)"
+		default y if DEFAULT_shadowsocksr-libev-mbedtls
+		default m if ALL
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libmbedtls
+		select PACKAGE_libpcre
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libpthread
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+	config PACKAGE_shadowsocksr-libev-polarssl
+		tristate "shadowsocksr-libev-polarssl.. Lightweight Secured Socks5 Proxy (PolarSSL)"
+		default y if DEFAULT_shadowsocksr-libev-polarssl
+		default m if ALL
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpcre
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpolarssl
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libpthread
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+	config PACKAGE_shadowsocksr-libev-server
+		tristate "shadowsocksr-libev-server..... Lightweight Secured Socks5 Proxy (OpenSSL)"
+		default y if DEFAULT_shadowsocksr-libev-server
+		default m if ALL
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_zlib
+		select PACKAGE_libpthread
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpcre
+		select PACKAGE_libopenssl
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+	config PACKAGE_shadowsocksr-libev-server-mbedtls
+		tristate "shadowsocksr-libev-server-mbedtls"
+		default y if DEFAULT_shadowsocksr-libev-server-mbedtls
+		default m if ALL
+		select PACKAGE_libpcre
+		select PACKAGE_libmbedtls
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+	config PACKAGE_shadowsocksr-libev-server-polarssl
+		tristate "shadowsocksr-libev-server-polarssl"
+		default y if DEFAULT_shadowsocksr-libev-server-polarssl
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libpolarssl
+		select PACKAGE_libc
+		select PACKAGE_libpthread
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpcre
+		select PACKAGE_librt if USE_GLIBC
+		help
+		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+		 https://github.com/shadowsocksr/shadowsocksr-libev
+		 breakwa11
+
+endmenu
+
 menu "Utilities"
 
 	config PACKAGE_ldconfig
