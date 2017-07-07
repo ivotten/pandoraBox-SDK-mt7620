@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=fcgiwrap
 PKG_VERSION:=1.10
-PKG_RELEASE:=1
+PKG_RELEASE:=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/xiaohaidao007/fcgiwrap.git
@@ -31,11 +31,9 @@ endef
 #CONFIGURE_ARGS += --disable-utmp
 
 define Package/fcgiwrap/install
-	$(INSTALL_DIR) $(1)/usr/sbin $(1)/etc/init.d $(1)/etc/fcgiwrap
+	$(INSTALL_DIR) $(1)/usr/sbin $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/fcgiwrap $(1)/usr/sbin
-	#$(INSTALL_BIN) ./files/shellinaboxd.init $(1)/etc/init.d/shellinaboxd
-	#$(INSTALL_DATA) $(PKG_BUILD_DIR)/shellinabox/*.css $(1)/etc/shellinabox
-	#$(PKG_BUILD_DIR)/make-chained-cert.sh > $(1)/etc/shellinabox/certificate.pem
+	$(INSTALL_BIN) ./files/fcgiwrap.init $(1)/etc/init.d/fcgiwrap
 endef
 
 $(eval $(call BuildPackage,fcgiwrap))
