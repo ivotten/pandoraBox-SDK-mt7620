@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4792
+Installed-Size: 4793
 Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converters

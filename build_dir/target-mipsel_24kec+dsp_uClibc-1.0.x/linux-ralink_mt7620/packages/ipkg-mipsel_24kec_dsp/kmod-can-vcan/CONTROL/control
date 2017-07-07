@@ -6,6 +6,6 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1869
+Installed-Size: 1870
 Description:  Similar to the network loopback devices, vcan offers a
  virtual local CAN interface.

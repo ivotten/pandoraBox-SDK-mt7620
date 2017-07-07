@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5193
+Installed-Size: 5192
 Description:  Kernel module for the DS2490 usb 1-wire bus master driver

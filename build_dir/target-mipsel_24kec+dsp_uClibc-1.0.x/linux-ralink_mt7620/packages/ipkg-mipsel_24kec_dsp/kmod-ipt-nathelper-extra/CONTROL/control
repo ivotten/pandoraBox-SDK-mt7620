@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 57793
+Installed-Size: 57795
 Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - amanda

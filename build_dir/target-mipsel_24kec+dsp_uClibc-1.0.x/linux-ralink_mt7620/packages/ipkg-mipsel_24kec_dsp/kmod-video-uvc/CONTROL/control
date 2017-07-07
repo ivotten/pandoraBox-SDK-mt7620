@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 40566
+Installed-Size: 40567
 Description:  Kernel modules for supporting USB Video Class (UVC) devices

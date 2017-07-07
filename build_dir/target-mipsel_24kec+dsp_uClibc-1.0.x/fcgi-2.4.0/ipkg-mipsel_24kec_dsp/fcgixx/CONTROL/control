@@ -1,0 +1,9 @@
+Package: fcgixx
+Version: 2.4.0-1
+Depends: libc, fcgi, uclibcxx
+Source: feeds/packages/libs/fcgi
+Section: libs
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5721
+Description:  Shared library of FastCGI++

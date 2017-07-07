@@ -1,0 +1,35 @@
+targetdir = $(DESTDIR)@prefix@@sbindir@
+man8dir = $(DESTDIR)@prefix@@mandir@/man8
+datarootdir =
+
+.PHONY:	clean distclean
+
+all: fcgiwrap
+install: all
+	install -d -m 755 $(targetdir)
+	install -m 755 fcgiwrap $(targetdir)
+	install -d -m 755 $(man8dir)
+	install -m 644 fcgiwrap.8 $(man8dir)
+ifneq ("@systemdsystemunitdir@", "")
+	install -d -m 755 $(DESTDIR)@systemdsystemunitdir@
+	install -m 644 systemd/fcgiwrap.socket $(DESTDIR)@systemdsystemunitdir@
+	install -m 644 systemd/fcgiwrap.service $(DESTDIR)@systemdsystemunitdir@
+endif
+
+LDLIBS = -lfcgi @systemd_LIBS@
+CFLAGS = @AM_CFLAGS@
+
+fcgiwrap: fcgiwrap.c
+
+#>+ 21
+clean:
+	-rm -f fcgiwrap
+
+#>+ 21
+distclean: clean
+	-rm -rf config.log config.status autom4te.cache
+	-rm -f configure Makefile config.h config.h.in
+
+#>+ 21
+uninstall:
+	rm -f $(targetdir)/fcgiwrap $(man8dir)/fcgiwrap.8

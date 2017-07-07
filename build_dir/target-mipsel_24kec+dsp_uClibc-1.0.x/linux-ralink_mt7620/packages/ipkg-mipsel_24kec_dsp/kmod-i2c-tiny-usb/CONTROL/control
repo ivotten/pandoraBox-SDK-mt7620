@@ -6,6 +6,6 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2652
+Installed-Size: 2650
 Description:  Kernel module for the I2C Tiny USB adaptor developed
  by Till Harbaum (http://www.harbaum.org/till/i2c_tiny_usb)

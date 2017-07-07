@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6225
+Installed-Size: 6224
 Description:  Kernel support for MMC/SD over SPI

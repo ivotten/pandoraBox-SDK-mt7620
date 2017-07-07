@@ -1,0 +1,94 @@
+Package: fcgi
+Version: 2.4.0-1
+Depends: libc, libpthread
+Source: feeds/packages/libs/fcgi
+Section: libs
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 19430
+Filename: fcgi_2.4.0-1_mipsel_24kec_dsp.ipk
+Size: 20249
+MD5Sum: f2eeb72d661418f94c86a6113c587dc8
+SHA256sum: 4804f1475c34d5a90ddf432e7a7c76d8178d04d77e6449fdd885cee96e4d1494
+Description:  FastCGI is a language independent, scalable, open extension to
+ CGI that provides high performance without the limitations of
+ server specific APIs.
+
+Package: fcgixx
+Version: 2.4.0-1
+Depends: libc, fcgi, uclibcxx
+Source: feeds/packages/libs/fcgi
+Section: libs
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5721
+Filename: fcgixx_2.4.0-1_mipsel_24kec_dsp.ipk
+Size: 6452
+MD5Sum: aaaeba21f979b37a88cce981a97d9209
+SHA256sum: 08b12f8f8e1aabb8ee35b157513af40974120cda344f79b9951ac1c70eeaf46c
+Description:  Shared library of FastCGI++
+
+Package: libpcre16
+Version: 8.40-2
+Depends: libc
+Source: feeds/packages/libs/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 76978
+Filename: libpcre16_8.40-2_mipsel_24kec_dsp.ipk
+Size: 77741
+MD5Sum: efd48d035a6d3860f792b63405036991
+SHA256sum: f63de56a439b201323f3b46ab9371a653af90ec7e653cfba096c7250a0701bbe
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
+Package: libpcre
+Version: 8.40-2
+Depends: libc
+Source: feeds/packages/libs/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 84428
+Filename: libpcre_8.40-2_mipsel_24kec_dsp.ipk
+Size: 85214
+MD5Sum: 70eaa49374d5e6b8af47441465023168
+SHA256sum: 955b0d3fd8616bac73d513c9db132643b6d23f9d757893d22ae34c01e8df0015
+Description:  A Perl Compatible Regular Expression library
+
+Package: libpcrecpp
+Version: 8.40-2
+Depends: libc, libpcre, libstdcpp
+Source: feeds/packages/libs/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 11363
+Filename: libpcrecpp_8.40-2_mipsel_24kec_dsp.ipk
+Size: 12153
+MD5Sum: b1b341e42c1ebfa56b6a9c3e573da704
+SHA256sum: 07834f3b2a9186c8ade43dcdad860ea764f642f9d4341b34917120b8925a0522
+Description:  C++ wrapper for Perl Compatible Regular Expression library
+
+Package: spawn-fcgi
+Version: 1.6.4-1
+Depends: libc
+Source: feeds/packages/net/spawn-fcgi
+License: BSD-3c
+LicenseFiles: COPYING
+Section: net
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5959
+Filename: spawn-fcgi_1.6.4-1_mipsel_24kec_dsp.ipk
+Size: 6671
+MD5Sum: 12c38ff5fe0ef31af6e97f0de2521d12
+SHA256sum: 60b3e3200fec24b75e5b7b77e9780ee0e909ec5761093b4ddf2665cf304a7661
+Description:  spawn-fcgi is used to spawn fastcgi applications
+

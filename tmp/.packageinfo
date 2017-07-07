@@ -1,3 +1,24 @@
+Source-Makefile: package/custom-package/fcgiwrap/Makefile
+Package: fcgiwrap
+Version: 1.03
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +spawn-fcgi +fcgi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: a web based terminal emulator
+Maintainer: 
+Source: fcgiwrap-1.03.tar.gz
+Type: ipkg
+Description: 	Simple FastCGI wrapper for CGI scripts.
+	extension Nginx support CGI(use spwan-cgi)
+(extra Nginx)Simple FastCGI wrapper for CGI scripts.
+
+@@
+
+
 Source-Makefile: package/custom-package/shadowsocksr-libev/Makefile
 Package: shadowsocksr-libev
 Version: 2.5.6-1
@@ -11806,6 +11827,50 @@ Config:
 @@
 
 
+Source-Makefile: package/feeds/base/gettext/Makefile
+Package: libintl
+Version: 2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: libs
+Category: Libraries
+Repository: base
+Title: Stub header for the GNU Internationalization library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: 
+License: FSFULLR
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Stub header for the GNU Internationalization library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
+Source-Makefile: package/feeds/base/libiconv/Makefile
+Package: libiconv
+Version: 8
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: libs
+Category: Libraries
+Repository: base
+Title: Tiny drop-in replacement for the GNU Character set conversion library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: 
+License: LGPL-2.1
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Tiny drop-in replacement for the GNU Character set conversion library
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
 Source-Makefile: package/feeds/base/mbedtls/Makefile
 Package: libmbedtls
 Submenu: SSL
@@ -11885,6 +11950,27 @@ http://www.openssl.org/
 @@
 
 
+Source-Makefile: package/feeds/base/uclibc++/Makefile
+Package: uclibcxx
+Version: 0.2.4-3
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: C++ library for embedded systems
+Maintainer: 
+Source: uClibc++-0.2.4.tar.bz2
+License: LGPL-2.1+
+Type: ipkg
+Description: C++ library for embedded systems
+http://cxx.uclibc.org/src/
+
+@@
+
+
 Source-Makefile: package/feeds/base/zlib/Makefile
 Package: zlib
 Version: 1.2.11-1
@@ -11926,6 +12012,49 @@ Type: ipkg
 Description:  zlib is a lossless data-compression library.
  This package includes the development support files.
 
+@@
+
+
+Source-Makefile: package/feeds/packages/fcgi/Makefile
+Package: fcgi
+Menu: 1
+Version: 2.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Shared library of FastCGI
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
+Source: fcgi-2.4.0.tar.gz
+Type: ipkg
+Description:  FastCGI is a language independent, scalable, open extension to
+ CGI that provides high performance without the limitations of
+ server specific APIs.
+http://www.fastcgi.com/
+Jacob Siverskog <jacob@teenageengineering.com>
+@@
+
+Package: fcgixx
+Version: 2.4.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread fcgi +USE_UCLIBCXX:uclibcxx +USE_LIBSTDCXX:libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libtool libintl libiconv
+Section: libs
+Category: Libraries
+Repository: packages
+Title: Shared library of FastCGI++
+Maintainer: Jacob Siverskog <jacob@teenageengineering.com>
+Source: fcgi-2.4.0.tar.gz
+Type: ipkg
+Description: Shared library of FastCGI++
+http://www.fastcgi.com/
+Jacob Siverskog <jacob@teenageengineering.com>
 @@
 
 
@@ -11988,6 +12117,29 @@ Type: ipkg
 Description: C++ wrapper for Perl Compatible Regular Expression library
 http://www.pcre.org/
 Thomas Heil <heil@terminal-consulting.de>
+@@
+
+
+Source-Makefile: package/feeds/packages/spawn-fcgi/Makefile
+Package: spawn-fcgi
+Submenu: Web Servers/Proxies
+Version: 1.6.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Tool to spawn fastcgi applications
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: spawn-fcgi-1.6.4.tar.xz
+License: BSD-3c
+LicenseFiles: COPYING
+Type: ipkg
+Description: 	spawn-fcgi is used to spawn fastcgi applications
+http://redmine.lighttpd.net/projects/spawn-fcgi
+Daniel Golle <daniel@makrotopia.org>
 @@
 
 

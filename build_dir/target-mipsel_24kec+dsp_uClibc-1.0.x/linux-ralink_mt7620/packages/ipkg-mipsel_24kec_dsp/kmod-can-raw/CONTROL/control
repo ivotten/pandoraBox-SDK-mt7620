@@ -6,6 +6,6 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4883
+Installed-Size: 4882
 Description:  The raw CAN protocol option offers access to the CAN bus via
  the BSD  socket API.

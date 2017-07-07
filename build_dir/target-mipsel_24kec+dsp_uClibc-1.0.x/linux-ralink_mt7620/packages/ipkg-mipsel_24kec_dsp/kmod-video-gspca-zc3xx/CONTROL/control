@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 17106
+Installed-Size: 17104
 Description:  The ZC3XX USB Camera Driver (zc3xx) kernel module

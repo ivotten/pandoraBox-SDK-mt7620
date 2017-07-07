@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7462
+Installed-Size: 7463
 Description:  Kernel modules for support of input device events

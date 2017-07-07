@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 457653
+Installed-Size: 457652
 Description:  Kernel module for BTRFS support

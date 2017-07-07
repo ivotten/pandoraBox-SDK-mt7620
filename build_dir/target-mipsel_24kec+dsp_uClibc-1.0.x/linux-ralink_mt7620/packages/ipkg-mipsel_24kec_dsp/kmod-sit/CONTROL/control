@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10916
+Installed-Size: 10914
 Description:  Kernel modules for IPv6-in-IPv4 tunnelling

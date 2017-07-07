@@ -1,0 +1,11 @@
+Package: libintl
+Version: 2
+Depends: libc
+Source: feeds/base/package/libs/gettext
+License: FSFULLR
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 167
+Description:  Stub header for the GNU Internationalization library

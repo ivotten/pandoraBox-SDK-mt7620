@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4276
+Installed-Size: 4278
 Description:  Shared 6lowpan code for IEEE 802.15.4 and Bluetooth.

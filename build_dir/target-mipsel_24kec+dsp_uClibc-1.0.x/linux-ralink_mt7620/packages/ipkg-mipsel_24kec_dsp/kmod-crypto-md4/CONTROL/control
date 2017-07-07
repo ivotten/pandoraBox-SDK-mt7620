@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2342
+Installed-Size: 2339
 Description:  MD4 digest CryptoAPI module

@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2411
+Installed-Size: 2409
 Description:  Kernel module to drive LEDs based on USB device presence/activity

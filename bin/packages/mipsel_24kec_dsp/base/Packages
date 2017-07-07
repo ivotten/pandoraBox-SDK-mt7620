@@ -1,3 +1,17 @@
+Package: fcgiwrap
+Version: 1.03
+Depends: libc, spawn-fcgi, fcgi
+Source: package/custom-package/fcgiwrap
+Section: net
+Architecture: mipsel_24kec_dsp
+Installed-Size: 6459
+Filename: fcgiwrap_1.03_mipsel_24kec_dsp.ipk
+Size: 7136
+MD5Sum: 1d44aaa933308ddca8871d95535def84
+SHA256sum: 1a8ff4338e673d72950513bb07929ba31c20441fd19576afea511775eae01ad2
+Description:  Simple FastCGI wrapper for CGI scripts.
+ extension Nginx support CGI(use spwan-cgi)
+
 Package: ldconfig
 Version: 1.0.20-1
 Source: package/toolchain
@@ -6,11 +20,11 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8327
+Installed-Size: 8328
 Filename: ldconfig_1.0.20-1_mipsel_24kec_dsp.ipk
-Size: 9091
-MD5Sum: 67102d0cc6f3694cb9860863df14cd56
-SHA256sum: 34d2a37b0d647ea27f1f431241a47b46f70a30655621fc935ac2a44c577cbdde
+Size: 9100
+MD5Sum: 7ee5c65ef58f60a7bfbe806c58f8179c
+SHA256sum: 984beca87ebc4b97e27f8fe371bd72fb4ee8a1b1dd7229df76d0e5be89b50b2b
 Description:  Shared library path configuration
 
 Package: ldd
@@ -21,11 +35,11 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4728
+Installed-Size: 4730
 Filename: ldd_1.0.20-1_mipsel_24kec_dsp.ipk
 Size: 5397
-MD5Sum: 06d052cdbac1897b4daacb3e19b46c48
-SHA256sum: a6c84ab518141a83331e4c35e3557319f35c694d7b56acc7133625241f9c0373
+MD5Sum: 831bc9605e4b6f563c0fafff67c8520c
+SHA256sum: bd69d6510124818ee3796d340997a93c257d5b6e3ead0bbc5d6cac7785cf9452
 Description:  LDD trace utility
 
 Package: libgcc
@@ -38,10 +52,77 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
 Installed-Size: 31145
 Filename: libgcc_4.8-linaro-1_mipsel_24kec_dsp.ipk
-Size: 31825
-MD5Sum: 5bfc5114cd58a2c6e93e2bbc29dd7dd8
-SHA256sum: c233d1eb94513732d2cfa64d7b7dbe4236a59b4834c6f3ee327e7a86d2fcaeb4
+Size: 31844
+MD5Sum: cf741917312428fd9a168a4541faf593
+SHA256sum: 54c4b73fb2248e47344f531999536e50e7d42c040f4d83acfeefb78a9781ab66
 Description:  GCC support library
+
+Package: libiconv
+Version: 8
+Depends: libc
+Source: feeds/base/package/libs/libiconv
+License: LGPL-2.1
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 168
+Filename: libiconv_8_mipsel_24kec_dsp.ipk
+Size: 916
+MD5Sum: 4010ac4132d321275226ac4bdf60fa9a
+SHA256sum: 4d64ee2e9d27ceaf6a47f36fa30c4aea9c144dc0b5252729448106bf4efce400
+Description:  Tiny drop-in replacement for the GNU Character set conversion library
+
+Package: libintl
+Version: 2
+Depends: libc
+Source: feeds/base/package/libs/gettext
+License: FSFULLR
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 167
+Filename: libintl_2_mipsel_24kec_dsp.ipk
+Size: 903
+MD5Sum: 2b9c7c886b50da2f3b6188a2dec88f63
+SHA256sum: ffc8bbabb2e9ff86087923e18e12473d9ae9549969ea6d93c53831742da198e8
+Description:  Stub header for the GNU Internationalization library
+
+Package: libmbedtls
+Version: 2.4.2-1
+Depends: libc
+Source: feeds/base/package/libs/mbedtls
+License: GPL-2.0+
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 155155
+Filename: libmbedtls_2.4.2-1_mipsel_24kec_dsp.ipk
+Size: 155782
+MD5Sum: 34e6748fc1c7ed38bd3abbab9c7c19eb
+SHA256sum: 9dc522d90eaf43f6506fdf7bed8ec985cadb93d40f7feabd96c9aad171b10e29
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libopenssl
+Version: 1.0.2k-1
+Depends: libc, zlib
+Source: feeds/base/package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 685692
+Filename: libopenssl_1.0.2k-1_mipsel_24kec_dsp.ipk
+Size: 679896
+MD5Sum: 3cd20c6fb3f03ef2e81cb72efeb210ab
+SHA256sum: 3a6935863953fa918946ffa82e59bb2b37b78dc7f496fa60479247ffb3b1585e
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
 
 Package: libpthread
 Version: 1.0.20-1
@@ -52,11 +133,11 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 123
+Installed-Size: 126
 Filename: libpthread_1.0.20-1_mipsel_24kec_dsp.ipk
-Size: 835
-MD5Sum: a7d48a16d367591dc282ac8dbbd918ac
-SHA256sum: e0507d0cbd0e03f3d77508ab3ee1f5bfee290da83580cb8fe3234460d7240b80
+Size: 843
+MD5Sum: c24ec60c612c7190d5cbfabdf8b89dda
+SHA256sum: f66b1d07ccaa3c174c13b7d3d35ce8b80a8b46d9831520731309ab8ea34cb0ae
 Description:  POSIX thread library
 
 Package: librt
@@ -68,11 +149,11 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 123
+Installed-Size: 126
 Filename: librt_1.0.20-1_mipsel_24kec_dsp.ipk
-Size: 845
-MD5Sum: bbe6ddd91aab7e1c05f346bb3755ff63
-SHA256sum: 887e72df30fc4164e37ffb596e63b430c8bbbe70b10fbc5a10935bc1005fdfa3
+Size: 855
+MD5Sum: f806df0e8eb86d9b809350270370dda3
+SHA256sum: 16b30b0d0797dab4445add8a0d93c581d09539e1705320e49006a9f5e476e307
 Description:  POSIX.1b RealTime extension library
 
 Package: libstdcpp
@@ -83,11 +164,11 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 245004
+Installed-Size: 245008
 Filename: libstdcpp_4.8-linaro-1_mipsel_24kec_dsp.ipk
-Size: 244343
-MD5Sum: d56a8a7ceaf1dd442d7aaa335e1e7bb5
-SHA256sum: c46d30e17952f8491d86611337891ad9f2d21273fcd92b9d89388c91d032c9ff
+Size: 244346
+MD5Sum: 5ce7772beb80b7fdf090d56ae4d1f4fb
+SHA256sum: a5a2e82be9afa109dcedc9f8e1f70b9e4934a111c717883ebee2635df2e2a4b6
 Description:  GNU Standard C++ Library v3
 
 Package: libthread-db
@@ -100,8 +181,129 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: mipsel_24kec_dsp
 Installed-Size: 190
 Filename: libthread-db_1.0.20-1_mipsel_24kec_dsp.ipk
-Size: 914
-MD5Sum: 0fb34b842c2da332af50a582242d2d3a
-SHA256sum: 8a075dad317a4ed25bec17618edc2051cb3b6faecc445b98043c19105c4d585b
+Size: 913
+MD5Sum: 7c6fbe9c1adf433e194a525006954649
+SHA256sum: aa00c60346a7e95f3b9cd92f27c72cd6697081f3827ef13d1f10de46d12839bd
 Description:  POSIX thread library debugging support
+
+Package: openssl-util
+Version: 1.0.2k-1
+Depends: libc, libopenssl
+Source: feeds/base/package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: utils
+Architecture: mipsel_24kec_dsp
+Installed-Size: 195965
+Filename: openssl-util_1.0.2k-1_mipsel_24kec_dsp.ipk
+Size: 196112
+MD5Sum: a86d680f409cfb8432d6ff3c471cfdb6
+SHA256sum: 4ec3a2904672392d89324a41c3b9af326840810e7867697cc617c7c59df4bec8
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: shadowsocksr-libev-mbedtls
+Version: 2.5.6-1
+Depends: libc, libpthread, libpcre, libmbedtls
+Source: package/custom-package/shadowsocksr-libev
+Section: net
+Maintainer: breakwa11
+Architecture: mipsel_24kec_dsp
+Installed-Size: 257899
+Filename: shadowsocksr-libev-mbedtls_2.5.6-1_mipsel_24kec_dsp.ipk
+Size: 257864
+MD5Sum: 280163d0c53b7064054f87e171c5c65f
+SHA256sum: 1e71f8e2a6eaed6b6f473e91f2bc515c853b2531733790509bbdf332fe9455b5
+Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocksr-libev-server-mbedtls
+Version: 2.5.6-1
+Depends: libc, libpthread, libpcre, libmbedtls
+Source: package/custom-package/shadowsocksr-libev
+Section: net
+Maintainer: breakwa11
+Architecture: mipsel_24kec_dsp
+Installed-Size: 94316
+Filename: shadowsocksr-libev-server-mbedtls_2.5.6-1_mipsel_24kec_dsp.ipk
+Size: 94970
+MD5Sum: b15a0679fb3e347c4753829ddf561ecf
+SHA256sum: 373406e6a662cd2127bd6d2c5ddec4ca84da387832aca5ee52a5dfc1d2a236a6
+Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocksr-libev-server
+Version: 2.5.6-1
+Depends: libc, libopenssl, libpthread, libpcre, zlib
+Source: package/custom-package/shadowsocksr-libev
+Section: net
+Maintainer: breakwa11
+Architecture: mipsel_24kec_dsp
+Installed-Size: 94264
+Filename: shadowsocksr-libev-server_2.5.6-1_mipsel_24kec_dsp.ipk
+Size: 94759
+MD5Sum: 51904b6c71511cd56a09455b8db8b9b1
+SHA256sum: 3a6bd38a45d88bdde3d2f481f56e04859c4b7c0843097939805b269414a3f8ab
+Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocksr-libev
+Version: 2.5.6-1
+Depends: libc, libopenssl, libpcre, libpthread, zlib
+Source: package/custom-package/shadowsocksr-libev
+Section: net
+Maintainer: breakwa11
+Architecture: mipsel_24kec_dsp
+Installed-Size: 257762
+Filename: shadowsocksr-libev_2.5.6-1_mipsel_24kec_dsp.ipk
+Size: 257403
+MD5Sum: be1d22501738a6d6493580c075cd3b55
+SHA256sum: 26214820abaed635c9c5892d8b29fa5b1dfc4f943db088e2be4b3ad4e622565b
+Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: uclibcxx
+Version: 0.2.4-3
+Depends: libc
+Source: feeds/base/package/libs/uclibc++
+License: LGPL-2.1+
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 64354
+Filename: uclibcxx_0.2.4-3_mipsel_24kec_dsp.ipk
+Size: 64874
+MD5Sum: 8666e74a31114b0ced37fc905a932221
+SHA256sum: d120107521594654e85f66823ba5231f820eeddb20760e023bb3a248ed156d41
+Description:  C++ library for embedded systems
+
+Package: zlib-dev
+Version: 1.2.11-1
+Depends: libc, zlib
+Source: feeds/base/package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: devel
+Architecture: mipsel_24kec_dsp
+Installed-Size: 79460
+Filename: zlib-dev_1.2.11-1_mipsel_24kec_dsp.ipk
+Size: 80224
+MD5Sum: 873a05563105ae3a0bf1670e0be0600d
+SHA256sum: 72e230c98f4fdaa65387fb59599020b4344a1c9ad340a0705f9993d0e1639e3b
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.
+
+Package: zlib
+Version: 1.2.11-1
+Depends: libc
+Source: feeds/base/package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 41671
+Filename: zlib_1.2.11-1_mipsel_24kec_dsp.ipk
+Size: 42409
+MD5Sum: 8407d00ddfeadacdd133506602ae142b
+SHA256sum: 16272b787af841a3a6c153256e80e952db2f90a969b06d8a12c83b55e14f2ae6
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
 

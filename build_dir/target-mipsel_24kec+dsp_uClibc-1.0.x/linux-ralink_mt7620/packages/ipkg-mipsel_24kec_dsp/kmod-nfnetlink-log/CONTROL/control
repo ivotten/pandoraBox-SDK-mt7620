@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6343
+Installed-Size: 6342
 Description:  Kernel modules support for logging packets via NFNETLINK
  Includes:
  - NFLOG

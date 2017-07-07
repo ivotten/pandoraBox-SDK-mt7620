@@ -6,6 +6,6 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3510
+Installed-Size: 3513
 Description:  Kernel module for MAX731{0,2,3,5}, PCA6107, PCA953{4-9}, PCA955{4-7},
  PCA957{4,5} and TCA64{08,16} I2C GPIO expanders

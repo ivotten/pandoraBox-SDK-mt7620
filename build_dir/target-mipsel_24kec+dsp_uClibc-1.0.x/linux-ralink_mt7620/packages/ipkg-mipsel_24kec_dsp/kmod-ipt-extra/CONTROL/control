@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4844
+Installed-Size: 4846
 Description:  Other Netfilter (IPv4) kernel modules
  Includes:
  - addrtype

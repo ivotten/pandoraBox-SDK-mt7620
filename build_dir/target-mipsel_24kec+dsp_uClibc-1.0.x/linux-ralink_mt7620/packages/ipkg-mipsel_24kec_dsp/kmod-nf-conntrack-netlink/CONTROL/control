@@ -6,6 +6,6 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11682
+Installed-Size: 11681
 Description:  Kernel modules support for a netlink-based connection tracking
  userspace interface

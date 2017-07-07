@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4275
+Installed-Size: 4278
 Description:  Kernel support for Handspring Visor PDAs

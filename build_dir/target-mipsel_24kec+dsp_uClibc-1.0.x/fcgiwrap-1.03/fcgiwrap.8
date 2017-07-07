@@ -1,0 +1,121 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH FCGIWRAP 8 "Jun 3, 2010"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+fcgiwrap \- serve CGI applications over FastCGI
+.SH SYNOPSIS
+.B fcgiwrap
+.I [OPTIONS]
+
+.SH DESCRIPTION
+\fBfcgiwrap\fP is a simple server for running CGI applications over
+FastCGI. It hopes to provide clean CGI support to Nginx (and other web servers
+that may need it).
+
+.SH OPTIONS
+.TP
+.B \-c \fInumber\fP
+Number of fcgiwrap processes to prefork.
+.TP
+.B \-f
+Redirect STDERR output from executed CGI through FastCGI so it shows in the web server
+error log.  Otherwise it would be returned on \fBfcgiwrap\fP's STDERR, which could be redirected.
+If running through \fBspawn-fcgi\fP, \fBfcgiwrap\fP's STDERR is sent to /dev/null, so this option
+provides a way to get that output back.
+.TP
+.B \-s \fIsocket_url\fP
+A URL for the listen socket to bind to. By default \fBfcgiwrap\fP expects
+a listen socket to be passed on file descriptor 0, matching the FastCGI convention.
+The recommended way to deploy \fBfcgiwrap\fP is to run it under a process manager that
+takes care of opening the socket. However, for simple configurations and one-off
+tests this option may be used. Valid socket_urls include \fIunix:/path/to/unix/socket\fP,
+\fItcp:dot.ted.qu.ad:port\fP and \fItcp6:[ipv6_addr]:port\fP.
+.TP
+.B \-h
+Show a help message and exit.
+
+.SH ENVIRONMENT
+When running, \fBfcgiwrap\fP evaluates these environment variables set by
+the web server calling an fcgi-script. The variables DOCUMENT_ROOT and
+SCRIPT_NAME will be concatenated and the resulting executable run as CGI
+script wrapped as FastCGI, with the remainder after the script name
+available as PATH_INFO. To disable PATH_INFO mangling, set up your web
+server to pass SCRIPT_FILENAME, which should contain the complete path to
+the script. Then PATH_INFO will not be modified.
+
+DOCUMENT_ROOT
+.RS
+directory which the script resides in
+.RE
+SCRIPT_NAME
+.RS
+actual executable
+.RE
+SCRIPT_FILENAME
+.RS
+complete path to CGI script. When set, overrides DOCUMENT_ROOT and SCRIPT_NAME
+.RE
+FCGI_CHDIR
+.RS
+By default fcgiwrap changes to the directory containing the CGI script before executing it (per CGI spec).
+You may override this behaviour by passing FCGI_CHDIR containing the script's expected working directory
+or \- to skip the directory change completely.
+
+.SH EXAMPLE
+The fastest way to see \fBfcgiwrap\fP do something is to launch it at the command line
+like this:
+.br
+fcgiwrap \-s unix:/var/run/fcgiwrap.sock
+.br
+Apart from potential permission problems etc., it should be ready to accept FastCGI
+requests and run CGI scripts.
+
+Most probably you will want to launch \fBfcgiwrap\fP by 
+.I spawn-fcgi
+using a configuration like this:
+
+FCGI_SOCKET=/var/run/fcgiwrap.sock
+.br
+FCGI_PROGRAM=/usr/sbin/fcgiwrap
+.br
+FCGI_USER=nginx
+.br
+FCGI_GROUP=www
+.br
+FCGI_EXTRA_OPTIONS="\-M 0700"
+.br
+ALLOWED_ENV="PATH"
+
+.I Nginx
+can be configured to have the arbitrary CGI
+.I cgit
+run as FastCGI as follows:
+
+location / {
+.br
+	fastcgi_param DOCUMENT_ROOT /var/www/localhost/htdocs/cgit/;
+.br
+	fastcgi_param SCRIPT_NAME   cgit;
+.br
+	fastcgi_pass unix:/var/run/fastcgi.sock;
+.br
+}
+
+.SH AUTHOR
+fcgiwrap was written by Grzegorz Nosek <root@localdomain.pl>
+with contributions by W-Mark Kubacki <wmark@hurrikane.de>.
+.PP
+This manual page was written by Jordi Mallach <jordi@debian.org>
+(with contributions by Grzegorz Nosek)
+for the Debian project (and may be used by others).

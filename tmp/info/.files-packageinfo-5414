@@ -1,0 +1,13 @@
+custom-package/fcgiwrap
+custom-package/shadowsocksr-libev
+linux
+toolchain
+feeds/base/gettext
+feeds/base/libiconv
+feeds/base/mbedtls
+feeds/base/openssl
+feeds/base/uclibc++
+feeds/base/zlib
+feeds/packages/fcgi
+feeds/packages/pcre
+feeds/packages/spawn-fcgi

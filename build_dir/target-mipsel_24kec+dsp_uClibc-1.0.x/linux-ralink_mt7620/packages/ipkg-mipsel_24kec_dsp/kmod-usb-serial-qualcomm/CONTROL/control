@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2276
+Installed-Size: 2275
 Description:  Kernel support for Qualcomm USB Serial devices (Gobi)

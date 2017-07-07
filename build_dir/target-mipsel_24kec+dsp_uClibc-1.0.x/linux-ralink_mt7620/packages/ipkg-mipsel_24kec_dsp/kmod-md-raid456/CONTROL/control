@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 43632
+Installed-Size: 43630
 Description:  RAID Level 4,5,6 kernel module (raid456.ko)
  
  Includes the following modules required by

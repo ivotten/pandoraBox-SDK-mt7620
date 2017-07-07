@@ -6,11 +6,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4276
+Installed-Size: 4278
 Filename: kmod-6lowpan-iphc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4982
-MD5Sum: afa592a45f4ff7bff4ecb4778345cd01
-SHA256sum: 08e7d37023507914ff85335359036e05596c134b89c7009096dbd4cb90b928c2
+Size: 4977
+MD5Sum: ad17901b77eb7e2ce5d04459c944a927
+SHA256sum: 334354e191e9c0ac9efc5225f53f9991ea671a758c644c3d29b4ddac697fa14a
 Description:  Shared 6lowpan code for IEEE 802.15.4 and Bluetooth.
 
 Package: kmod-aoe
@@ -21,11 +21,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 23757
+Installed-Size: 23759
 Filename: kmod-aoe_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 24448
-MD5Sum: 5b50cdee016440f2992f85b1460dbb54
-SHA256sum: 8718b6bb04c3ec39e51bbf4356945f359536c095c7939e1d3d1d4d03fe73e42f
+Size: 24452
+MD5Sum: e63b8ab3ddc18beb554113c9ed54ab19
+SHA256sum: ba80aa122284eab56aa3a9f9c9671cd339f251719c6f595873df6403e1f06f0c
 Description:  Kernel support for ATA over Ethernet
 
 Package: kmod-arptables
@@ -36,11 +36,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8583
+Installed-Size: 8582
 Filename: kmod-arptables_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9396
-MD5Sum: 185eb1c9afa12645dffcdcbe01e8e22d
-SHA256sum: 451fccc3ecf35251bb772cdf0ca91f3ae07ae43e3eb1965ffaabb70752974cfd
+Size: 9394
+MD5Sum: 64c59619d3bbe409118c6ecce2e7217d
+SHA256sum: a419e580b58185032e7ece22631873507b51895b423a621989123fe0fbcd71f1
 Description:  Kernel modules for ARP firewalling
 
 Package: kmod-ata-ahci
@@ -51,11 +51,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 19127
+Installed-Size: 19128
 Filename: kmod-ata-ahci_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 19885
-MD5Sum: 94af41b8fe3a48d37b62acb0f3811493
-SHA256sum: 37fc2477d2bb8e1d8cbd319dee9c6599fc1b2b8b5c5654ee459141b0e0c605da
+Size: 19883
+MD5Sum: 6781eee79ba882384f5b9b22412c01be
+SHA256sum: 3350dbed307796adff50707b41c509bf9afbd48060b2dd87b2d3b275a5749ec3
 Description:  Support for AHCI Serial ATA controllers
 
 Package: kmod-ata-core
@@ -66,11 +66,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 82975
+Installed-Size: 82978
 Filename: kmod-ata-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 83496
-MD5Sum: f1c6b7242084758599635211d552ace3
-SHA256sum: 6176a314272c6a94e9a1178a732a39c1b966e2d331ed5192ecaa03f3c0cb3046
+Size: 83481
+MD5Sum: bfcac6aa104406d6e22f1c7997c8e27f
+SHA256sum: 1dd6d6c6041693346672747ffd1e915fdb67348eaec43a0fc1894546da130073
 Description:  Serial and Parallel ATA support
 
 Package: kmod-atm
@@ -81,11 +81,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 28858
+Installed-Size: 28860
 Filename: kmod-atm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 29571
-MD5Sum: 7fc950a51004eab18d3bdf0610b39c34
-SHA256sum: 8c3d61733a07e77c8582a98c307f89f112673840d5df0186bd5c417a0af9ba71
+Size: 29578
+MD5Sum: 126e26a202aaef6b802bd9c2a06aadef
+SHA256sum: 3983ee30ee5e4ed59dae3f91ff3e39cbdc4f9bc677f6d1b22e0037772daa9c12
 Description:  Kernel modules for ATM support
 
 Package: kmod-block2mtd
@@ -96,11 +96,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 190
+Installed-Size: 189
 Filename: kmod-block2mtd_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 954
-MD5Sum: 66c1b08f6875a63713214abe357d69a0
-SHA256sum: 5b7d20fcbc7c64820b9498efbbf6f5272e272100e43b9c7a871ee134ddf3c522
+Size: 953
+MD5Sum: 8bf570fa595d67bdd5bc95ef794f2554
+SHA256sum: bbdb6499dccd641a4ebb91755f82cde7e27274035061bcdf1b74fb59ecae947b
 Description:  Block device MTD emulation
 
 Package: kmod-bluetooth
@@ -111,11 +111,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 180791
+Installed-Size: 180792
 Filename: kmod-bluetooth_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 181304
-MD5Sum: 53f715141914d638fff1e13657600746
-SHA256sum: 362630ab4c454a09d5f9133e6c5046b084103cd2498f58f41a5df53e819f1dee
+Size: 181346
+MD5Sum: 12945435c7f4acb6034098b7c4e4bc9a
+SHA256sum: 77871a525aa64ce7032cac000ecae1163111182d049a9b6712252081d521c0b5
 Description:  Kernel support for Bluetooth devices
 
 Package: kmod-bridge
@@ -126,11 +126,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 187
+Installed-Size: 188
 Filename: kmod-bridge_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 953
-MD5Sum: c2fa57599879f47b0f57df887c90d1de
-SHA256sum: ab4b76894f1dc4fd589bb78e1fce3807b3a33705846141bd169bef09b1ea8d3a
+Size: 954
+MD5Sum: fd31c84ada3620c38bdf7cf83d33b534
+SHA256sum: 345623cf96306ac1e49f8bf6d7016fbe0b7568cf41f67f987e880559f4f4fe72
 Description:  Kernel module for Ethernet bridging.
 
 Package: kmod-can-bcm
@@ -141,11 +141,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8851
+Installed-Size: 8850
 Filename: kmod-can-bcm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9706
-MD5Sum: 39c76d4f037391d0a93e3461e92d9f19
-SHA256sum: c05272793a30d3916f7efa9d6fff84de650c8763bdd1db6fb6b27e6a344d7ce5
+Size: 9710
+MD5Sum: 141a4b581a668b16181a71396d78c611
+SHA256sum: 86edfdae9ac66a7264454bd68e4dddcd0ad85c2b4c17966fd81ce8fa32a6e18f
 Description:  The Broadcast Manager offers content filtering, timeout monitoring,
  sending of RTR frames, and cyclic CAN messages without permanent user
  interaction.
@@ -158,11 +158,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5723
+Installed-Size: 5727
 Filename: kmod-can-gw_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6517
-MD5Sum: 6a8c5c148ca7a310771b1975f7409bd7
-SHA256sum: 1bc5ab0be7ec5e7931b49e47d644617d2658010f17a464b51ffd0ad71bb910b9
+Size: 6531
+MD5Sum: 8287b81f36dbc50f1cc2ef7f5ddbd332
+SHA256sum: c470635f887fa2d5502786945d25cdb3303c406142ec1ac7644843b379421b83
 Description:  The CAN Gateway/Router is used to route (and modify) CAN frames.
 
 Package: kmod-can-raw
@@ -173,11 +173,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4883
+Installed-Size: 4882
 Filename: kmod-can-raw_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 5670
-MD5Sum: 55bd7e7e1983e0ed71ad4476199b4736
-SHA256sum: 64809acdab93ec648665c2624c6b8995953225484c7a135fe3528d6b6657b5c7
+MD5Sum: 5b787d7ec9a95c9f7b0cdb5eb714f5aa
+SHA256sum: 04b300c3c3d3d838ce6d71fe6e733b45284a625edddfeebaeaa71fb5a7df7930
 Description:  The raw CAN protocol option offers access to the CAN bus via
  the BSD  socket API.
 
@@ -189,11 +189,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4852
+Installed-Size: 4854
 Filename: kmod-can-slcan_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5680
-MD5Sum: f1fda76a2d1b5d47c1ef11127babc0bf
-SHA256sum: 768e9cc7c6153ef5d892f04230d65fc9bc756176ef6820978a5df07cd0063bb0
+Size: 5684
+MD5Sum: 920cda7024097cdfbcb946e9ea02217f
+SHA256sum: 23e2191214607407a92576ebdbdfb1d3c55c216a82c43085e490036f5bca0ced
 Description:  CAN driver for several 'low cost' CAN interfaces that are attached
  via serial lines or via USB-to-serial adapters using the LAWICEL
  ASCII protocol.
@@ -206,11 +206,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1869
+Installed-Size: 1870
 Filename: kmod-can-vcan_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 2700
-MD5Sum: 86e9f596550bea0b84a71abddc9c85af
-SHA256sum: 322ab71aeb26159de340c94022fee117f31e8c7f209713d6875d8ee5b33e8997
+MD5Sum: b0a23c04d4c7e9e3ab6ba6e38611ab33
+SHA256sum: e459ab6b696dcc91c1c4ab735a4a7a7379680606a2cbc12b1de056f56290350f
 Description:  Similar to the network loopback devices, vcan offers a
  virtual local CAN interface.
 
@@ -222,11 +222,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 15406
+Installed-Size: 15404
 Filename: kmod-can_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 16142
-MD5Sum: 9ede0ee4a6b9521bc071caecbbd06cb6
-SHA256sum: bcaaa48dac13894c38d58855f5098c2f53c5ba766a9531ea9f1f3a9e7ba538b1
+Size: 16136
+MD5Sum: b2c3e177df4d9d27b41b2c4de570077e
+SHA256sum: 37aee4374a3a8ca6b3518c3f9a24604d73078591d0298cb5f566160f55a1c6b3
 Description:  Kernel module for CAN bus support.
 
 Package: kmod-crypto-arc4
@@ -237,11 +237,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1414
+Installed-Size: 1413
 Filename: kmod-crypto-arc4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2220
-MD5Sum: 6c9c13c3adb7f4a1f9eac4b8227e4a07
-SHA256sum: ab3ba733e13c5f8e68f7ea240d09435aa5db0fd8a5c056577032609a611469be
+Size: 2216
+MD5Sum: 2757c4028f6072988c08f31f572e329b
+SHA256sum: 171c87e5bd0ea9e19998926f2660f06c1be804b277aaf2be297754d3a5ce11fe
 Description:  ARC4 (RC4) cipher CryptoAPI module
 
 Package: kmod-crypto-core
@@ -252,11 +252,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7840
+Installed-Size: 7842
 Filename: kmod-crypto-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8551
-MD5Sum: 9f3e702666c83b33ff2f727cf02692b3
-SHA256sum: 013105a406f49415daf99ce02932769b876819c10bd0b2514e13ab104677a73f
+Size: 8558
+MD5Sum: d9bf181a66d85e34d30dbc9cea42e0b8
+SHA256sum: 9b10b2e209955cea4ab73c07af428d6e27a95002cdc608f1ca9e1241a5bd21a0
 Description:  Core CryptoAPI modules
 
 Package: kmod-crypto-crc32c
@@ -267,11 +267,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1197
+Installed-Size: 1195
 Filename: kmod-crypto-crc32c_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1993
-MD5Sum: 69d68f662b5e7b4cd21edb576ce6cf1b
-SHA256sum: 59038a5e3cf2e0aa2808d67fe1aed54bb694187a9edf5487da04719b88ba9693
+Size: 1994
+MD5Sum: 91c5ae4d02a1c8dc9aad620702aeedb6
+SHA256sum: db2ef43ca53b66c76b453c4b4cbfaa70099a070611ca88d7c19508726581f28a
 Description:  CRC32c CRC module
 
 Package: kmod-crypto-crct10dif
@@ -282,11 +282,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1459
+Installed-Size: 1457
 Filename: kmod-crypto-crct10dif_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2256
-MD5Sum: db44d214c184b03ac9327333b85fab0b
-SHA256sum: f41f6107b2d86e99077a0d1bb5fb04dfb5c25f98cf8e422384ee3de2e63a2da0
+Size: 2257
+MD5Sum: 83f9cacca66fb5e9185f6ec4e594fb9e
+SHA256sum: 927daf7ced10741aab6888f76fd84d8fa23b3e7be1822634b06a719d52cdb03c
 Description:  CRCT10DIF CRC module
 
 Package: kmod-crypto-des
@@ -297,11 +297,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8669
+Installed-Size: 8670
 Filename: kmod-crypto-des_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9202
-MD5Sum: 9451df278315040691763be7b7816504
-SHA256sum: 4d15a605c996e06a637abf70edb2456ee1701b1ecd8eb4b3a5e0d51ece551d40
+Size: 9200
+MD5Sum: 78b452bcf3ab47ebcc11c7edc308ac89
+SHA256sum: 56e417e66ca0a5bcdf9822fc97ece3011f170169375aed9b1b4f884e57adea5b
 Description:  DES/3DES cipher CryptoAPI module
 
 Package: kmod-crypto-ecb
@@ -312,11 +312,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1781
+Installed-Size: 1779
 Filename: kmod-crypto-ecb_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2591
-MD5Sum: 39dd36e66635d797302c74706f2bf3c4
-SHA256sum: 3dd51db2067e451b7883d3c8401b16a4d615768fb65de988dfc91b6eea6bfe44
+Size: 2586
+MD5Sum: 39f9c93ba87cd1ca52b207146739d320
+SHA256sum: d605a9b5e5fd21ffafd575599264ce20e83e93a317667c690f50acaac1dad35a
 Description:  Electronic CodeBook CryptoAPI module
 
 Package: kmod-crypto-fcrypt
@@ -327,11 +327,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3949
+Installed-Size: 3948
 Filename: kmod-crypto-fcrypt_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4723
-MD5Sum: 4faea52492b29d0f4cd74238450905c3
-SHA256sum: 6301813013b80379b897d2f68989416bf8b2003f6042b783dd29bc995741c6ca
+Size: 4726
+MD5Sum: d78ead45d4d68f4709f9edb59fe0178a
+SHA256sum: 75e7a2c7e25717795b643ef971db600f50bb6adacef04991a0f36b8324d6aabe
 Description:  FCRYPT cipher CryptoAPI module
 
 Package: kmod-crypto-hash
@@ -344,9 +344,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 7452
 Filename: kmod-crypto-hash_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8240
-MD5Sum: 85481817632ce1099232a495887474c0
-SHA256sum: eae638569820bb401998b28df587eea418058bc6a3e505c8c89e612e38734d99
+Size: 8233
+MD5Sum: 540e0bf966d0d9d9d29b0255a267fbb8
+SHA256sum: 1f59266bb28382a67f0a2c3afc204bae924ff4c5a5c7c63b9423023871231728
 Description:  CryptoAPI hash support
 
 Package: kmod-crypto-hmac
@@ -359,9 +359,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2362
 Filename: kmod-crypto-hmac_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3133
-MD5Sum: 4c7c9acf6920d83cc5dac5348da12f78
-SHA256sum: f4101de5f392e16ce6c04fee17331598c921543aac64d476fc4d74d50109e244
+Size: 3136
+MD5Sum: 703d9fb865bcf18ea9ecf1b942317d0c
+SHA256sum: 7a13eeef31c0a028b07b7b0eed22587180421d4aa75084a79fb5155a767c00e4
 Description:  HMAC digest CryptoAPI module
 
 Package: kmod-crypto-manager
@@ -372,11 +372,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4027
+Installed-Size: 4029
 Filename: kmod-crypto-manager_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4738
-MD5Sum: ee48b2fd53b6af8653a16763af50089a
-SHA256sum: f70c632dfe02eabe64f6af008d957ec50248946bd1a7c76a2b92208be7fa440e
+Size: 4735
+MD5Sum: 1b653bb54a9ddab008992cb88fe97cbb
+SHA256sum: bb24de82a0adc3fc9157a841bf1ac49d0a3f55113be8e471527a6686e443846a
 Description:  CryptoAPI algorithm manager
 
 Package: kmod-crypto-md4
@@ -387,11 +387,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2342
+Installed-Size: 2339
 Filename: kmod-crypto-md4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3140
-MD5Sum: 4d72b9b20143cbf9f237b0dbebbc7bc1
-SHA256sum: 875759d2b61169d3814447104aa375ae9d62f54ac2370004135e21d285a78ff3
+Size: 3138
+MD5Sum: daca67577d0bf4783fa56783a620b176
+SHA256sum: ee22ff34f21eba99706212ca04fe2a42d9de05d8db2009c22be0574b3132c922
 Description:  MD4 digest CryptoAPI module
 
 Package: kmod-crypto-md5
@@ -402,11 +402,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1468
+Installed-Size: 1467
 Filename: kmod-crypto-md5_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2265
-MD5Sum: 0e24e466f55954fcb259753f9ab4eeed
-SHA256sum: 1069d2a7d46ba51a6100626404e04ca7669328e976d0ad2e671ca5fd3137e5cf
+Size: 2264
+MD5Sum: 435d7029882f45ece437e351ed27f8af
+SHA256sum: 991761a73048f67fcb351bb509bb9c92cdebd93a1eab0fb8982dde7390de4530
 Description:  MD5 digest CryptoAPI module
 
 Package: kmod-crypto-pcbc
@@ -417,11 +417,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2078
+Installed-Size: 2077
 Filename: kmod-crypto-pcbc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2857
-MD5Sum: c561f822c3fe63af185b4e556c6093f0
-SHA256sum: a7427d55ed42e81724def42a454286092c29879ef554c6e9e75d69aa76814897
+Size: 2856
+MD5Sum: 4861f26829c32695fa0dc4b873725166
+SHA256sum: f22f1d0499b8ff930917fa3caef3dd47540909aac1e0fe1ede304222430d8e4e
 Description:  Propagating Cipher Block Chaining CryptoAPI module
 
 Package: kmod-crypto-pcompress
@@ -434,9 +434,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 105
 Filename: kmod-crypto-pcompress_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 823
-MD5Sum: 5a841d0dae3aa08c10e766eddeee572e
-SHA256sum: f82e8e82a9187bbfc6b6fe6a1db9a2a7622a3c51eab0b0d9f5031eb881598d96
+Size: 825
+MD5Sum: 570200dbb5aae674ef79b8ff52aef5b8
+SHA256sum: 0b64e09a8f8a7bad789906bffe317f0f6af1bf9cf13e5b5a6ca891855772256d
 Description:  CryptoAPI Partial (de)compression operations
 
 Package: kmod-crypto-sha1
@@ -449,9 +449,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1711
 Filename: kmod-crypto-sha1_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2512
-MD5Sum: aa4104901da3726f955e9f9c7a5a697e
-SHA256sum: 881220ea6deef0eaad6a844d986ac43ff814811ff33eb728b2766e68f7c7aed2
+Size: 2516
+MD5Sum: 74ef22a6f30fb3b1898c3bbde5c225a7
+SHA256sum: 2bfa9cbdfe8fbbea1bb888a582cd75f939bdaa70b1a60f367c3d1823ffb2c1f6
 Description:  SHA1 digest CryptoAPI module
 
 Package: kmod-crypto-sha256
@@ -462,11 +462,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4764
+Installed-Size: 4762
 Filename: kmod-crypto-sha256_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5548
-MD5Sum: b05ed460e6b028debd6f56403d23f1a4
-SHA256sum: 6caf744697c677ae0a69c3c227744ae3f3ddd779c2986e92305ed2418f4e6880
+Size: 5550
+MD5Sum: 8acecb16f4d697f0487f6c2cf056ccb7
+SHA256sum: 2a01094d68db558ae4fde3049a6499b8e2ce2a9c245cf9d913ffc3e66e164fab
 Description:  SHA224 SHA256 digest CryptoAPI module
 
 Package: kmod-dm
@@ -477,11 +477,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 78137
+Installed-Size: 78136
 Filename: kmod-dm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 78872
-MD5Sum: 18905088c8425b9e09cd2f0bc701ab07
-SHA256sum: ab7c579747fe8d3bc5a4fa6627f3bf269987a0e5349ef9b5a922b455ff560041
+Size: 78874
+MD5Sum: 0bd8bf2d55ea035e352219a50a758622
+SHA256sum: 7e4cbc34f9c8ff6c478c302fe4db2e90ef95de5374fe1cfd334a5c1c8875d742
 Description:  Kernel module necessary for LVM2 support
 
 Package: kmod-dnsresolver
@@ -492,11 +492,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4085
+Installed-Size: 4083
 Filename: kmod-dnsresolver_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4831
-MD5Sum: edeb2bbdf986e0f3cffd85977b4b8ef7
-SHA256sum: 0b70ece83e00ee1ce9990c50925b8c7412ce399b6e0c05ee09a10f5044bc761f
+Size: 4824
+MD5Sum: f02ea1685193b799405cdde51d9c04e4
+SHA256sum: 279aaa1cc85524ac7f08ee7a6d018eb27acea1f9cf18fcae3cfafa382169a095
 Description:  In-kernel DNS Resolver
 
 Package: kmod-ebtables-ipv4
@@ -507,11 +507,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4150
+Installed-Size: 4151
 Filename: kmod-ebtables-ipv4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4991
-MD5Sum: 94a1ee1e81749d6b0a072d4432f3a8aa
-SHA256sum: dfb66625389b3db4d7a640135868b85d1207144ebf51fef0943cea9dec607484
+Size: 4992
+MD5Sum: 66f0d6f96a27a2aa879b1d393d25e895
+SHA256sum: 4d766cb3d0fe249ff66b1715c288843d7b8aa8e3452d4b5010f45731ce06fa46
 Description:  This option adds the IPv4 support to ebtables, which allows basic
  IPv4 header field filtering, ARP filtering as well as SNAT, DNAT targets.
 
@@ -523,11 +523,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1825
+Installed-Size: 1824
 Filename: kmod-ebtables-ipv6_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2671
-MD5Sum: 55a7e1e64611722c6f930e9a17211383
-SHA256sum: 6c8fc8217cdaedc7e65f773c206b96511d6160bc87e5bf241f04727d5831363f
+Size: 2666
+MD5Sum: b83b66909bdfaabaefa169cf67c2d226
+SHA256sum: 801d947e5bd3d854735d803df58626de7ad37c50cebb37d33c83c3a25fb4908c
 Description:  This option adds the IPv6 support to ebtables, which allows basic
  IPv6 header field filtering and target support.
 
@@ -539,11 +539,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6398
+Installed-Size: 6399
 Filename: kmod-ebtables-watchers_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7234
-MD5Sum: d254baeb088c0641030b76cee7ea181b
-SHA256sum: 3e11d3fa6b5447ebeecdb9ac9d831fbcb55dfe88e6400bc006885bbea9687597
+Size: 7227
+MD5Sum: fea7cb6b8bd0c7bd0eca197ddd29ec5e
+SHA256sum: abb244d8fb3d84792775545264ed3ae79e3d655b61ca8270dd46c9d8fd72f7da
 Description:  This option adds the log watchers, that you can use in any rule
  in any ebtables table.
 
@@ -555,11 +555,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 21186
+Installed-Size: 21187
 Filename: kmod-ebtables_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 22072
-MD5Sum: 01c185c18de27f88c65e95846b66a10c
-SHA256sum: d498d9e27fee911ba32757295de8ecff98c2488b8f026a99d6ccc17253ac4b15
+Size: 22081
+MD5Sum: 56f01bffc75930f2576da89784859b61
+SHA256sum: 0b66f160d3f0dc626b32b7db95fd64848bd1e29a8699b8291c50f8ed3537231b
 Description:  ebtables is a general, extensible frame/packet identification
  framework. It provides you to do Ethernet
  filtering/NAT/brouting on the Ethernet bridge.
@@ -574,9 +574,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2817
 Filename: kmod-echo_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3601
-MD5Sum: a5db25dc727ce39b179fd712af6bd750
-SHA256sum: 821aa1b41f17814ff01a253ab37fd157b45e5e8292c5d60bc242c8780b623dfc
+Size: 3606
+MD5Sum: e0dc5d4025944fd8ccc55ada944a33c7
+SHA256sum: e72bc9accad18ec6f72f8b73f9455c6113eb2a3c1d124f71a12658c06e85e93e
 Description:  This driver provides line echo cancelling support for mISDN and
  DAHDI drivers
 
@@ -588,11 +588,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1740
+Installed-Size: 1739
 Filename: kmod-eeprom-93cx6_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2538
-MD5Sum: 340b9057379dd5c548208dcb86b62f4f
-SHA256sum: 73ca2dc0600daa43b127c5e17a9f811797b2c8a80a96b4c9782148ab6dc747e0
+Size: 2541
+MD5Sum: 14ac8b8a4fecf207e8a49de0206ad631
+SHA256sum: 380efd8bf0f27bd76f40b744869a5e224819d29b03dceec73471f1bc4d5388ca
 Description:  Kernel module for EEPROM 93CX6 support
 
 Package: kmod-fs-afs
@@ -603,11 +603,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 49887
+Installed-Size: 49885
 Filename: kmod-fs-afs_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 50618
-MD5Sum: b2dca08937e25b88242875b22985d705
-SHA256sum: 95c48bda519880a89979da15f73aabced52721d81f5b2c7aac071f418665fae8
+MD5Sum: e96aaf6f0418da3b3f9914da25744bf8
+SHA256sum: a2fa5567651c1e153e7c918b68257abf1688bc83f0319fe5512b8919c0c7c479
 Description:  Kernel module for Andrew FileSystem client support
 
 Package: kmod-fs-autofs4
@@ -618,11 +618,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 14030
+Installed-Size: 14028
 Filename: kmod-fs-autofs4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 14789
-MD5Sum: c34e0ceba3a987a8f9db91a6c943da3d
-SHA256sum: 3ef12026494b764a7f13d9facd09646654f61912742cae65efeacf27ef6ac61f
+Size: 14786
+MD5Sum: 16d2e8a711984a1373255fce3927041d
+SHA256sum: e0f2a992695fb5e0a5dfe98df75c78ca95c07343dd3358d4a75a08c6599acba9
 Description:  Kernel module for AutoFS4 support
 
 Package: kmod-fs-btrfs
@@ -633,11 +633,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 457653
+Installed-Size: 457652
 Filename: kmod-fs-btrfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 457420
-MD5Sum: 1ec7a8eee99180246e31cb1bb8404cd4
-SHA256sum: 1d89cd0f0f2526d7f186840c3c0b6bb690aacbb0d843dcdae8b83c7a0214faca
+Size: 457438
+MD5Sum: f0f414e81a070ce6b624e58165690899
+SHA256sum: 94467f91809737e5cbac272e253bb045c04b92ebba6900bd6176c28fca47bac0
 Description:  Kernel module for BTRFS support
 
 Package: kmod-fs-cifs
@@ -650,9 +650,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 116233
 Filename: kmod-fs-cifs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 116128
-MD5Sum: edec1f1b7475e5fff09cbb9441b9c1d8
-SHA256sum: 0b2b9571b96f504a4d7fc81d7ca47e53a182b2487cafb6af0c7b308c3bd2b1ec
+Size: 116127
+MD5Sum: e9fd094a5836e078a174df92096ae830
+SHA256sum: 2462fd0b7699e203c347361fd0e7ff6d0fd22db28fc7b22eb3f50b6231fcc395
 Description:  Kernel module for CIFS support
 
 Package: kmod-fs-configfs
@@ -663,11 +663,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 12258
+Installed-Size: 12257
 Filename: kmod-fs-configfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 13033
-MD5Sum: 455409c1c5a01f4a955cc18c8b6469f9
-SHA256sum: 8dbe5f95e6e208f7a138bcdeded82b95c0d25c1adae6a6af142c0ffb2401c626
+Size: 13031
+MD5Sum: e89cea2e71d6d4335dc79e53bc58be73
+SHA256sum: 4c13313b63d1ddf742d27c6d71d0854028ec6d3e7ac439d9a5ee29e72088ba6a
 Description:  Kernel module for configfs support
 
 Package: kmod-fs-cramfs
@@ -678,11 +678,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5270
+Installed-Size: 5266
 Filename: kmod-fs-cramfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6057
-MD5Sum: c8874f40a74b07e53c889e2a4e251225
-SHA256sum: 98731e43c1bcebf1c5649c5a67132341043e5cbb03dee24f86ff2df3aca7e390
+Size: 6055
+MD5Sum: 0310540a07305607c124f76bb4e0ce21
+SHA256sum: d01de97e9b8c7a23550e71039c61406ccfae9170ca0b4f7614de7787aff6dba2
 Description:  Kernel module for cramfs support
 
 Package: kmod-fs-exportfs
@@ -693,11 +693,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3038
+Installed-Size: 3037
 Filename: kmod-fs-exportfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3813
-MD5Sum: d51b949588c9e3648103c79bea93eb6f
-SHA256sum: 702ca571cdc6e3ceb84c29c2911db8960f23e267c984121108fda70824464e3c
+Size: 3804
+MD5Sum: 33c71ea914ad5ad10422e29c97b956c2
+SHA256sum: a23ca15254fb221e7576f8cd04e8c8079d2a693201ecdd50b1ba1b8ab1b27963
 Description:  Kernel module for exportfs. Needed for some other modules.
 
 Package: kmod-fs-ext4
@@ -708,11 +708,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 228989
+Installed-Size: 228990
 Filename: kmod-fs-ext4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 229308
-MD5Sum: cbab15f6647444a400899d0ead485a7b
-SHA256sum: a16fec86422a216c8eea027f0e26be6477734d84a15c3a158c60bd3ff06dcc41
+Size: 229285
+MD5Sum: f54863e8d524de83a6fe88216c349e3c
+SHA256sum: 9d5200b71853cdbe3b73cf721267b475c1a578645a7571f757b4e1f807f6ef91
 Description:  Kernel module for EXT4 filesystem support
 
 Package: kmod-fs-fscache
@@ -723,11 +723,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 26483
+Installed-Size: 26481
 Filename: kmod-fs-fscache_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 27110
-MD5Sum: a4606dd911b5b8a17cc1935985f13427
-SHA256sum: 609bc6aa3ce79435954cc1fbc4a4b67900ebaa7f1b212b35a6c4ba9070715240
+Size: 27099
+MD5Sum: 9a6821e297192a052245d9831291e2ca
+SHA256sum: 50d83000a9465539aa91d7f27c9caf930634425830a2f9cd9c4988e2909f3ff5
 Description:  General filesystem local cache manager
 
 Package: kmod-fs-hfs
@@ -738,11 +738,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 29526
+Installed-Size: 29527
 Filename: kmod-fs-hfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 30265
-MD5Sum: b1b81d86c85e57eee8d923e02984fbd4
-SHA256sum: bdf435ada1cb7f002581961ff4d2f6072722ec42bb1c929363c33068d5779334
+Size: 30256
+MD5Sum: b03012f3ffba70338d881ba9b75e47df
+SHA256sum: 87751c9de985346f0ccacfcb0884b9599c911644b69dff21f1f76c1bad220945
 Description:  Kernel module for HFS filesystem support
 
 Package: kmod-fs-hfsplus
@@ -753,11 +753,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 58545
+Installed-Size: 58544
 Filename: kmod-fs-hfsplus_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 59094
-MD5Sum: c353f4c3bbb8e7da121e9bff04fd4eb4
-SHA256sum: 0c41985a876beedf60e54018f4ed0d10dbcb0ed3f243575597f163c1e9a0ffd9
+MD5Sum: 6c3e9d5d70db002129f78f6f5c44f4d3
+SHA256sum: 53a6b99f27149d3171d9bc7951d5e55a3deb792fb09a99407ce15cbb43e14a37
 Description:  Kernel module for HFS+ filesystem support
 
 Package: kmod-fs-isofs
@@ -768,11 +768,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 15779
+Installed-Size: 15780
 Filename: kmod-fs-isofs_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 16559
-MD5Sum: 2b8855ba8927d103a702372e81f50cc5
-SHA256sum: 088243d81b182a2d9cbf44c3f3e9d1f2ea250d34162be9cba48f6808b6fca31f
+MD5Sum: acef54eca2e11629eea299dfe20e0e5a
+SHA256sum: 616829a92c6859964c3a4bc3ec5dca809c57004363b94260563c50f3828c4dc7
 Description:  Kernel module for ISO9660 filesystem support
 
 Package: kmod-fs-jfs
@@ -783,11 +783,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 96898
+Installed-Size: 96896
 Filename: kmod-fs-jfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 97440
-MD5Sum: 991849761ae494bc427a84d359bf9502
-SHA256sum: e4290d9d4b7447f1790ba3b71fc00c10b441094be7403d94ff5513e44d0da1dd
+Size: 97426
+MD5Sum: 1d28be65a82def30e11c81aff358340b
+SHA256sum: f18d28faf8d8762c4841bcc2ae55e692673d25f21f295f396b52e0d104a1dcd5
 Description:  Kernel module for JFS support
 
 Package: kmod-fs-minix
@@ -798,11 +798,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 15599
+Installed-Size: 15598
 Filename: kmod-fs-minix_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 16329
-MD5Sum: afae4905493e34ab1dd71e33aa789b99
-SHA256sum: e25b85d93b642569f4d701ec5d2e294117e72e8074f3da33dd981d2e53fdc8e1
+Size: 16323
+MD5Sum: 3b78ec2a3b566ca6d6a259e9098d914f
+SHA256sum: b97ac1bbbeb8db5bb6acfd00f3dc0e216f6df7214cd81dd6bbbcecf76e937334
 Description:  Kernel module for Minix filesystem support
 
 Package: kmod-fs-msdos
@@ -813,11 +813,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5256
+Installed-Size: 5258
 Filename: kmod-fs-msdos_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6031
-MD5Sum: 186d321732b6140d918d785243e77bb8
-SHA256sum: e23396a00e52d1f8a4f8821af2015b71b22590ba0dada5d51eeed432c91c200f
+Size: 6045
+MD5Sum: 0947305fc14695689d30ec3ccf059af4
+SHA256sum: 21ecabf28f68f8846d8dfa1d0774c519cff17871d5e3b7d65d6ce1e6beb02de4
 Description:  Kernel module for MSDOS filesystem support
 
 Package: kmod-fs-nfs-common
@@ -828,11 +828,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 124193
+Installed-Size: 124192
 Filename: kmod-fs-nfs-common_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 124762
-MD5Sum: 71a17e162a5f504316d9e9563f8b1af0
-SHA256sum: 4c67208e104aea9c2a2cf797f4ae8f8e0777b7c819fc2d5ffb20656bf6fe37fe
+Size: 124744
+MD5Sum: da7951550754a6c13c188c3f8350de2c
+SHA256sum: 874c863a8e218f0cfd3cc56d23b7b9969632e28483c76d093e10cb92bfbb3243
 Description:  Common NFS filesystem modules
 
 Package: kmod-fs-nfs
@@ -843,11 +843,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 80427
+Installed-Size: 80426
 Filename: kmod-fs-nfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 81161
-MD5Sum: 24d6b48030211146bf2fc368bebbdd71
-SHA256sum: 08d84e7a0d617d9a3cab7698f524a0833d7bbb6812dbfcacc49f32970432c074
+Size: 81171
+MD5Sum: b6a7442297aea8ab1df22e08259a759f
+SHA256sum: 5f2dde114add91619f4dc9466545a128cff41db5640c0e75a1a23185593ca42e
 Description:  Kernel module for NFS support
 
 Package: kmod-fs-nfsd
@@ -858,11 +858,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 110387
+Installed-Size: 110388
 Filename: kmod-fs-nfsd_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 110889
-MD5Sum: 63579d88a33a84cb878c54863fc8ab82
-SHA256sum: 9dc427ce2746238fae78129dfaf6e9a051f29be511bb73a80b3b661d94b55487
+Size: 110877
+MD5Sum: 5fc686ba629733cecf49179b95615577
+SHA256sum: a2edc7266e69dcf331e483eff3a51a40663be52a09c08f9819e8cf07de994028
 Description:  Kernel module for NFS kernel server support
 
 Package: kmod-fs-ntfs
@@ -875,9 +875,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 54465
 Filename: kmod-fs-ntfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 55066
-MD5Sum: b20602166b0faaf230f81bcbfcdd5ce8
-SHA256sum: 885eb04f2283bbe69cd87cb842656887c7f734d2a9e0cbe18aee1b5e9393127d
+Size: 55043
+MD5Sum: a5d62a7a1ed7e95e70487560109c0050
+SHA256sum: 3ee6690e8751322a32e92c50feb31f0fe05ac25cd471dd9c504d7c3ff343ab59
 Description:  Kernel module for NTFS filesystem support
 
 Package: kmod-fs-reiserfs
@@ -888,11 +888,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 126629
+Installed-Size: 126628
 Filename: kmod-fs-reiserfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 126828
-MD5Sum: 7a26111174bba2d5b217a60543efafc2
-SHA256sum: 836a3b371a155e4dcbac6061118e9c8ce9e4f22a5f7a413e1c8a1f105de014fa
+Size: 126826
+MD5Sum: 0e515113db385075a5f963412a97a029
+SHA256sum: a76ecfc3bdd2d8e468bc9f5fca254616d30a658dcbc080cf54ed5e7ba601b6f9
 Description:  Kernel module for ReiserFS support
 
 Package: kmod-fs-sunrpc-auth-rpcgss
@@ -905,9 +905,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 25535
 Filename: kmod-fs-sunrpc-auth-rpcgss_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 26255
-MD5Sum: 180df63bf51f8332b54615afb0b09983
-SHA256sum: 205c83cc910478459e3af6021b94a3d5d9f50a347ec844c21119359c100159fe
+Size: 26262
+MD5Sum: 5b9ca5797cc44760172d83b50d155719
+SHA256sum: 7d8425b40a2a2f7a0dd3f15071e91bb0a7b2ada3555d980016c1177b135baccd
 Description:  GSS authentication for SUN RPC
 
 Package: kmod-fs-udf
@@ -918,11 +918,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 50706
+Installed-Size: 50704
 Filename: kmod-fs-udf_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 51435
-MD5Sum: 4f42f370ee3dc4191d98a5eac60912ee
-SHA256sum: 009dd7a8746ef81a557c901fc8b55cea8e82aeeb95fb6404320661069551a003
+Size: 51432
+MD5Sum: 4a75efd0f42b986a96469a27751814e0
+SHA256sum: bffda9925cc989e60e4d217b2899c8b51a42fb810c18631726e6b893a483feca
 Description:  Kernel module for UDF filesystem support
 
 Package: kmod-fs-vfat
@@ -933,11 +933,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 39666
+Installed-Size: 39669
 Filename: kmod-fs-vfat_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 40470
-MD5Sum: 2547fed30d45e10afefd7dcc12c7ae2d
-SHA256sum: 4e8d10a99a160f111942abf5cca8f06e367135eade25c33f5910adcb6960b617
+Size: 40463
+MD5Sum: b94d156cf5034ef62c1661f1670eb741
+SHA256sum: a6990d78e5988aa001febcb99e7d1cac925c526919bc47afd94dfb3c271eb03f
 Description:  Kernel module for VFAT filesystem support
 
 Package: kmod-fs-xfs
@@ -948,11 +948,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 284383
+Installed-Size: 284380
 Filename: kmod-fs-xfs_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 284348
-MD5Sum: f6e66e977f7aae8b2fceda248a24d581
-SHA256sum: 731dc4bc0f3ca854e6ae55763fddca8111db4a6c6c0fcadc7c36b40a01b3bb41
+Size: 284289
+MD5Sum: 22ba987f5d36123ca28e5f71ae00952a
+SHA256sum: 083db09cd251d907d382fcb2e370308613106e9f0fc0f3bed0af5dbb00ce47b6
 Description:  Kernel module for XFS support
 
 Package: kmod-fuse
@@ -963,11 +963,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 45447
+Installed-Size: 45448
 Filename: kmod-fuse_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 46135
-MD5Sum: 805e3012112ee9c41d12d4bbd550ff51
-SHA256sum: 4c68bf573b90c7d26522701835e5ec52a660af621ea17a9b0021aa6c229418dc
+Size: 46141
+MD5Sum: c268839c4a27beb4d39d1fdfec0ddfaa
+SHA256sum: 0e4c19aa9c7e621b4210a2f434ad1d03ed8bfbdaa8f348765938f638b62d97bb
 Description:  Kernel module for userspace filesystem support
 
 Package: kmod-gpio-dev
@@ -981,8 +981,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 2110
 Filename: kmod-gpio-dev_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 2882
-MD5Sum: 2bc2b92d28b06b8a4a095b2b3f79dcdc
-SHA256sum: 43dd218948d0bfc174c3562a32093e7574ded9b44b6b9ef32ea9564f5a3d199f
+MD5Sum: 61326ee134a4fc8dcb35fef50a0c5c63
+SHA256sum: aa9dec76783aad179507c32bf5819302941d75eda089a51cbc678145720db7ec
 Description:  Kernel module to allows control of GPIO pins using a character device.
 
 Package: kmod-gpio-ir-recv
@@ -995,9 +995,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2077
 Filename: kmod-gpio-ir-recv_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2843
-MD5Sum: 350d5c6f713e48d75d9bd93f5fbd3ec5
-SHA256sum: f9785be5f15dbc16f69bf234cac25c6b8dbd0f1d051256f6838c29d27b7e26c1
+Size: 2847
+MD5Sum: 8c5cc3c4199ab69cd3200bc1308c247c
+SHA256sum: ce8d2894c9c2a9fb4a60300ac54ab065c99c2c1b8552abee3a689c344df2de58
 Description:  LIRC (Remote control) GPIO driver
 
 Package: kmod-gpio-pca953x
@@ -1008,11 +1008,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3510
+Installed-Size: 3513
 Filename: kmod-gpio-pca953x_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4359
-MD5Sum: efc0698ca636b58eab08e400f7f046f6
-SHA256sum: 845cf0b5d3d2b0ba5274362054afdc99f71e614f26b6e6e7be48bbcc1dbfa865
+Size: 4358
+MD5Sum: 7a51de4477a391ae45ed813a1e7c6f96
+SHA256sum: fa9297094fe40d4347871c86767349f6cfdc22cae77d9c2c95ad670938c8c4c1
 Description:  Kernel module for MAX731{0,2,3,5}, PCA6107, PCA953{4-9}, PCA955{4-7},
  PCA957{4,5} and TCA64{08,16} I2C GPIO expanders
 
@@ -1024,11 +1024,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3083
+Installed-Size: 3086
 Filename: kmod-gpio-pcf857x_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3891
-MD5Sum: 74d130a0df186c0a7739a96622346769
-SHA256sum: de199d704d96348a2ff17ab6480a46db2f06b9013cea519b5ea0ee57cda318ab
+Size: 3889
+MD5Sum: 555c0455b7ae2ff6597034d379038ca2
+SHA256sum: 40a01a5ed51ab0fb09e6ba98fb2376066d3fa879d8e44f14f8d6803e0544c0b4
 Description:  Kernel module for PCF857x, PCA{85,96}7x, and MAX732[89] I2C GPIO expanders
 
 Package: kmod-gre6
@@ -1039,11 +1039,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11582
+Installed-Size: 11581
 Filename: kmod-gre6_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 12411
-MD5Sum: 6a31e19a3bf1266a795dc46fc898e60d
-SHA256sum: cf57cf5dfb9dccb94f17276f30e92a3839088b508c6594a3ba6f3ab471c5ced8
+Size: 12406
+MD5Sum: f69f7855f30a178e1c0877d12a246f0c
+SHA256sum: 37f4f194172a564af7cc5cd6a6e48a2c49ea1a8ccbac5da61dde1e4209affa35
 Description:  Generic Routing Encapsulation support over IPv6
 
 Package: kmod-gre
@@ -1054,11 +1054,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8197
+Installed-Size: 8195
 Filename: kmod-gre_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9008
-MD5Sum: 11af314a9e75e5971ea9054e21f681b4
-SHA256sum: 8691890dfc130ef705f0137e603b2f60f9743f1e6343932878932637ac6cfb8c
+Size: 9011
+MD5Sum: 951c81e64808c4972ee06e762cb28546
+SHA256sum: f55b34de2459ab0b8b312e8c81f56499da4b02284d9ddcf782cc5434a9e13495
 Description:  Generic Routing Encapsulation support
 
 Package: kmod-hid-generic
@@ -1071,9 +1071,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 905
 Filename: kmod-hid-generic_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1691
-MD5Sum: 2c464fb41c36fa7c3078df30937b3060
-SHA256sum: aff8c3c6df200405601dc938c22c698db9cb04f60f2970927c07c578198345dc
+Size: 1696
+MD5Sum: c8c6ab82551aae2cc64f1f5b5cf183ef
+SHA256sum: 925234c7163f1a8656c301d4c336940de20a7511995dc1aa291c5bcd552d8a07
 Description:  Generic HID device support
 
 Package: kmod-hid
@@ -1084,11 +1084,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 41969
+Installed-Size: 41968
 Filename: kmod-hid_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 42563
-MD5Sum: f205afbb9d7ada0bdd3a92a7d0ab5968
-SHA256sum: ac0c87627ebc7a9b2846eed0e1a596fe6af19321a95263ea490bf3284e83fd75
+Size: 42566
+MD5Sum: 4cac464cc52121f27b2860670bb12865
+SHA256sum: 7c78888cf1b49069362ceec202ebc5a5e97c2aeb0b0bc269e075d42308584302
 Description:  Kernel modules for HID devices
 
 Package: kmod-i2c-algo-bit
@@ -1101,9 +1101,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 3806
 Filename: kmod-i2c-algo-bit_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4580
-MD5Sum: a27dc759830cf4c2b8d8a47b7dcba166
-SHA256sum: a4284830d810caf64be4dbf5ecbca46e9292196f1c850814bb338331c8405be0
+Size: 4583
+MD5Sum: ccc3b61ee659a9f52a8e206bebb04357
+SHA256sum: 515c0556fe274f66cb9ec1e20e963326a678e93226dc118eb05ff4ad4447b8e2
 Description:  Kernel modules for I2C bit-banging interfaces
 
 Package: kmod-i2c-algo-pcf
@@ -1116,9 +1116,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 3408
 Filename: kmod-i2c-algo-pcf_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4169
-MD5Sum: d8e0f63936e070f38534cf70de6b3030
-SHA256sum: f11e41914048f4da9dcd42c38386af5bd96b41517bc607182136e0d84c607b45
+Size: 4177
+MD5Sum: 35b309314e24402cac1bf1a73163998d
+SHA256sum: 30908b0c9c8dd1ff26eaec215f06ee4e77f2e3f01513263c99ff0e08cc4b1258
 Description:  Kernel modules for I2C PCF 8584 interfaces
 
 Package: kmod-i2c-core
@@ -1129,11 +1129,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4386
+Installed-Size: 4389
 Filename: kmod-i2c-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5076
-MD5Sum: 7c999363653e71473eef053df8c480df
-SHA256sum: 8cd3741c0c6b37d41bb01fee248c01c1763aa0dce635b6280ffbb9bd745117a5
+Size: 5070
+MD5Sum: 6b7bf9b31ec67c9ef2b130caf68cc37e
+SHA256sum: 433877854cdb79ab59a2a1c8630c0766e53dbbbe9b949344c5caf26564796cc7
 Description:  Kernel modules for I2C support
 
 Package: kmod-i2c-gpio
@@ -1144,11 +1144,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2280
+Installed-Size: 2279
 Filename: kmod-i2c-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3112
-MD5Sum: b24bcfdb40a440f37886bb3c810db97f
-SHA256sum: e4c5f5dd300124a5dd3d10cec0fde00c9d88724bdafbcd435ef035fcac451c64
+Size: 3108
+MD5Sum: 0f904ac225804bc35418dfa02c0f7b69
+SHA256sum: 6438336d2fcca8d8ac511dcf8ee5ad198faa09b29b008761354f2d519f2e9265
 Description:  Kernel modules for a very simple bitbanging I2C driver utilizing the
  arch-neutral GPIO API to control the SCL and SDA lines.
 
@@ -1160,11 +1160,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2652
+Installed-Size: 2650
 Filename: kmod-i2c-tiny-usb_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3486
-MD5Sum: e9780f63883117a568fc5d6478083944
-SHA256sum: ab919fea3d4b94bb911206ae9b3bf161cb4273ec386aea5f8d3cdbe0a95807a2
+Size: 3482
+MD5Sum: c37b78c5a1d089a55eb1a1df9507bd74
+SHA256sum: 7ba57a8bfb654f5cafeeff6a9764aea347e5315852e8e3704545825ecd7f428b
 Description:  Kernel module for the I2C Tiny USB adaptor developed
  by Till Harbaum (http://www.harbaum.org/till/i2c_tiny_usb)
 
@@ -1178,9 +1178,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 41093
 Filename: kmod-ide-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 41848
-MD5Sum: 5065ffdf15951d7c357b28f2b40887dd
-SHA256sum: ad3a90cd0c473998506ed50905cbab4270c5cf50924dfd29537b3feaa494a6b3
+Size: 41844
+MD5Sum: a0d0a1111dbc016d507342d06f8e51b7
+SHA256sum: be19db3ecc2ee1d0571663d600fb623e42a0c6e58250d5622c41da2c807cc238
 Description:  Kernel support for IDE, useful for usb mass storage devices (e.g. on WL-HDD)
  Includes:
  - ide-core
@@ -1194,11 +1194,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1888
+Installed-Size: 1883
 Filename: kmod-ide-generic_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2662
-MD5Sum: b5fd6f48c64718654e97837acc69dfa7
-SHA256sum: 8c6798ff41c9a45cd205a2536deba869632ce0e90c151756bc007b825f802785
+Size: 2657
+MD5Sum: 72eb2c3372d7984d13052405035c763e
+SHA256sum: 99527c5701b1730dd7088ce5642dc8aa8200618fd70e23eda0ce5ddcc16368c4
 Description:  Kernel support for generic PCI IDE chipsets
 
 Package: kmod-ifb
@@ -1209,11 +1209,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3121
+Installed-Size: 3120
 Filename: kmod-ifb_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3872
-MD5Sum: 5aba3bcdfa3b40a04d65a2fd43d7ed4e
-SHA256sum: 538bc3509476b6078084f856a3979e77844a7fc0f45f3b43a5dc58075b17d332
+Size: 3869
+MD5Sum: 8360d93af4da3b1e2a05330e85382a07
+SHA256sum: 0cf4e3c0760a0592bc031d96854e572c0db738340c8901f8efaf3e0eb1007d64
 Description:  The Intermediate Functional Block
 
 Package: kmod-ikconfig
@@ -1224,11 +1224,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 23513
+Installed-Size: 23511
 Filename: kmod-ikconfig_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 24317
-MD5Sum: a04f9576ec4ead28150b8c17d725428f
-SHA256sum: 7336853d15b6d7e455cc7b704a8479ca360d67a7f059e2da7f1f36f9d346c434
+Size: 24314
+MD5Sum: 6dc5f63e34ea972ae7d4363a7e5de921
+SHA256sum: a2ca02152496cdcc0a8e8999c7aa4c544d91bcd023369d6318e605c0796f771a
 Description:  Kernel configuration via /proc/config.gz
 
 Package: kmod-input-core
@@ -1241,9 +1241,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 18711
 Filename: kmod-input-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 19443
-MD5Sum: f03c613edbe7760fe84a12b6338ac107
-SHA256sum: c1c41229d0eed41fa9678477a339520f6df950d081255a165e2ff97dbdbec21c
+Size: 19440
+MD5Sum: 822cfd17db998652685cfc86fb2bf69e
+SHA256sum: 863290ccfd496fce7a123d63ddf351833294ac57d5030162a3500133c89e3e4c
 Description:  Kernel modules for support of input device
 
 Package: kmod-input-evdev
@@ -1254,11 +1254,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7462
+Installed-Size: 7463
 Filename: kmod-input-evdev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8257
-MD5Sum: a84d2a4318c1b030b238bb9790dde9bc
-SHA256sum: 7232db0ca50782034e430fd92414a44d58fe180159c4fbcb26646a754bb46be1
+Size: 8260
+MD5Sum: a1c5efcd4c6858523d85eca39481ebbd
+SHA256sum: b2f8477763c1b7f3baa74e96827ef758e8381b145ffed86862b961359910c923
 Description:  Kernel modules for support of input device events
 
 Package: kmod-input-gpio-encoder
@@ -1272,8 +1272,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 2497
 Filename: kmod-input-gpio-encoder_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 3261
-MD5Sum: 865b1d58744652b408b584f34d3bf32a
-SHA256sum: f4e983fe07351fb55fa70b97282c43da176f8965ead9eda83562da0283fdd601
+MD5Sum: 0148b5ec067a0a1dc48496385a0ac0a7
+SHA256sum: ddfdbfa7ee5b078209abe8d1d408d26a0b32513a88f7ccfb1209b8563fe1d066
 Description:  GPIO rotay encoder
 
 Package: kmod-input-joydev
@@ -1284,11 +1284,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5799
+Installed-Size: 5797
 Filename: kmod-input-joydev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6594
-MD5Sum: ff7663a8fec6266cf7a98fc6bbcac886
-SHA256sum: 81fa804b5a508f374c03b321f524c84b77883f7fd9f3af12c8ff79b87bd46660
+Size: 6577
+MD5Sum: 7a3c474a75b795b62f204bf2645107ca
+SHA256sum: 70f8bd9cefcf31544e4d42c944420722dc1d46518356cae4d4d1325b1743c40e
 Description:  Kernel module for joystick support
 
 Package: kmod-input-matrixkmap
@@ -1299,11 +1299,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1392
+Installed-Size: 1390
 Filename: kmod-input-matrixkmap_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2200
-MD5Sum: 5430c13f30ebf34df6730fca0c73eca1
-SHA256sum: 1906bd3e36fca8b8ffe680e8cb10ecdf0c6182fac560a2533e97bb3923e5b3d5
+Size: 2196
+MD5Sum: ea994f32316c639f2eef76d3a69dd520
+SHA256sum: bea7dbce14c923dec322adde88b6553c83726752ef95d92bb83e45a14de5240b
 Description:  Input matrix devices support
 
 Package: kmod-input-polldev
@@ -1314,11 +1314,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2186
+Installed-Size: 2185
 Filename: kmod-input-polldev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2938
-MD5Sum: 0078b0e03fe33824493b6e61140ea3a7
-SHA256sum: cf55019ec8196c458c299ef186db098bfa38af41d56bb2ffe8c0246aceb9e0ef
+Size: 2931
+MD5Sum: 7b59dad26e8f080e4c72a5365c3204e3
+SHA256sum: 9fb59830108c3393308eb0a7b0012db32185933a9f1594fa11392eef7600d2a0
 Description:  Kernel module for support of polled input devices
 
 Package: kmod-ip6-tunnel
@@ -1329,11 +1329,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 13402
+Installed-Size: 13400
 Filename: kmod-ip6-tunnel_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 14160
-MD5Sum: 233f841b16072f57b9c3ba9867ba1ae3
-SHA256sum: fe9886f03d8f7b5be041676e62c8c94bbcbaef3a47395a792027cb5c7d781ca4
+Size: 14165
+MD5Sum: 8a9379ef8b5c97de02f06eaf84756cc2
+SHA256sum: 0dc9aac5b5b230d7578923e7fda579683c4ea472b26c8047faa661446fab4678
 Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling
 
 Package: kmod-ip6tables-extra
@@ -1346,9 +1346,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 4950
 Filename: kmod-ip6tables-extra_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5736
-MD5Sum: 45b513195309c60c7ecaecc2db6bcf15
-SHA256sum: 389fa006c15723361adce44bcdd449d88f01ed0631ce839a16b4283ccf4b23bd
+Size: 5738
+MD5Sum: 09567dd26c462b1f14d97b4ee1f07942
+SHA256sum: 3dafa9bba3660b25c776387e14c8470f52cbcb59acccd260c7644b86f5a1a269
 Description:  Netfilter IPv6 extra header matching modules
 
 Package: kmod-ip6tables
@@ -1359,11 +1359,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 21952
+Installed-Size: 21953
 Filename: kmod-ip6tables_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 22712
-MD5Sum: c5b6e57ab874f1d08224a40ac8ced9a8
-SHA256sum: 1777a1701a7bb0a5b5695cda02369f2eea9d09dc547e71119b92202120b92ded
+Size: 22709
+MD5Sum: 5d5a38a9ccbc4207ad40f89c278b0168
+SHA256sum: 4b3ec793cf8a20f761ab7e5fd45e186215182b1dade2c4cf973504d952b945cb
 Description:  Netfilter IPv6 firewalling support
 
 Package: kmod-ipt-bandwidth
@@ -1376,9 +1376,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 14028
 Filename: kmod-ipt-bandwidth_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 14760
-MD5Sum: afaaefd45dad97c58de9b8a2928f76e7
-SHA256sum: af1442db78e5ecd336a291d02aa2591c7ed8ecfa958de57a99831acd3e445886
+Size: 14759
+MD5Sum: 00a9b6b509ef0a5168e2d8047ffe425a
+SHA256sum: e3084a1669a6e6e912dfba18a566adac75ab8372409abf77c46f6b3bcf385795
 Description:  bandwidth
 
 Package: kmod-ipt-conntrack-extra
@@ -1389,11 +1389,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11263
+Installed-Size: 11267
 Filename: kmod-ipt-conntrack-extra_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 12112
-MD5Sum: 16d61e7a5814962ef68cd71c2930b9e3
-SHA256sum: da5004613093e203f0bfb72b6146bbb368c972848f023693bcbd49b2cdcae997
+Size: 12125
+MD5Sum: d8bd537d5e45521bc3d02901a3f358c9
+SHA256sum: ef101fc6f404f5e3506752c121659788fb1270fb5a68ad2e9e9d1b7484969c58
 Description:  Netfilter (IPv4) extra kernel modules for connection tracking
  Includes:
  - connbytes
@@ -1410,11 +1410,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 44542
+Installed-Size: 44548
 Filename: kmod-ipt-conntrack_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 45385
-MD5Sum: 0d6c6f1d3148dd2c8d6761d90316380a
-SHA256sum: 5ea28d90fbd3b38531dfc7f9fa47e66bd2d253cfa5c5ee6e8160a1e2b1501a33
+Size: 45391
+MD5Sum: e03d651e8338e16bfb7883c1931e2eb5
+SHA256sum: 8e8daf419ebfb7633a365dd4fd0fa610d63f5c02770d76871c28ade6930076b3
 Description:  Netfilter (IPv4) kernel modules for connection tracking
  Includes:
  - conntrack
@@ -1431,11 +1431,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 35257
+Installed-Size: 35252
 Filename: kmod-ipt-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 36209
-MD5Sum: c667ec3bd9a309b4fd155212e3d529c6
-SHA256sum: 11ea167e7aa90211e696dcea6ede393588e70ff4aecdb4fd8abad8d655f8875f
+Size: 36208
+MD5Sum: 2a8b6ad042f050dc7bc51a1613ca987b
+SHA256sum: 6e7ada9b77b812e93abdd170afec72f0b581dfbde51410f2087051224a250f9c
 Description:  Netfilter core kernel modules
  Includes:
  - comment
@@ -1454,11 +1454,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4844
+Installed-Size: 4846
 Filename: kmod-ipt-extra_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5679
-MD5Sum: 8711261a9903cdcbde65ef6772e490ef
-SHA256sum: 13cd8774e3bf60ff88ebd2fc086ebffa7114dc5eeed3f2c6169a632a23fbd1f0
+Size: 5682
+MD5Sum: 706968ab9e9b215603bcd28d37ca2864
+SHA256sum: f14f497f0fe11cb004413842e31562ea52c123d2820f562f8481f99dcff494c7
 Description:  Other Netfilter (IPv4) kernel modules
  Includes:
  - addrtype
@@ -1475,11 +1475,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1309
+Installed-Size: 1311
 Filename: kmod-ipt-filter_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2161
-MD5Sum: cb56dd5359b40eef2c181876c0e97c06
-SHA256sum: 34b485f8a1e78bb8074e2878f3593bf20d39eaeda83afdde5e9f645554286830
+Size: 2159
+MD5Sum: d1ba4e0abab381819a3b25f3f66a44a7
+SHA256sum: 95d8218c0ae15227cf70fa084c1ba9d7bbea33bf8ad7f8811c2540c01dd550be
 Description:  Netfilter (IPv4) kernel modules for packet content inspection
  Includes:
  - layer7
@@ -1493,11 +1493,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6090
+Installed-Size: 6088
 Filename: kmod-ipt-hashlimit_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6883
-MD5Sum: 2cf19421abb7ebd137ca12614397e4b7
-SHA256sum: 7eba1572a51c033fc470d0de29d61632f49042999067feacaff850a0e43b8814
+Size: 6878
+MD5Sum: 60c7a8b844f2950164c1315249defc20
+SHA256sum: 44dd2aa88944613e83b203926ca8fea11f56c5e86b530b393eb4fba919f2b693
 Description:  Kernel modules support for the hashlimit bucket match module
 
 Package: kmod-ipt-imq
@@ -1510,9 +1510,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 7951
 Filename: kmod-ipt-imq_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8762
-MD5Sum: fc52d105e9e78f61dc9530b42ce3525a
-SHA256sum: bb089955071fa4c87d002ac983b36a81ae11f7a7a66249c8006980f530649cd8
+Size: 8763
+MD5Sum: d0f2b9051083a11dbc5e8ee04eca05d2
+SHA256sum: 628f234bed02aa75e9df30c90ed5324fdb8b182a66544b5cc666c9c3a9c6b002
 Description:  Kernel support for Intermediate Queueing devices
 
 Package: kmod-ipt-ipopt
@@ -1525,9 +1525,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 7128
 Filename: kmod-ipt-ipopt_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8049
-MD5Sum: 49ad070b1af984a944e754fce581f631
-SHA256sum: f7e45423f912582e71e50c8f522fe9b1a6bd52c8286a92e7a737160acc86836a
+Size: 8042
+MD5Sum: 388701ac3601fcb10bae102bd6638b10
+SHA256sum: 8b980e60cfd1f2815fb99e82a2478b101a0d709220169416a2a02121b543b0d8
 Description:  Netfilter (IPv4) modules for matching/changing IP packet options
  Includes:
  - CLASSIFY
@@ -1550,11 +1550,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1228
+Installed-Size: 1227
 Filename: kmod-ipt-iprange_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2046
-MD5Sum: aab41fa9c95b57868ba0b895cfd27c16
-SHA256sum: b4a5a007834b3e2bb8fabb80792b75563bfbe896fb782c51cc8c9a87c45f72a3
+Size: 2043
+MD5Sum: 532386db30f1cf5e488690541697b644
+SHA256sum: 378c55510a42de34e4c22fa3f8392eef03ad2c711571cab9897b1d136e147d6b
 Description:  Netfilter (IPv4) module for matching ip ranges
  Includes:
  - iprange
@@ -1569,9 +1569,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1460
 Filename: kmod-ipt-ipsec_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2275
-MD5Sum: 56392df021927025e70b4b035e51b2a2
-SHA256sum: c43451eabbcce95e47d0513e19cb70b6e9cce19539852ca425a19c3476a43c5f
+Size: 2265
+MD5Sum: bb05855127716e3a50e908f558c7a3f7
+SHA256sum: 10de04f273c5bbcf2f309762959f12adc8c61b147df6cb492d5e9dc6b0dfb52c
 Description:  Netfilter (IPv4) modules for matching IPSec packets
  Includes:
  - ah
@@ -1586,11 +1586,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 103083
+Installed-Size: 103086
 Filename: kmod-ipt-ipset_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 103553
-MD5Sum: 49427adcbc4c4820962da46b75c49362
-SHA256sum: c4f0b33e3873a6a1fd52ea1417905cc2f82e771a15b93e56738db7e039d5fab9
+Size: 103545
+MD5Sum: 3aa56687f3fd9da2e63e5847d7cebaf8
+SHA256sum: da191ec40b4738d1fc31e7ebe18c76cd11044d4a9648695d69c54e6e115cbec6
 Description:  IPset netfilter modules
 
 Package: kmod-ipt-led
@@ -1604,8 +1604,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 1972
 Filename: kmod-ipt-led_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 2793
-MD5Sum: 5b0debca624b00dde7a8e10df87ff81d
-SHA256sum: 984ce3b92a0edf91d9e2f00384679be7977978323fe06940efeaa2307bc391ba
+MD5Sum: 374f3abd6dce5d8b5ae072035c274dcd
+SHA256sum: d7ed3b9eb30e9d65f031423f014b3ef1e68151a5f3b28a7d19a77a5be87f2c8a
 Description:  Netfilter target to trigger a LED when a network packet is matched.
 
 Package: kmod-ipt-nat-extra
@@ -1616,11 +1616,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1594
+Installed-Size: 1591
 Filename: kmod-ipt-nat-extra_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2439
-MD5Sum: db5e9ee8946d4eb13dba66bdbece1f3f
-SHA256sum: 2c90487ed1646444fa240e81ac379189ceda6ba8fe273a98173f73a0f642f6ed
+Size: 2434
+MD5Sum: cc9cd772bfc5f4be00228ee0d5ff6f76
+SHA256sum: 85047b320efc68dc42f518055cfa1e91197203661ba8b59707f5ff90dd29aff8
 Description:  Netfilter (IPv4) kernel modules for extra NAT targets
  Includes:
  - NETMAP
@@ -1637,8 +1637,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 7129
 Filename: kmod-ipt-nat6_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 7968
-MD5Sum: cfc05770917c3b8dd11ccc0b28f4d5aa
-SHA256sum: 4d706c9f5ddada7371d4ab9bea66bb80c3f90623d4f0975c920fd7ce860342d8
+MD5Sum: d08a8ccab2db9c33d4280f310158535d
+SHA256sum: 9d807179b30bfb6fb07c7b12dbbd380ae9f131f78d8b73bc92d0c568acd3aca0
 Description:  Netfilter (IPv6) kernel modules for NAT targets
 
 Package: kmod-ipt-nat
@@ -1651,9 +1651,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 15104
 Filename: kmod-ipt-nat_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 15952
-MD5Sum: 6bd0f45f6caa5041801de0a0c59d5316
-SHA256sum: 512c2c5d3e72236ef22456e8be7b60723285ce8de75ba197eb08a0f6c586e404
+Size: 15949
+MD5Sum: 47bedfdabf534c6b44d484c17a695764
+SHA256sum: 4b4ebbd3a61e0450f7e18eaff02c98a0f04a7d786d61d1a2c5bdd0733d8529ba
 Description:  Netfilter (IPv4) kernel modules for basic NAT targets
  Includes:
  - MASQUERADE
@@ -1666,11 +1666,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 57793
+Installed-Size: 57795
 Filename: kmod-ipt-nathelper-extra_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 58756
-MD5Sum: 89cca1ad9c96952362c5a3680bb1aad2
-SHA256sum: 872d0691cc1869711adfd6d51c023453af20f0133e8cdeb8e017e1165d67f41e
+Size: 58769
+MD5Sum: 90932511511f57d25f40b8b355a35493
+SHA256sum: 59ec71b7957fa69246cc4c454a566e771aef7ced4b49acf799fac0d91abedc51
 Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - amanda
@@ -1690,11 +1690,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 9030
+Installed-Size: 9027
 Filename: kmod-ipt-nathelper_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9861
-MD5Sum: 2fc0a7abb5450258b985e1692bd12d2b
-SHA256sum: d5fcba3702472aa8d7d79687dd479ea3d59816e0eaccdba992a558255343bbe5
+Size: 9851
+MD5Sum: fc5fa1efdb8e6ceecb54d7f99733a778
+SHA256sum: 67aa3bbe9ae20b222a7d8dc2fe167fb8b832d2751b52def748a84200b0ecd877
 Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - ftp
@@ -1711,9 +1711,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1061
 Filename: kmod-ipt-nflog_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1875
-MD5Sum: 803390580a3e57b40347622f74508c8b
-SHA256sum: 80da72ce5feac70048fd1989031cedd8547c2084b46cc0da5979c67465a807a9
+Size: 1877
+MD5Sum: 196d37edb9e351f8cbfda2c2b971f226
+SHA256sum: e3fc396718137d581a76f9ac67b6a20a2f529967a129aa1cf789202b826dddc3
 Description:  Netfilter module for user-space packet logging
  Includes:
  - NFLOG
@@ -1728,9 +1728,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2000
 Filename: kmod-ipt-nfqueue_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2836
-MD5Sum: 44c52a2ddb683621e0c6b65416f2a35c
-SHA256sum: 2c01767b75a1950c570d1c995035e68a4a58fb5ac0a93e67bf176b39967bdc44
+Size: 2838
+MD5Sum: 94de33b7f11c03a23ce76ff5249a3602
+SHA256sum: 895873145836993bad1c798712f905cd464825e78c25883481e9910463ac5553
 Description:  Netfilter module for user-space packet queuing
  Includes:
  - NFQUEUE
@@ -1743,11 +1743,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2358
+Installed-Size: 2355
 Filename: kmod-ipt-tee_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3131
-MD5Sum: ad239c2fb603085c8e8f2f71277d231b
-SHA256sum: ada98041cf17cca6b68477ad52d12c04b3a1237d23d485f976b20b24d11d7b0b
+Size: 3123
+MD5Sum: db6f1030e5e6676ee3722196f578b4b3
+SHA256sum: a15a9bf1c9294071182356ae66f16bd1b1de075e68a9b120f980f0287d44b6f6
 Description:  Kernel modules for TEE
 
 Package: kmod-ipt-timerange
@@ -1760,9 +1760,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1212
 Filename: kmod-ipt-timerange_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1994
-MD5Sum: 874ab43423ecfd0aee3638a3f3812fb3
-SHA256sum: 7959a2c423cbd8b97483a0588d8b58db78bfd9fb7019bbb6df94c1c1eea6073a
+Size: 1995
+MD5Sum: f4777308f64f521facc001100b6d432c
+SHA256sum: d27e15dc0afcc3063f6eef8646a08efa400ff6ec7bf463da9092d8ca65d0e4cd
 Description:  timerange
 
 Package: kmod-ipt-tproxy
@@ -1773,11 +1773,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5549
+Installed-Size: 5550
 Filename: kmod-ipt-tproxy_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6344
-MD5Sum: 7203b656a7cdf09edd648796441e1d73
-SHA256sum: 006b7ccc6f139c3bc21edcc3ee1dd0e07044b90ee57cce7d6cd5bb61e402150b
+Size: 6352
+MD5Sum: 1e05909b163a5ea07b4711ae95405756
+SHA256sum: e7e4ddd6e1e52e5be399e6dddcaa38603dd70d2d4fa39bab01ae652c1e46fbba
 Description:  Kernel modules for Transparent Proxying
 
 Package: kmod-ipt-u32
@@ -1790,9 +1790,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1311
 Filename: kmod-ipt-u32_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2104
-MD5Sum: e84d57bd1fb7b377080a25fedff5fa28
-SHA256sum: d1e84b0faaa2e32a35255375787a4eea33270e9772333900c37b2f6515835297
+Size: 2101
+MD5Sum: 0a02d3e57191d12b040d105c6c08265e
+SHA256sum: 71d800d3821d723522e25219abf629a47925bdc74987343037dfd510a5b3cc56
 Description:  Kernel modules for U32
 
 Package: kmod-ipt-webmon
@@ -1803,11 +1803,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10717
+Installed-Size: 10720
 Filename: kmod-ipt-webmon_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11447
-MD5Sum: 45b60ca919fec723af26812649906121
-SHA256sum: fd602bdcd345e19464449f1cc41085bfde62e5b75f3c0695270d4c8cad1aa97a
+Size: 11464
+MD5Sum: 2f181c0df00dfda89992ebcf3d1b5b8d
+SHA256sum: 5c950fba046d262f8d1e5777673df905ec5020e1b86f8dc9266ae51c30c9fcca
 Description:  webmon
 
 Package: kmod-ipt-weburl
@@ -1818,11 +1818,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 9443
+Installed-Size: 9444
 Filename: kmod-ipt-weburl_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10219
-MD5Sum: dfbd33da0be3d605f95e8376d4eab737
-SHA256sum: 349b33f0d667e2e90120ad8a372d433285e26b3dc5bfd733653e7374dc5abf59
+Size: 10223
+MD5Sum: a53c75039a8513e4e7414681dca5651b
+SHA256sum: 5af820df259a17bafd459fa875e83574ffdd80746c9d060ff752e6a9298eddc7
 Description:  weburl
 
 Package: kmod-iptunnel4
@@ -1833,11 +1833,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2134
+Installed-Size: 2132
 Filename: kmod-iptunnel4_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2895
-MD5Sum: f15019e1f94346f3e1ac895b38f7d2f3
-SHA256sum: ef1556f034f323fd42dfc5ae00ace308a35dd1df1bf16709f486d117d6ba776a
+Size: 2882
+MD5Sum: fd6698aff4ce4e4e55d67391833bbf24
+SHA256sum: ba61fa1463951461f990a7c4e0bf16b4b901be74357585bcbbd5e54e749f750e
 Description:  Kernel modules for IPv4 tunneling
 
 Package: kmod-iptunnel6
@@ -1848,11 +1848,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2153
+Installed-Size: 2152
 Filename: kmod-iptunnel6_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2906
-MD5Sum: b5f15e179c171f5fa7be6c43c330bf2d
-SHA256sum: 1561ba62c25553374c2156ef11a5c6354561a6be65af96acb02abd3c5ee6a13a
+Size: 2908
+MD5Sum: 3626ec18c507afd4393a026115f5da21
+SHA256sum: ff42236ba40356efb0b5746f61a5a03d8116525307dbecda8f450d725b96d8f6
 Description:  Kernel modules for IPv6 tunneling
 
 Package: kmod-iptunnel
@@ -1863,11 +1863,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7968
+Installed-Size: 7969
 Filename: kmod-iptunnel_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8759
-MD5Sum: 35b7286c7bc4e245aa3dbb502b92a047
-SHA256sum: b9dac5df8d4a060a3e21d7d1826d5602f0f23e994751ba021f67ca60e573b4cb
+Size: 8763
+MD5Sum: ab1f991c403c0ecb7fc920d072fad593
+SHA256sum: 4f8b360b48455f219cfb7268a7962e4750f63ac42bb753ad727866017529a555
 Description:  Kernel module for generic IP tunnel support
 
 Package: kmod-ipv6
@@ -1878,11 +1878,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 169030
+Installed-Size: 169031
 Filename: kmod-ipv6_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 169437
-MD5Sum: 5d6b29fda31ebebe4302749df8af8b3d
-SHA256sum: e5a74776341a797fadd041268d896ccb7c7ea1d192fef953c5e13a188aac5332
+MD5Sum: 5640b0b8ab683372d7bc7710fb91a463
+SHA256sum: 21181b28c6df9d64f74a9163ca74a406bf600df260fd7a57e064638d3266d304
 Description:  Kernel modules for IPv6 support
 
 Package: kmod-ir-nec-decoder
@@ -1895,9 +1895,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1718
 Filename: kmod-ir-nec-decoder_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2507
-MD5Sum: edb3d0c279176a3ccc2535b2191b3525
-SHA256sum: bcc62b02aef019cb2fb3c9a9ca1765c1127a2ad0a6d7cb419ae4eb4d203cc0fc
+Size: 2508
+MD5Sum: ae77af170ad372a3b964013e285c01e6
+SHA256sum: ac0361e1e6d45d8ae287b07dbc79c181bde31b29e7c97e265e7d0c6d24f4dbc4
 Description:  ir-nec-decoder
 
 Package: kmod-l2tp-eth
@@ -1908,11 +1908,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3073
+Installed-Size: 3074
 Filename: kmod-l2tp-eth_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3853
-MD5Sum: 7d0dca1e7d69d534c7e06bd9fb8ff6f7
-SHA256sum: 05a288050ca28200502b4735824a43fa929d1325ad9a06a8534299e66aec5cc7
+Size: 3847
+MD5Sum: 5761420eda2fcd64c716c91af7ecc7c1
+SHA256sum: bf25a1de636f9c37566231846f19fcf7e4c974bde5f7b19802d7d0340239af69
 Description:  Kernel modules for L2TP ethernet pseudowire support for L2TPv3
 
 Package: kmod-l2tp-ip
@@ -1923,11 +1923,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4939
+Installed-Size: 4936
 Filename: kmod-l2tp-ip_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5707
-MD5Sum: eb19a8824c6a65c2971a292ef46d6930
-SHA256sum: 78e4026b7302a2efd51ee9befe10cb45714e3904f199b41a78132bcb46e519b6
+Size: 5703
+MD5Sum: 67cd8231f20e2b383e13e9f9fb903e44
+SHA256sum: 598f990277428ac6d224916150a53a50e1cba6752002a8ccbc0168c9f2af96b7
 Description:  Kernel modules for L2TP IP encapsulation for L2TPv3
 
 Package: kmod-l2tp
@@ -1938,11 +1938,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 14840
+Installed-Size: 14837
 Filename: kmod-l2tp_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 15570
-MD5Sum: c853da5962ce47d449c218421afa6692
-SHA256sum: e8d92688ca532f766577f3a349211b60eb8c5edc22111b4df2090044f7d0d580
+MD5Sum: c8332a197dcd8e5ce392aea0261fd1ae
+SHA256sum: 0ea91caca3bf9dcdc6f79b6d8c5d7fb82443477e5d2522efcc06e1bcf144c5ff
 Description:  Kernel modules for L2TP V3 Support
 
 Package: kmod-leds-gpio
@@ -1955,9 +1955,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2167
 Filename: kmod-leds-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2924
-MD5Sum: 8f8c3ded4d772200bc68eec863213560
-SHA256sum: 8883f0b915ef65760cbe8763031da4cdaa7a04dd7dfa729f2bcccadc635245d4
+Size: 2922
+MD5Sum: f933b927b0d109b07408274ed0b84dd8
+SHA256sum: ccca06651e8fbb014b8a0079c97f523d266155b5ac9b9b2ecf99951d737df19e
 Description:  Kernel module for LEDs on GPIO lines
 
 Package: kmod-leds-tca6507
@@ -1970,9 +1970,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 4047
 Filename: kmod-leds-tca6507_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4821
-MD5Sum: ada2dfd2f219e2ba46bd8331a9dc55ba
-SHA256sum: 1169cacc6cc1abfe9e05b0b2547d8a05071b56ee8c201e27a780aa51d4b38690
+Size: 4818
+MD5Sum: d9e84de95e6b77f6ff057d1d68e7604a
+SHA256sum: 156e36534a9de612680bcf78e3a1985d51247fea2ad3744a03cabb5bbc74a2a0
 Description:  Kernel module for LEDs on TLC59116
 
 Package: kmod-ledtrig-default-on
@@ -1983,11 +1983,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 241
+Installed-Size: 244
 Filename: kmod-ledtrig-default-on_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1035
-MD5Sum: 6eeba8aff4413aa93d070fd5aeccb526
-SHA256sum: 6ed083b56dc76445185b1d89865d01a15a04c259b66a721c52e3b82a6ba28711
+Size: 1031
+MD5Sum: 2342a1b5c1ebfe97d4b491d7abe57eda
+SHA256sum: 3238ddf92e0c280c8c408992b96e3ec09495a99e8e5d91ef858a6d99d9a8c0ba
 Description:  Kernel module that allows LEDs to be initialised in the ON state
 
 Package: kmod-ledtrig-gpio
@@ -1998,11 +1998,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2572
+Installed-Size: 2570
 Filename: kmod-ledtrig-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3353
-MD5Sum: af3c3f349b88242b17effad274bd6792
-SHA256sum: fc82b390e1341c06adb82c473029653a483ff6bc82c16f75ae3f819e9d057932
+Size: 3346
+MD5Sum: 724f663062f1e8fbb5540ce16302f08f
+SHA256sum: 869da5107bd170ef53810cb60694764c9e5ba5b23d763758620e9c6bed92bddb
 Description:  Kernel module that allows LEDs to be controlled by gpio events
 
 Package: kmod-ledtrig-heartbeat
@@ -2015,9 +2015,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1729
 Filename: kmod-ledtrig-heartbeat_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2525
-MD5Sum: 8c04dade0fa2fe5826d7112d5b054d06
-SHA256sum: 503bb3fa475a0686b35a7a1822aef3789c2fd90d51da702fac65597f24de2da7
+Size: 2523
+MD5Sum: 0511c5f794d9594e5b5f1853c4e41a25
+SHA256sum: e4957103e8120789a6ec050427c3de8176e71f63b519ca7c0ec2da7d186197eb
 Description:  LED Heartbeat Trigger
 
 Package: kmod-ledtrig-netdev
@@ -2030,9 +2030,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 193
 Filename: kmod-ledtrig-netdev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 977
-MD5Sum: f2a0fbc9b000814ce32755843eae1a9f
-SHA256sum: 513e7aa05202f482119924742e7b77e8b67d643d399ed55e09ca9f0efa343a3e
+Size: 972
+MD5Sum: e8dd2e1c4b34ff29930d03df23fec483
+SHA256sum: f0504db7773016b525f1ecca5d3ff961e370f91bfb75fe6cad4042491d07cacb
 Description:  Kernel module to drive LEDs based on network activity
 
 Package: kmod-ledtrig-timer
@@ -2045,9 +2045,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 236
 Filename: kmod-ledtrig-timer_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1036
-MD5Sum: 7ef7c9e1e7cc31049b911d0cbb617e29
-SHA256sum: 1d487a031f0db35ff8d9ee641c5483b0092344a401bbd1300787bdd31f5013a3
+Size: 1033
+MD5Sum: b1707f97ad16cefede186e0c0aacd782
+SHA256sum: d1a49280312ca742bcecb6cf8abad90470f587b7ce131ea5994c41a6922c4d34
 Description:  Kernel module that allows LEDs to be controlled by a programmable timer
  via sysfs
 
@@ -2059,11 +2059,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2411
+Installed-Size: 2409
 Filename: kmod-ledtrig-usbdev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3206
-MD5Sum: 9db540cc36cc91aae066ee47eed0327b
-SHA256sum: 433200570052dda10990131ef4b7e53a4337dd3d2e3de53e84e6fb5e9021c33a
+Size: 3200
+MD5Sum: 4cd102950640f11e7cf87c26c52290b6
+SHA256sum: c8b0985fdb9aebc67e4824503423e4787bcdcada415a4d20d0a3b68ec9741715
 Description:  Kernel module to drive LEDs based on USB device presence/activity
 
 Package: kmod-lib-crc-ccitt
@@ -2074,11 +2074,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1411
+Installed-Size: 1409
 Filename: kmod-lib-crc-ccitt_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2204
-MD5Sum: b6f23cfdf25f26ab0a4dfd3295039cb9
-SHA256sum: 09d78e4aca2bc67954f51f15a6e7be09f6aa780902005b5b1f7830a7ee199f48
+Size: 2203
+MD5Sum: eb11dad50ac122fc7f06981c347bfd5f
+SHA256sum: 60e91ab9846fa1695ca9399070ca5cf4e37c4fc36e4dce3eb1ea9d560fcfa25e
 Description:  Kernel module for CRC-CCITT support
 
 Package: kmod-lib-crc-itu-t
@@ -2089,11 +2089,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1417
+Installed-Size: 1419
 Filename: kmod-lib-crc-itu-t_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2209
-MD5Sum: ad988364ca879d6ebfaa69cc72cd3e08
-SHA256sum: 57f605404b0b800cef57179b6c35e158eb55fae02a86d20e2e8695a7ed928f21
+Size: 2210
+MD5Sum: 33a311e7fb29b82caa185340310b2ed1
+SHA256sum: fbd4e558984d59cc97a7c5318f1ffef157555456c0138e32e3f318385904b0e6
 Description:  Kernel module for CRC ITU-T V.41 support
 
 Package: kmod-lib-crc16
@@ -2106,9 +2106,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 1327
 Filename: kmod-lib-crc16_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2116
-MD5Sum: e389b1aa13aac607a2d21533b074adbe
-SHA256sum: 7be587cb80c1bdbf089eae04db8443c0ff669bd0026713751b70a2b6fa1ee9ea
+Size: 2117
+MD5Sum: cdc02290288742659630f470d5943f0c
+SHA256sum: e5a9cabcac06f431b3db1bd304d56c9ca11be61548dc080213e00841a0ebdae3
 Description:  Kernel module for CRC16 support
 
 Package: kmod-lib-crc32c
@@ -2119,11 +2119,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1112
+Installed-Size: 1110
 Filename: kmod-lib-crc32c_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1903
-MD5Sum: b14f3e20c6fb6425a2a28485244a7bc4
-SHA256sum: 070442f80b65610e10436f4bd39689196242858c42a4ae4ae9607ff1ee28089b
+Size: 1902
+MD5Sum: 11e9aa0b650f8b229d28a8db251fd9e0
+SHA256sum: 171cfdbf611fd5e67408b25d208a81c8354226702c7f82fd9e036a5c11545e62
 Description:  Kernel module for CRC32 support
 
 Package: kmod-lib-crc7
@@ -2134,11 +2134,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1080
+Installed-Size: 1082
 Filename: kmod-lib-crc7_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1852
-MD5Sum: 87bb9c37fc4bf35f173321f4d81dd3c2
-SHA256sum: d5b4fb5da6ec80819b98b7761f7a0cdab91d94ccd475e8c693da9ea8ff247740
+Size: 1861
+MD5Sum: 074c04398594d9591fe707412c140d2b
+SHA256sum: fb3803bacd07815b9e6340788654f73cdfded689c5b0484d11573ce5e272b55c
 Description:  Kernel module for CRC7 support
 
 Package: kmod-lib-crct10dif
@@ -2149,11 +2149,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1517
+Installed-Size: 1519
 Filename: kmod-lib-crct10dif_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2315
-MD5Sum: fb810e5063eec91f725267130b11fe79
-SHA256sum: 2c661979494532fd2baa28375824e37e701a725e3ff59c4420c8e64ac49a1249
+Size: 2326
+MD5Sum: 17fde17b7db268035224e877ecdb2152
+SHA256sum: fd567dcf63b2bcd76172a925a8805f9f524821b3a84379447d9e3712ed2733e9
 Description:  Kernel module for CRC-T10DIF support
 
 Package: kmod-lib-lzo
@@ -2166,9 +2166,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 2899
 Filename: kmod-lib-lzo_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3681
-MD5Sum: 8ae3a49e14c793e3ed13cf922898ccb9
-SHA256sum: b8080b8259e27c99821f16965f757632460ba8279ad6997b39132da9077aa864
+Size: 3673
+MD5Sum: 2ada2c06c20eb4bc831c1c7e8e96c40b
+SHA256sum: 997f90dca7116f19998c31bf8eb61bb1ed63ae740aed12a7bb2f9608c46293c0
 Description:  Kernel module for LZO compression/decompression support
 
 Package: kmod-lib-oid-registry
@@ -2179,11 +2179,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1977
+Installed-Size: 1975
 Filename: kmod-lib-oid-registry_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2779
-MD5Sum: f24ee7503e78c242011ab44c217f123e
-SHA256sum: a8454fe5b91eef17fd4d40320501a6f5bb0e3cc53143917ce36039edda23573e
+Size: 2780
+MD5Sum: 77ba16f65ac40401e96aafefe9455b81
+SHA256sum: 4508f7e3bd486b5099ecc7aa8395848e14a6c038e7ac9a1a296f15566ab04ed6
 Description:  Kernel module for OID-Registry function support
 
 Package: kmod-lib-raid6
@@ -2194,11 +2194,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 74141
+Installed-Size: 74139
 Filename: kmod-lib-raid6_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 74969
-MD5Sum: ab5ca0b27cb48778cd535695c29b2f49
-SHA256sum: 286e7be76c137026a43ad80e3395be9d61c175afdbef5e04d73176b621b901db
+Size: 74963
+MD5Sum: 7acefa0c412c1ae7e2ec945b50bf8857
+SHA256sum: e1570ee91b2533756727540adcc184797e7a055de61b45e0b9084fb2c091a546
 Description:  Kernel module for RAID6 algorithms
 
 Package: kmod-lib-textsearch
@@ -2209,11 +2209,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3934
+Installed-Size: 3936
 Filename: kmod-lib-textsearch_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4713
-MD5Sum: 84a6b2e6d3e2aff22a9a35bafabda8a7
-SHA256sum: 07cc1ae59a8771cfb22d89851885533e7e075ea44aaf2476ae8c669b64b02cae
+Size: 4707
+MD5Sum: 4163bb05ef42cb233f25972541fe5a3e
+SHA256sum: 1ed7fc50d36fe86f81d9599297c7365414fc698797b75aa3d586754e2fe546c5
 Description:  Textsearch support
 
 Package: kmod-lib-xor
@@ -2224,11 +2224,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3406
+Installed-Size: 3404
 Filename: kmod-lib-xor_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 4108
-MD5Sum: b65c613521949bf58a9cd062c550e2ed
-SHA256sum: fd352969c1c4ea23dd976761a1a9b3c076134e34f2c69a538b7af8c73560afad
+MD5Sum: 0bc22e7f7655f448bff8de90a251e141
+SHA256sum: 7884b7e07f6b2773eef82b27a16c525c5fd4767d1a21115e0aeb279fd7d94c81
 Description:  Kernel module for XOR blocks algorithms
 
 Package: kmod-lib-zlib
@@ -2239,11 +2239,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 18141
+Installed-Size: 18140
 Filename: kmod-lib-zlib_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 18874
-MD5Sum: 534868d8c1a7895c8230880cd9fb5c5d
-SHA256sum: c1a3e7d30dcf206cffed49d095fc5f58941d6bc01dafc41bae4133552bf2669b
+Size: 18873
+MD5Sum: 2497ba1e15939a366e530a79e1098546
+SHA256sum: a3a9c88a20f2645cacd31b9846db0369993fde06cf87f33cda97e0a8afacf2e8
 Description:  Zlib support
 
 Package: kmod-libphy
@@ -2254,11 +2254,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 231
+Installed-Size: 230
 Filename: kmod-libphy_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 982
-MD5Sum: 066b62dbf3d83d422b796f92c7ef9fbd
-SHA256sum: b87a923a82735a3ee9a9e6979a7d7fbab0dff0895e45a8d40735e7bce0ec68a1
+MD5Sum: 2d5d7ac353390cf1482469802ca06999
+SHA256sum: 6857aa0378c8378e3a749757c393700a3055ca5ee8c8530ea400ebf42618bb03
 Description:  PHY library
 
 Package: kmod-lirc_dev
@@ -2269,11 +2269,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7014
+Installed-Size: 7015
 Filename: kmod-lirc_dev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7761
-MD5Sum: a82b1dbddf19a6e8563dfe1800419113
-SHA256sum: 11da9a77fa00cd612d9a3252369cfb5fca59da8632d7ca267cbfd8d1e5545cac
+Size: 7762
+MD5Sum: 795a91a346f676fdd43b86cf779f8fb2
+SHA256sum: 6479e3a75ee5ea9751d06a98eabf17fbfae12863c19ec7321818f99f65af5d16
 Description:  lirc_dev
 
 Package: kmod-llc
@@ -2286,9 +2286,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 194
 Filename: kmod-llc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 967
-MD5Sum: 3b47f48e724b51fe3e6db7cc20c99788
-SHA256sum: 17e37169dbb9d3a13ddfd2016a1a35cc9cd8963286aaf2568ab06a222765f6e6
+Size: 964
+MD5Sum: e88e2721bf4ad36571ddd4781de43cc1
+SHA256sum: 44d41bda8c99d37636dcff546d0ad8442c45f9f783f270a9840eadc8c1438d72
 Description:  Kernel module for ANSI/IEEE 802.2 LLC support.
 
 Package: kmod-loop
@@ -2299,11 +2299,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11457
+Installed-Size: 11456
 Filename: kmod-loop_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 12253
-MD5Sum: 44953251a770df5765cfa5eb4b5cf72d
-SHA256sum: da8fb00446fec0f00c7d4c5204390bca0ec8ffb52ee07304d34a9476712523df
+Size: 12256
+MD5Sum: 6d7e3e607e9bb3095cd028766c0d6f1b
+SHA256sum: 53933928eefb64146ae4873d50f867a305bd0d2fbd737c6dd49dd71111bf793b
 Description:  Kernel module for loopback device support
 
 Package: kmod-macvlan
@@ -2314,11 +2314,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6910
+Installed-Size: 6909
 Filename: kmod-macvlan_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7780
-MD5Sum: 088d8b875cd05ce1eb4748a26c06cce2
-SHA256sum: 54764008c899dccd8acd351fe5d90d3411c3f41d73ad3588ae6cbf8a9d937cb7
+Size: 7784
+MD5Sum: 9f9f9ee6979711713dd0b26b705f34ce
+SHA256sum: 33484c91cd252b52116f5f823be19e9d6398f35174bed4df23ad2bf69e41c862
 Description:  A kernel module which allows one to create virtual interfaces that
  map packets to or from specific MAC addresses to a particular interface
 
@@ -2330,11 +2330,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3726
+Installed-Size: 3723
 Filename: kmod-md-linear_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4497
-MD5Sum: 53dca4955737705ab3d141f87d36acce
-SHA256sum: 6ba4953fe3bb45bc44310016104065d4d9982b7be4eefe49686a2601c15e4f70
+Size: 4495
+MD5Sum: 3ecec05747932c2e9910055c00a4a894
+SHA256sum: 9abf724a2ec5ca03220dd3a8f7387973981e4fdf1840d17d05d9da3dd7839f34
 Description:  RAID "Linear" or "Append" driver module (linear.ko)
 
 Package: kmod-md-mod
@@ -2347,9 +2347,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 67727
 Filename: kmod-md-mod_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 68384
-MD5Sum: 8ad5038678f32d2aaa44d58895231aa7
-SHA256sum: 6578190595e009bfa7ddaeacc4a68366b702c6dfbbf577512ebf3d154b0b54e7
+Size: 68405
+MD5Sum: 3bba2b4ade7735cb2398a7c37542cae4
+SHA256sum: acff26f10bfefbf674808d23a6c83187989e8356c5a567ebc4d4f6f1841576ad
 Description:  Kernel RAID md module (md-mod.ko).
  You will need to select at least one RAID level module below.
 
@@ -2363,9 +2363,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 5170
 Filename: kmod-md-multipath_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5937
-MD5Sum: 410ec84468d3c8fb34cb62c75f4d6bd6
-SHA256sum: c4392a74701ce3ccb331b13b945ca551764df386d64a09697ff4563f1f4dc1f6
+Size: 5936
+MD5Sum: d61d8b8b373d870712ec27d43e7d855f
+SHA256sum: 8f32ac37c502c5426633d3a95377acd71dccb8d3688d0e370fba38149c9786a8
 Description:  Multipath driver module (multipath.ko)
 
 Package: kmod-md-raid0
@@ -2376,11 +2376,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6330
+Installed-Size: 6331
 Filename: kmod-md-raid0_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7162
-MD5Sum: 2f9a6e12efc0ae3e065abd66cf6e9117
-SHA256sum: 0d1426c6bae68261afde78120d17c8b8ddef9568680926f6599c7189bdf333a4
+Size: 7160
+MD5Sum: 6d061ab679f71e4a23a490ae1e47719a
+SHA256sum: 8e1894caa626163150127eb1ebe049891252a9deb374c09508ee915c3046a3ae
 Description:  RAID Level 0 (Striping) driver module (raid0.ko)
 
 Package: kmod-md-raid10
@@ -2391,11 +2391,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 28644
+Installed-Size: 28643
 Filename: kmod-md-raid10_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 29378
-MD5Sum: b8dd24dbac899ea36faf663dd47b3198
-SHA256sum: 5ffe6495bb4a58993d8f5145a8f506226c35dbc45c155450b66e3607a795377f
+Size: 29379
+MD5Sum: dc85077bdaa240d9c2a4a18469ff553f
+SHA256sum: ee01cc01c2ffed441e3ead269f3de31997816ced7e617ec9e832ed4ef95b5267
 Description:  RAID Level 10 (Mirroring+Striping) driver module (raid10.ko)
 
 Package: kmod-md-raid1
@@ -2406,11 +2406,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 20437
+Installed-Size: 20436
 Filename: kmod-md-raid1_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 21211
-MD5Sum: effa7e4dcca55526c374e1e61abfb4fb
-SHA256sum: daacbb25d13bd2ff861193cfe0d053598977b752ce875e75033366df347d1b2d
+Size: 21209
+MD5Sum: f7a26024d5712f3153a0b9bb159afadb
+SHA256sum: 133a712676f36bb4e6666057bbec897df3ce8519169506125d50ad08ce571962
 Description:  RAID Level 1 (Mirroring) driver (raid1.ko)
 
 Package: kmod-md-raid456
@@ -2421,11 +2421,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 43632
+Installed-Size: 43630
 Filename: kmod-md-raid456_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 44441
-MD5Sum: 3c2b5d8a28e6be94fcfea6a3821f8e65
-SHA256sum: ea6796822c2940df1ec8792596fe6986bcf7e6765ba1707b58c88103f4096d57
+Size: 44427
+MD5Sum: e75026032ee31dad56035f27f518536b
+SHA256sum: b4105fdf2d5ee3017cf4da71660bc5396fa1489efcf70aefb62c9c1bb8cb1578
 Description:  RAID Level 4,5,6 kernel module (raid456.ko)
  
  Includes the following modules required by
@@ -2446,11 +2446,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3010
+Installed-Size: 3009
 Filename: kmod-mii_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3748
-MD5Sum: a45b3b089dd85593b02e9204b2428547
-SHA256sum: db57807644fccfe8fe90a905d0f64fe4467a8adca8bd86b15421a79e68c7d58f
+Size: 3755
+MD5Sum: c2ccea504e5ff54b0e2d315a52edfeb8
+SHA256sum: 1983faee012726a03a7372f61d423f34b175527ea2833b2940f12f58dbdbd86e
 Description:  MII library
 
 Package: kmod-mmc-spi
@@ -2461,11 +2461,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6225
+Installed-Size: 6224
 Filename: kmod-mmc-spi_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7064
-MD5Sum: 56059b9e63680338e10335c3bbeb8e8d
-SHA256sum: bfc3148f624b698fd523895af140eba0054220369baaa793bc6ac6c61fd0a023
+Size: 7063
+MD5Sum: 2356e3c1bb1bd7610cd463c2705003f5
+SHA256sum: 888d08dc8f29b5f29bd1f7bae6872dcf166d67ffe75dd195af5aed179e8dcb2a
 Description:  Kernel support for MMC/SD over SPI
 
 Package: kmod-mmc
@@ -2476,11 +2476,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 61239
+Installed-Size: 61237
 Filename: kmod-mmc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 61947
-MD5Sum: 8fbe882edf84ce9ba7db318f5268f619
-SHA256sum: a95acd3015b447699494f7254981a1cdce3401172a193c6ae8fc19164d397381
+Size: 61963
+MD5Sum: 0ce661b0c62b9e2887383f799cf43f51
+SHA256sum: de8846ee5541716a08b8649530d68d34690a94e2ad525b4f29f5c1e74f782557
 Description:  Kernel support for MMC/SD cards
 
 Package: kmod-mppe
@@ -2491,11 +2491,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4462
+Installed-Size: 4461
 Filename: kmod-mppe_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5259
-MD5Sum: 4caaa1599fd9874a54f7c9b082b4baac
-SHA256sum: 53a63b21bfe41f3614372733f74e9aec47c894042f69a89ada99fb470ceb3cb0
+Size: 5255
+MD5Sum: bb8eb31b0f3e51506647235868c20c0f
+SHA256sum: d6fb0ae49fc1afbd65786b44818b867d33c74b864dd58b1a8fd9424e01369e0f
 Description:  Kernel modules for Microsoft PPP compression/encryption
 
 Package: kmod-mt762x-mmc
@@ -2506,11 +2506,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 9699
+Installed-Size: 9700
 Filename: kmod-mt762x-mmc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10482
-MD5Sum: a46825b7c46f861e895f81f2729d7b6f
-SHA256sum: 8b1451e9d46abb2f4ca0d3456b70fdeb30120661e0c38f2e54b5e263efd8b5c9
+Size: 10486
+MD5Sum: 0b25f3df14c0ca50533fc8dd6c31391c
+SHA256sum: 2649b760af52d8363a0e5f2b66ce4d736b4656c3073beb67f24a3e733bbe6318
 Description:  This package contains the MT762x MMC driver,use for SDXC/MMC.
 
 Package: kmod-nbd
@@ -2523,9 +2523,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 9008
 Filename: kmod-nbd_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9766
-MD5Sum: 6d34633e9066a2464c59c5a77e48f99d
-SHA256sum: 37f00ad78513b42ef2289feda41b8283f6c9679a3b41e7133066564d3e4e957f
+Size: 9759
+MD5Sum: b3299d50e27e419bbec5186cd433d03d
+SHA256sum: 7f8d7a37dbe4a622ee834df895a076b32f0fdfed142682b053bddff51847d246
 Description:  Kernel module for network block device support
 
 Package: kmod-nf-conntrack-netlink
@@ -2536,11 +2536,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11682
+Installed-Size: 11681
 Filename: kmod-nf-conntrack-netlink_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 12513
-MD5Sum: 236445158ff8d33973f2d68a59f41463
-SHA256sum: 2be5b2d526fe22381cbeea1fa44edd1d2ced1fbf78827785794e8b3c70a9f729
+Size: 12509
+MD5Sum: b03c16d05b317b3dfcfaad0a2409a635
+SHA256sum: 94be65e1063f39e2c53f19411c2ab8ac5c880f7fcc125df8e3b5199c05b49083
 Description:  Kernel modules support for a netlink-based connection tracking
  userspace interface
 
@@ -2552,11 +2552,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6343
+Installed-Size: 6342
 Filename: kmod-nfnetlink-log_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7178
-MD5Sum: ee445c8f079a09477780b7b77982d149
-SHA256sum: 991f02df3db8fcfaaf690f117678cd921e8a9afe5b105e7e084c467738900ee4
+Size: 7186
+MD5Sum: 8a2655d45ac207bf8a7bc7ee3e58121f
+SHA256sum: 641c7040ede3d7801cae3d34aa8b7f4a11318552e27cdc23aa4c2d2f76d1f197
 Description:  Kernel modules support for logging packets via NFNETLINK
  Includes:
  - NFLOG
@@ -2571,9 +2571,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 7226
 Filename: kmod-nfnetlink-queue_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8052
-MD5Sum: fd7c0e4d6f9d83cbcb5be4b5c4a2cf6f
-SHA256sum: fca5faf066a9f4881cfbfc4cc6814dffc68e66dd6a9a1eb8a53a4e47d3e98232
+Size: 8057
+MD5Sum: 499f0bb60ae13f9f6e5507e9fff7a0ac
+SHA256sum: 0eef3de842cbf4e7aa98046d3d3c6af41bcaa77e849c9c9a326b70481adeef19
 Description:  Kernel modules support for queueing packets via NFNETLINK
  Includes:
  - NFQUEUE
@@ -2586,11 +2586,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3777
+Installed-Size: 3775
 Filename: kmod-nfnetlink_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 4559
-MD5Sum: 890f604cc2dd66a1fae7c9e4d23bc16f
-SHA256sum: a1c43faa0ec27d1d0a790019c56500a399ba35fb969e86f3fb2d34b8e97dbe6a
+MD5Sum: 9738f79a858af9d0fa4c541fa57a40fa
+SHA256sum: 31dbcf39afed7c40c6af25912c69cf9118e2963377c6de13b03fda0f6425829b
 Description:  Kernel modules support for a netlink-based userspace interface
 
 Package: kmod-nls-base
@@ -2603,9 +2603,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 3425
 Filename: kmod-nls-base_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4132
-MD5Sum: 32278af78e3b71008879e67426716e25
-SHA256sum: 58bd57e99c2e2371ca542de3b64b1be809555ec7356ac19d8ca1a43f70c838b8
+Size: 4130
+MD5Sum: 53e80bb2640d7af5fcc211464553fbd8
+SHA256sum: ddeda2ef599ad4586e05e1e3d4ee3bf35c19eb95f9c004ad69ae050a4d47b3b5
 Description:  Kernel module for NLS (Native Language Support)
 
 Package: kmod-nls-cp437
@@ -2616,11 +2616,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2304
+Installed-Size: 2306
 Filename: kmod-nls-cp437_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3095
-MD5Sum: 39a5a18f9b8241a874fb8cb4da0e1d41
-SHA256sum: 45f345355294bd0e5bf5f7bf9dc6ef085a561c37056d59c02f3e8ae5af37e06e
+Size: 3100
+MD5Sum: 0ec49854876af3b76c05ea7c13ea2466
+SHA256sum: af95f2ce38450372877a01aa96875df9cae5bfc084e8500fbb4f91521c427b4f
 Description:  Kernel module for NLS Codepage 437 (United States, Canada)
 
 Package: kmod-nls-cp936
@@ -2631,11 +2631,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 87745
+Installed-Size: 87744
 Filename: kmod-nls-cp936_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 87865
-MD5Sum: 46d53961ab67fe3f46ea08b9e0df1123
-SHA256sum: 5cd6c6697de5b77d8ddf1a9276b8e5ffe348ce6dbad10b278866152ec561010d
+Size: 87923
+MD5Sum: d9f0137f7240affc54ee1d581c649666
+SHA256sum: 0483f34413a7318ffc2488b3f7eaf17c402fd147cd6ce311756f35132e1102c7
 Description:  Codepage 936 (Chinese GBK)
 
 Package: kmod-nls-iso8859-1
@@ -2646,11 +2646,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1932
+Installed-Size: 1930
 Filename: kmod-nls-iso8859-1_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2710
-MD5Sum: 3580fa68957fc940b0cd88c8e809379e
-SHA256sum: 7f21bd5a9837f15d998bfee999d6a11e82f8d6fcaa14663c93c98bb326c7e78a
+Size: 2711
+MD5Sum: 33b97139f2b9678f0c6270390917a8af
+SHA256sum: 0b3f730986b10754a0033b9a0aee086003619d890c0c7a58897248ad3e79b0f3
 Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
 
 Package: kmod-nls-utf8
@@ -2664,8 +2664,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 1124
 Filename: kmod-nls-utf8_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 1908
-MD5Sum: b12ede72c5f8cfdefedc5b22bed68803
-SHA256sum: 4dddb5bb6206d06629d536c660d137c54cdb6bfe38920165df8c31a0beba2c72
+MD5Sum: 30888fa7f8bcfd2ba7a35cca09b5c58f
+SHA256sum: cfe19cb050c9197cf6fe8979b4e39d26220f20d759574fe718c679498c113b1e
 Description:  Kernel module for NLS UTF-8
 
 Package: kmod-oprofile
@@ -2676,11 +2676,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 14268
+Installed-Size: 14271
 Filename: kmod-oprofile_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 14991
-MD5Sum: 9204781b4ea700971f3e318a2229e4f5
-SHA256sum: 2c4120c96ece58dd10fc0a70282b39b97ba210410766cd70cfa4b2e545909a9e
+Size: 14988
+MD5Sum: c1313f0f61b6f4a0b09a1354324a2709
+SHA256sum: 33d0df567afd3bc38bb7ecfad48ff0617089ef45c6090505d4067088b1088cba
 Description:  Kernel module for support for oprofile system profiling
 
 Package: kmod-ppp
@@ -2693,9 +2693,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 21497
 Filename: kmod-ppp_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 22220
-MD5Sum: f13832e1b8ef7c72d5578422e529f0d0
-SHA256sum: bd57852f79434212be8cd3a4049bc0aab74ac56c1cecfa5026fb4f21218756fc
+Size: 22221
+MD5Sum: 77c2a5bfc79663d5f01fa9d06bc04d76
+SHA256sum: 02aaec9cac15e5574d0ac6633609bff82a3ffa795d5adc811e87b264581a8f3d
 Description:  Kernel modules for PPP support
 
 Package: kmod-pppoa
@@ -2706,11 +2706,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3065
+Installed-Size: 3067
 Filename: kmod-pppoa_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3837
-MD5Sum: 93a8247383a4f9248165d4a06111eb85
-SHA256sum: 006d8a58b4ac7d9f551deaf62074ccb2e597bef2f5e33f147a4868a565644a8d
+Size: 3840
+MD5Sum: c13e54fe0e52b5a9816eda2c6a6d1a1e
+SHA256sum: 90a24949b4769dd3f2f14d5de07511ef51eac95d9c402fb2786399f3e62ba671
 Description:  Kernel modules for PPPoA (PPP over ATM) support
 
 Package: kmod-pppoe
@@ -2721,11 +2721,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6747
+Installed-Size: 6746
 Filename: kmod-pppoe_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 7530
-MD5Sum: 0dc7451628ffbfb506c5992e5cb55cd9
-SHA256sum: 715c9a32bf8fffc0f38688573d60ee2982cff7d2ab575d1d6d2fafcc866d2d98
+MD5Sum: 9d042cb2984b1e2c60e89c3bf5c601c8
+SHA256sum: 186070bc0773287e866cde5e1e90053493f5c04672263e9cdc86afb7b1ebb2ab
 Description:  Kernel module for PPPoE (PPP over Ethernet) support
 
 Package: kmod-pppol2tp
@@ -2736,11 +2736,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 9801
+Installed-Size: 9800
 Filename: kmod-pppol2tp_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10600
-MD5Sum: f7c5fe56659f26b9f4a4419276a53b81
-SHA256sum: 8dac3315a0314bfd94c8925a829c330e6fb66589b107da817dfd10bcaf2b4646
+Size: 10601
+MD5Sum: 44297ed690d1206fdc66ce4e95c59ac4
+SHA256sum: 884153a185785cb23c46a1e648b05ad9e02109e6f2a00296ce332a021d81d46c
 Description:  Kernel modules for PPPoL2TP (PPP over L2TP) support
 
 Package: kmod-pppox
@@ -2754,8 +2754,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 1739
 Filename: kmod-pppox_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 2478
-MD5Sum: 8785885644ed68b8bd6f81408c647904
-SHA256sum: 8a0087ae1fc41a8d59d9dbcb816fcddafbf4054e2c0b449404390ea950a56910
+MD5Sum: f01e41c2e30922cc4d010eec4a89014d
+SHA256sum: 4379961dbecb34111fafa90d5a0b40c66f728f82a0358cd6b96bb9f9ab3ee56b
 Description:  Kernel helper module for PPPoE and PPTP support
 
 Package: kmod-pps-gpio
@@ -2766,11 +2766,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2177
+Installed-Size: 2175
 Filename: kmod-pps-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3020
-MD5Sum: 075982b8e08f8ab94abee2836959a50e
-SHA256sum: f1bb3da1d8a34299cf056873d5861b2c18a3abdd15a2de979930763e325a5db9
+Size: 3012
+MD5Sum: d831c7ba3f0223544dcfc8f80ec7fe86
+SHA256sum: 3dd0483bb9edfede5ed15767ddb7f1af2d45ed1ba87d8ac0b112ffffd46a0fad
 Description:  Support for a PPS source using GPIO. To be useful you must
  also register a platform device specifying the GPIO pin and
  other options, usually in your board setup.
@@ -2783,11 +2783,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5465
+Installed-Size: 5461
 Filename: kmod-pps_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6312
-MD5Sum: e4a0172cf10783a9f2499d58fab2a6fb
-SHA256sum: be24f413d9f4b5e9261505970c9adbddafb756982b407b05f1ea276efe2f6996
+Size: 6300
+MD5Sum: 78cabde907189037b8d605ddcccc1735
+SHA256sum: eceba4665283f6e119198eb68a94e57fa16f0ca9c472ebef2ed9c927bbb844c8
 Description:  PPS (Pulse Per Second) is a special pulse provided by some GPS
  antennae. Userland can use it to get a high-precision time
  reference.
@@ -2800,11 +2800,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5495
+Installed-Size: 5499
 Filename: kmod-pptp_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6263
-MD5Sum: e9cb2fe052578435e1f7569f134f0a01
-SHA256sum: e8c77cb9a6972d7cf665b247b02693fb3406e37e9f68804969b4777e39362d7b
+Size: 6269
+MD5Sum: e1e6abe303571c6ee054a522a0f22ed6
+SHA256sum: 54c8195cab6b99b47b53731fdfbcf9c6967ec01fc05544d9ad1b09c07854c8c6
 Description:  PPtP support
 
 Package: kmod-pwm-gpio
@@ -2817,9 +2817,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 105
 Filename: kmod-pwm-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 844
-MD5Sum: 22e1fcbc6af562ba5606fc0f8e4f8563
-SHA256sum: 4f0660e891786953f2464c3ea32d6f3542a702f0d5e7485562c0bd2bb7012b06
+Size: 843
+MD5Sum: 715ba9a65b2cf22ce5bb6dd624fad6a8
+SHA256sum: 458739ae6161140d0316c32c140e103e6dab1c8736dfea88b5992b48e8e8f187
 Description:  Kernel module to models a single-channel PWM device using a timer and a GPIO pin
 
 Package: kmod-pwm
@@ -2832,9 +2832,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 105
 Filename: kmod-pwm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 811
-MD5Sum: 5c725571bed9ed2886e87d0ffc6071d2
-SHA256sum: c1f4ee700070fc9b7e0384ae02a6f405173da94e0aefb144cc110d31f132e24e
+Size: 816
+MD5Sum: f741e29d628ebd744db4a2ef03c843a4
+SHA256sum: d20e6db37f9308ed78da10a58da6975841514a380b3d603b149d4698b0bf75aa
 Description:  Kernel module that implement a generic PWM API
 
 Package: kmod-ralink-hwnat
@@ -2847,9 +2847,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 15884
 Filename: kmod-ralink-hwnat_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 16561
-MD5Sum: 5d232c91708f3c193de2ab87053644d2
-SHA256sum: 38d9e84322302618c8911ee0dde5dc3dc6c4975313ed649628e112628a397aaa
+Size: 16554
+MD5Sum: 278c9c81edca5c78aea77cd54b0d219f
+SHA256sum: 686945937833986f7e2e798c7eb9398c822712d8a368abdefbe5f9108d5795f5
 Description:  This package for Ralink/MTK Hardware NAT Drivers.
 
 Package: kmod-ralink-i2c
@@ -2860,11 +2860,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2477
+Installed-Size: 2475
 Filename: kmod-ralink-i2c_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3252
-MD5Sum: c5e81e69bf70608693c70a5092c90080
-SHA256sum: 2d254b5193b655d8c02eaa2f951189e3458fa8874e075720c6389be1855a7136
+Size: 3243
+MD5Sum: d678e769610c4f3942cb4987f6351fd1
+SHA256sum: ee8ef9ceef5babf8e248f70741ffa6bcbd8f6971e2d34242f6ca9d97fd80275c
 Description:  This package for Ralink I2C Drivers.
 
 Package: kmod-rc-core
@@ -2877,9 +2877,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 9543
 Filename: kmod-rc-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10330
-MD5Sum: c2c138343ae39a65f38858418474cbe0
-SHA256sum: 7cc9c0bf8b4a68db01f24a736e5e616d43eb3398aab5923558186e259c3655b2
+Size: 10322
+MD5Sum: 3915dc01bcf60d32bd56b79ea976bd18
+SHA256sum: 52c6252d7a70f316cf162688e220cbc6daa225248099131e0ffdac925d9ed06b
 Description:  rc-core
 
 Package: kmod-rc_map
@@ -2890,11 +2890,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 872
+Installed-Size: 870
 Filename: kmod-rc_map_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1672
-MD5Sum: 3d2ca9eda4ea2e219e0c0efbc3f61fb8
-SHA256sum: 95ec07fe33060deff7c9ba09e38ad87abbd70e9b6159e49eb2aa34f7df9dec9e
+Size: 1677
+MD5Sum: 72199688dd8f68751c5e629e43118904
+SHA256sum: a1419ff90f6194490a241fc890e3aced52837c22cb82621bee6c50a77c890ecf
 Description:  (Remote control) LIRC GPIO driver; Linux Version>3.4
 
 Package: kmod-rxrpc
@@ -2905,11 +2905,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 53015
+Installed-Size: 53012
 Filename: kmod-rxrpc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 53717
-MD5Sum: bb6aaaf96fc1782dd268e12f24c19030
-SHA256sum: 06cd6853a8bfacb48a67f8eed8502e3d257f96b148b28159c24f5f292c5ca9f8
+Size: 53706
+MD5Sum: fafdaac2ad131657f96dfe920a4fcb8d
+SHA256sum: e901ce38eade5c2698c45c6ce2e62be041105bede011ec835a1ecdd8d99ce744
 Description:  Kernel support for AF_RXRPC; required for AFS client
 
 Package: kmod-sched-connmark
@@ -2920,11 +2920,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1471
+Installed-Size: 1470
 Filename: kmod-sched-connmark_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2290
-MD5Sum: d7b0c0f382b551d924e5309249808875
-SHA256sum: ae8392f6225a55a5b92203eae8346f0f386dc8b3a266d277442aacdfe0834af2
+Size: 2286
+MD5Sum: 5977542b3648d6987c12bf0d1dd14f0c
+SHA256sum: 9a14e3f27e29e637a8d8336d395ddf354e86978e3fe9dda03e9138bdacbfe7b3
 Description:  Traffic shaper conntrack mark support
 
 Package: kmod-sched-core
@@ -2935,11 +2935,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 31686
+Installed-Size: 31684
 Filename: kmod-sched-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 32430
-MD5Sum: 24e27f61ef2ad5011054ba8eda1d9fd2
-SHA256sum: 43efe5b9586e3c89fc581ebbcf3721323f6a5bf07edfd98d647bcf82ffd65ad9
+Size: 32424
+MD5Sum: 4247a44c7ca01c26f6dcd9a04fa86298
+SHA256sum: 639cb1377a8cdb749e77b1664bb5d6f12a427be30a92a68d0aa2799029b380cc
 Description:  Core kernel scheduler support for IP traffic
 
 Package: kmod-sched-esfq
@@ -2950,11 +2950,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5329
+Installed-Size: 5328
 Filename: kmod-sched-esfq_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6131
-MD5Sum: 2e74b4ba146ac0e70d4de80ec44001d3
-SHA256sum: d3c44e21381dda1d35ec58b871aded1867a9fd989edb2002974446d5437510bc
+Size: 6125
+MD5Sum: ebd10b33f4a5e4ba64a7254ca488d4ee
+SHA256sum: 620042da00f4a9fb2dea9761eddd4f3ec188f48194d9b386d5fc19e39ea39914
 Description:  Traffic shaper ESFQ support
 
 Package: kmod-sched
@@ -2965,11 +2965,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 50898
+Installed-Size: 50900
 Filename: kmod-sched_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 51691
-MD5Sum: ddffbf515e8bad0e32513950feb9087a
-SHA256sum: dc8552857c59b718ae195c05c90f7d6a74b070123af875b6023c22263d1439fd
+Size: 51673
+MD5Sum: b88dfd8bd5d663c553ac9f8858ed1b33
+SHA256sum: 537ec27885efc66c480a25edbb7c13bc81dda1bf40a4b9173af5208ad92dd299
 Description:  Extra kernel schedulers modules for IP traffic
 
 Package: kmod-scsi-cdrom
@@ -2982,9 +2982,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 30881
 Filename: kmod-scsi-cdrom_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 31592
-MD5Sum: 6c7371c4cb169dde4909d8b084c58a98
-SHA256sum: d847c98efcf22331fd396e2ac161d4a16885dfddec884b4471cb518fd3c182e4
+Size: 31584
+MD5Sum: c0c10365f26f84fdc07e78a234ca9b2e
+SHA256sum: f9fbe8257c5dc4c89ef0ce227a4935065ae552da75ac7be0a6c09507e3bda96d
 Description:  Kernel support for CD / DVD drives
 
 Package: kmod-scsi-core
@@ -2995,11 +2995,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 81217
+Installed-Size: 81223
 Filename: kmod-scsi-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 81652
-MD5Sum: 171b3db82ec9410d6cdf23dc6fc8a83e
-SHA256sum: 78cada7775202327b8ef699b1703bfb204f8d10c7267ac2542380c31b7ba1f64
+Size: 81690
+MD5Sum: 589767a94305e1e6600d9889eb6b83a5
+SHA256sum: 09aef7708b03e848f73ecdb3cfee86e113e30cb5ec81c229f7ac9c003bea0049
 Description:  SCSI device support
 
 Package: kmod-scsi-generic
@@ -3012,9 +3012,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 16490
 Filename: kmod-scsi-generic_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 17241
-MD5Sum: 4015346ab865648e4a6ba684af6df5fa
-SHA256sum: e8adb766aa66945b96ae3eae20bef731eb0860dace49c8ac515ba2563e3bcdba
+Size: 17242
+MD5Sum: 87d99b189c6a1f28c142af92d1a15b27
+SHA256sum: 68edb23b5ee857ea8bd0db5125f89f613e8a87cdfa7fafecfb4affa11e5aa976
 Description:  Kernel support for SCSI generic
 
 Package: kmod-sctp
@@ -3025,11 +3025,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 105725
+Installed-Size: 105723
 Filename: kmod-sctp_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 105810
-MD5Sum: b3f982946a274cb352eae92254b0befb
-SHA256sum: 796fa3a8107d09505cf59058311993c5d4956a170b9fac895ea8d5a96321b97d
+Size: 105812
+MD5Sum: 4bef399a0c5652d2afc01db053f049b8
+SHA256sum: 9201d111b3060ac87cefb9f7d15e54c9de905036a134e1a172fd06e10a2982b7
 Description:  Kernel modules for SCTP protocol support
 
 Package: kmod-sit
@@ -3040,11 +3040,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10916
+Installed-Size: 10914
 Filename: kmod-sit_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11730
-MD5Sum: 2244300b455b4a32f72e949ea90f6446
-SHA256sum: bd6b75f432ebdba2858bf5f610b36c917bdf2cd86ef46f1c6e9465cc4017bb6f
+Size: 11720
+MD5Sum: 48f24538d88d813b9e6c66d3b30fefb5
+SHA256sum: ed2f6ac3a5db9540cc16323b04946e3915528c72eb8d870f431d7e4cdd38a525
 Description:  Kernel modules for IPv6-in-IPv4 tunnelling
 
 Package: kmod-slhc
@@ -3057,9 +3057,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 3760
 Filename: kmod-slhc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4461
-MD5Sum: efd1da638a3cf7d857ae61d79ca325b4
-SHA256sum: 4431d2a578d73b789ce7effd52c959c4b2cabe9cabdea3230c4840857b9e0249
+Size: 4457
+MD5Sum: 99ed7699b9d7905ccab59b2ba743471d
+SHA256sum: 729703ba0b350758e97e345c0996875c8048adde3e4623ca8ddc00fe5cae3f57
 Description:  Serial Line Header Compression
 
 Package: kmod-sound-core
@@ -3070,11 +3070,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 137598
+Installed-Size: 137607
 Filename: kmod-sound-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 138075
-MD5Sum: 79c9cd63bae99702505a9d364eface7c
-SHA256sum: aed0586604bfefd104e024708d31ad43648232a0658cd10623c6556d1238a4ca
+Size: 138060
+MD5Sum: 6ad19b2103d60b70855017122a9c09e6
+SHA256sum: f36010b78465407840919c213c9351350a59677582a41b950b058ebf5e04d563
 Description:  Kernel modules for sound support
 
 Package: kmod-spi-bitbang
@@ -3085,11 +3085,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2365
+Installed-Size: 2369
 Filename: kmod-spi-bitbang_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3106
-MD5Sum: 47badf392ea12c0e468c2db8d2e85e46
-SHA256sum: 422e616b27d4a8f3559865a764041bdd420beb4f3fda6b9ffc86c238305c2538
+Size: 3117
+MD5Sum: 22f8179cb2b7b3ec1e03fb173bea8d9f
+SHA256sum: 03f799c28fa72e5fe4d893e2c324b02660c6ef9122b706c974875fdbe365020a
 Description:  This package contains the SPI bitbanging library
 
 Package: kmod-spi-dev
@@ -3100,11 +3100,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 186
+Installed-Size: 187
 Filename: kmod-spi-dev_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 960
-MD5Sum: b77984d567d04512208111bad3fc6e11
-SHA256sum: 4ea57cc2390698544d19f855d883173a15ca05ee9cd22595e3a559e53bc27632
+Size: 963
+MD5Sum: bf26f2d865382647f0063c5d419ccd69
+SHA256sum: 1825fdb4fb1211dbab0dc29cbf483f4444903506d6ae5f91bc8af91396958479
 Description:  This package contains the user mode SPI device driver
 
 Package: kmod-spi-gpio-old
@@ -3115,11 +3115,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2456
+Installed-Size: 2455
 Filename: kmod-spi-gpio-old_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3255
-MD5Sum: 065ac4150986a5e70e7b243f57e256e7
-SHA256sum: b7462f5363cde626f576cac0c9ff0d6f4897de88be90dc32708c10088938c89f
+Size: 3249
+MD5Sum: 23b91cf932fa4138e5e44a750ae178b5
+SHA256sum: e75edc58b5e82d3707efc0a1215a94cf8687b2c9a750b3b75f09d5713f020301
 Description:  This package contains the GPIO based bitbanging SPI controller driver
 
 Package: kmod-spi-gpio
@@ -3130,11 +3130,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3028
+Installed-Size: 3029
 Filename: kmod-spi-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3811
-MD5Sum: 2a9ae09f2bf5736e60aed9ca96dfaa9f
-SHA256sum: e4e9a30be62965b4a8d995f114fc76270c664cafd060555ac7361b5e99e031ca
+Size: 3813
+MD5Sum: ac3c622b5f884a8c1169b63c9ac070dd
+SHA256sum: 857a9372655e11e0228e117b17b9802f9cbb1fbc8c4d90817fde9a0737f3f455
 Description:  This package contains the GPIO-based bitbanging SPI Master
 
 Package: kmod-stp
@@ -3147,9 +3147,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 182
 Filename: kmod-stp_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 960
-MD5Sum: 4bf823f0fccd4e356bbe0760f8be6684
-SHA256sum: fe798915650f191e47eafe4fb1c0be23e1b7d867cc123b1c3dd9556789972aa3
+Size: 961
+MD5Sum: e6330dde0da92249ab17c672f09e6f70
+SHA256sum: 68122de240fafa0ee46e8ce3479f57066aa4d2cbe5bf7d894096cc41dc1308ca
 Description:  Kernel module for Ethernet Spanning Tree Protocol support.
 
 Package: kmod-tun
@@ -3160,11 +3160,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 12915
+Installed-Size: 12906
 Filename: kmod-tun_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 13689
-MD5Sum: 1d816d07bba22162a75bab5170256871
-SHA256sum: 6c326996d5569bb45d8600b8119282b4ffa5c30fdac24bbc1048e25685da8ce7
+Size: 13672
+MD5Sum: 45e3da861315004e892397f7a9eb3c42
+SHA256sum: 145f69d1127e52fe0d7840b2883c74c8eeaa572a7b754ffe665c7743579e439b
 Description:  Kernel support for the TUN/TAP tunneling device
 
 Package: kmod-usb-acm
@@ -3175,11 +3175,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10285
+Installed-Size: 10289
 Filename: kmod-usb-acm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11094
-MD5Sum: ca215fb2952a5dccbad33c38409bca15
-SHA256sum: 2933ca12c2af9b114260296c7682b4137b2e97769c590c11eb84048b26f826ba
+Size: 11099
+MD5Sum: bc50fb750fb7f1ac6da8f30d2aebf519
+SHA256sum: 4bc2452d32da2846705d708cfa235e9b9619189750cc5d1deb4d068859e561b6
 Description:  Kernel support for USB ACM devices (modems/isdn controllers)
 
 Package: kmod-usb-atm
@@ -3190,11 +3190,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8769
+Installed-Size: 8770
 Filename: kmod-usb-atm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9568
-MD5Sum: 45c351fdbe019b2917e769727924578b
-SHA256sum: 93ad066207ebff0685ebf036930621a5fb9db81a06ae024eb32a6a0fb4a765f3
+Size: 9566
+MD5Sum: 37455245bf825be8d9c120fd6a619ea2
+SHA256sum: 99f660b59eca442adedd80bc79b8cba127b977dc4aae36b61da8ae04e1514991
 Description:  Kernel support for USB DSL modems
 
 Package: kmod-usb-audio
@@ -3205,11 +3205,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 72691
+Installed-Size: 72694
 Filename: kmod-usb-audio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 73167
-MD5Sum: 339c1b5ad1f06f310cb7a000da519e8c
-SHA256sum: daf5a1ba9a019df004da200eed59b9a11cd49c3f0a171b2cbcd53b53255e575f
+Size: 73180
+MD5Sum: e2977ba529c29e12cae056afcdfd7c62
+SHA256sum: 58fb481fb233f0ebbcb0201204e65febf01d6769be2f4e2e1f0238cbfbdd28ee
 Description:  Kernel support for USB audio devices
 
 Package: kmod-usb-cm109
@@ -3222,9 +3222,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 5493
 Filename: kmod-usb-cm109_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6285
-MD5Sum: c6b647dfbd47af7edcaaef49c9d50ba6
-SHA256sum: 5d3b40ead31787a256d8aae4e47d322e6c840446adf11d335f6175443ea07b40
+Size: 6284
+MD5Sum: 3fac95c1387bbd5a7124b023bc5cdc6a
+SHA256sum: 555a118eddb9a830eae3b1623e9f8dca4c3779ef68cd19084274535a2e1f55ee
 Description:  Kernel support for CM109 VOIP phone
 
 Package: kmod-usb-core
@@ -3235,11 +3235,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 81338
+Installed-Size: 81336
 Filename: kmod-usb-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 81727
-MD5Sum: fbb91a94c889bf014346b041ede48389
-SHA256sum: b9c01d407b4ec1fbd7a4395d5344af016051d12ebf73a05cea68e9c7c83c85e8
+Size: 81718
+MD5Sum: fb8d7be271ceb94702ad9c381816efe6
+SHA256sum: d2d7afb46d3c36b65d27286eddc5257368a2cee999fd1f5ddcb47faa65b89076
 Description:  Kernel support for USB
 
 Package: kmod-usb-hid
@@ -3252,9 +3252,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 17033
 Filename: kmod-usb-hid_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 17826
-MD5Sum: 8498729c1b8ef0549eab3488b6cc77e2
-SHA256sum: c8c0d86bc22e046863b175f0a7f83b5d6bd7fdb1a43d77e2e7ec9a414d04bb6a
+Size: 17825
+MD5Sum: c497a06c98a0234cc3b6d750282e310e
+SHA256sum: 6bdd4311c60b045b4af4a0d1eb134df89c8647160c2f533eb20f3e4ebd916fed
 Description:  Kernel support for USB HID devices such as keyboards and mice
 
 Package: kmod-usb-net-asix
@@ -3265,11 +3265,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10489
+Installed-Size: 10488
 Filename: kmod-usb-net-asix_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11261
-MD5Sum: 350f81a70225f6b38777150646ed9f5b
-SHA256sum: 870eaf25ee6d4562418454d0af34bac6c2efaaa55d2afbe2c1dbae60d4b2d911
+Size: 11267
+MD5Sum: e4de915afe9d3f2027f911399b9a48ff
+SHA256sum: b024fca033e16c23bd766a19cb53dcc2235069de3b8073fb3f980a4aad7ba03f
 Description:  Kernel module for USB-to-Ethernet Asix convertors
 
 Package: kmod-usb-net-cdc-ether
@@ -3280,11 +3280,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3242
+Installed-Size: 3246
 Filename: kmod-usb-net-cdc-ether_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4023
-MD5Sum: c42590f38c55bd33f0d00e92803c65f8
-SHA256sum: 4d2b2a19ef6e13ad8efedef79eca0baa3da0b8baf173eef9abca9ee41f64c3fa
+Size: 4025
+MD5Sum: 9c7583317333278c9d9031c291d14b3e
+SHA256sum: 75d57b35a2136e8c6f3172e65a32c7298c58d42985ffd8a4a20e210b625d52e1
 Description:  Kernel support for USB CDC Ethernet devices
 
 Package: kmod-usb-net-cdc-mbim
@@ -3295,11 +3295,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3684
+Installed-Size: 3682
 Filename: kmod-usb-net-cdc-mbim_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4481
-MD5Sum: 3568be5ec82143e86d65a6fca7124c62
-SHA256sum: 5ced97c5fb900949dabd9db74b1bff8b51a1d87c2d286a27e761f0eda6598aa2
+Size: 4477
+MD5Sum: 10b95404b89810d176f1c0fde628e186
+SHA256sum: 71cc466e0401b8e77d264eab02e69f78dfa16c82c5b568397b4136581ed711aa
 Description:  Kernel module for Option USB High Speed Mobile Devices
 
 Package: kmod-usb-net-cdc-ncm
@@ -3310,11 +3310,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6803
+Installed-Size: 6800
 Filename: kmod-usb-net-cdc-ncm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7643
-MD5Sum: 64eef95c353c9bfc31aae0e3638266dc
-SHA256sum: 2fce58981a29c90bdbddfc652baa79b9bc33f1ee727eaa1516512369ecf0b687
+Size: 7632
+MD5Sum: 13f963fa3fd1df19acee334bc6890bea
+SHA256sum: 06cd360e48196e433482ee5cb1222e8d717994c6fb44f7b4ea9d31544d73995b
 Description:  Kernel support for CDC NCM connections
 
 Package: kmod-usb-net-dm9601-ether
@@ -3325,11 +3325,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4358
+Installed-Size: 4360
 Filename: kmod-usb-net-dm9601-ether_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5126
-MD5Sum: 28599f0c74d4a97defe89d38316dd456
-SHA256sum: a722dc4d001fe9e13c81e720fbe86d806568cc5a62777a35ab7a2cd2588caa18
+Size: 5125
+MD5Sum: 4ba2ddd2390e2022c9c18b88fa0a3a2d
+SHA256sum: 82b7b010b0b9c110a6c5cf1c0435f6697582ee8556630a365033bcdaa79d0eaf
 Description:  Kernel support for USB DM9601 devices
 
 Package: kmod-usb-net-qmi-wwan
@@ -3340,11 +3340,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4897
+Installed-Size: 4896
 Filename: kmod-usb-net-qmi-wwan_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5472
-MD5Sum: 396c7069a2b346dded7d89df6d08af9a
-SHA256sum: 8f6153bed18d485944ea04ee4b66eb5f1789ee0b18e2ad67b31e9f926aebacfd
+Size: 5490
+MD5Sum: 06f554f7c19fd4999227cb0cde976faf
+SHA256sum: f2c67ae5ec5f2ebae7f68bdfc39793456b5068557d313b64e41a84a088480c72
 Description:  QMI WWAN driver for Qualcomm MSM based 3G and LTE modems
 
 Package: kmod-usb-net-rndis
@@ -3358,8 +3358,8 @@ Architecture: mipsel_24kec_dsp
 Installed-Size: 4507
 Filename: kmod-usb-net-rndis_3.14.79-1_mipsel_24kec_dsp.ipk
 Size: 5277
-MD5Sum: 1473f31741fd6af73e001f1e16c2a2cf
-SHA256sum: afd9352bc91ae30307e56224915b50c74578cd79bfc0a232788a0993a22acee1
+MD5Sum: 332314e1553ed3f47ca45de20a1a38f3
+SHA256sum: 12dae1eaff3e9ba62491bd0ceb62c53f87a723cf90bfd47dbf165971e0fde1a6
 Description:  Kernel support for RNDIS connections
 
 Package: kmod-usb-net-sierrawireless
@@ -3370,11 +3370,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5541
+Installed-Size: 5543
 Filename: kmod-usb-net-sierrawireless_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6331
-MD5Sum: 0a5eac68f9c585c181d207d939cfcaff
-SHA256sum: 979fbdaff591c41680c03383eafca434315f33092a8af80730a72a1d3ca257dd
+Size: 6334
+MD5Sum: 2db82bd47f5ed4e9c274e328648a17be
+SHA256sum: f91a49e005018ef8dba9769f9febc94a252178efed3a6f97d3c5c0b42d94fe6e
 Description:  Kernel support for Sierra Wireless devices
 
 Package: kmod-usb-net
@@ -3385,11 +3385,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 13204
+Installed-Size: 13205
 Filename: kmod-usb-net_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 13989
-MD5Sum: 430b75cc3ff9635a48571505f02a5a52
-SHA256sum: ac07a05e1eff7bcba7b4a99a8fb75080f756b2861f0746494db1577a537a828a
+Size: 13996
+MD5Sum: 8b97c5590c37e4de1ce5a2e884960458
+SHA256sum: b48db5bdaaf25d35ca1805ca25b22136352c7fa45d6cdf77bc566a20f94ca488
 Description:  Kernel modules for USB-to-Ethernet convertors
 
 Package: kmod-usb-ohci
@@ -3402,9 +3402,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 19289
 Filename: kmod-usb-ohci_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 20059
-MD5Sum: 1bca5a9ebdddb0818bd920517708fd57
-SHA256sum: 657d9826ed8e06dce8f1bf57e8294a09a2c8ebe12789943487cc54530a727be7
+Size: 20054
+MD5Sum: e8a415d1bf94e9817e6af27d2eb37d88
+SHA256sum: b669664fec1ba02ee6585b8615877dea13bf4f092664ecf139804ee5f5acc847
 Description:  Kernel support for USB OHCI controllers
 
 Package: kmod-usb-printer
@@ -3415,11 +3415,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7478
+Installed-Size: 7482
 Filename: kmod-usb-printer_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 8266
-MD5Sum: f944dece88d17659745f9c99508e0541
-SHA256sum: 7a8d89b64c84dc5a1967814bf36deee80750907098347b7a49f688b2e02d5172
+Size: 8273
+MD5Sum: 456187bead62a7e5f539836ebdd4b951
+SHA256sum: aa1bcec8be45b4f3e74ceda18140863369ec09237671b0c587521e8289203345
 Description:  Kernel support for USB printers
 
 Package: kmod-usb-serial-ark3116
@@ -3432,9 +3432,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 4554
 Filename: kmod-usb-serial-ark3116_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5353
-MD5Sum: b57e4fefbf3b6717c3d0e2c90d540e4b
-SHA256sum: 3ac3abfcc0433dbcb306743775c7487a2d8258830af09d79edf5c5741df9f818
+Size: 5354
+MD5Sum: 3c3c37476e7d28143441720cadc669c3
+SHA256sum: 77ceaa1d5632b63926dd9c126377e0a64314c995cfec2decd69d63357f6ec8c1
 Description:  Kernel support for ArkMicroChips ARK3116 USB-to-Serial converters
 
 Package: kmod-usb-serial-belkin
@@ -3447,9 +3447,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 3736
 Filename: kmod-usb-serial-belkin_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4515
-MD5Sum: 38ffce09ce4a7e2c0a65b43ffc0f7932
-SHA256sum: 5034aff4aec23ae6505d48f51a1b083e1bfb8a6d6a5bf6b89d5ddbeef37a1957
+Size: 4516
+MD5Sum: 156870bfdee6842b749c1d41d2cf7cd3
+SHA256sum: 30ef434e5b2a1a3378a239052bf73d14b88c7bc0d0ca4e4de3e0e8079d5f47f6
 Description:  Kernel support for Belkin USB-to-Serial converters
 
 Package: kmod-usb-serial-ch341
@@ -3460,11 +3460,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3626
+Installed-Size: 3625
 Filename: kmod-usb-serial-ch341_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4418
-MD5Sum: 02e05442e0ac8a2e2bfa23d26ba817a4
-SHA256sum: 45f29f72f78dffac97bc3a817e12c54d7df972c6dcf60198f57cb7e49dd37551
+Size: 4413
+MD5Sum: 15dc9fa6e1c626eff5ad69f73a11e4bb
+SHA256sum: 08efe19ad423dd8207541ee0bf51f5305eceb3aeddd90d6cef322446947defcc
 Description:  Kernel support for Winchiphead CH341 USB-to-Serial converters
 
 Package: kmod-usb-serial-cp210x
@@ -3475,11 +3475,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4269
+Installed-Size: 4266
 Filename: kmod-usb-serial-cp210x_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5055
-MD5Sum: afff5cebd9ba0adbaeea186c8399e9d1
-SHA256sum: 4e0aea107f82995eea143f5997be46b1e580fdb31a20690f750ef688ae5d9bf0
+Size: 5052
+MD5Sum: 961d1a3037d6fe5277f287f4c3e3f4fc
+SHA256sum: f88e6ba5d972b8c0b8d3a4a28b5296f92fbb67d464d6f4cafb4bc559f1d8a1b8
 Description:  Kernel support for Silicon Labs cp210x USB-to-Serial converters
 
 Package: kmod-usb-serial-cypress-m8
@@ -3490,11 +3490,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6711
+Installed-Size: 6712
 Filename: kmod-usb-serial-cypress-m8_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7616
-MD5Sum: f3dc478cf33b6764ff6113a6e2bf07c6
-SHA256sum: 4dafb2555ff4b17eaf65aa580ff30c8a01b627e113e59307b05bf32c4a6b66e6
+Size: 7612
+MD5Sum: 81372857b08fdbaaa8d7a626b3607d78
+SHA256sum: 56261745cb121991130e7171919edcbd3d84307f905df7bee3b580b1d5071559
 Description:  Kernel support for devices with Cypress M8 USB to Serial chip
  (for example, the Delorme Earthmate LT-20 GPS)
  Supported microcontrollers in the CY4601 family are:
@@ -3508,11 +3508,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 11267
+Installed-Size: 11268
 Filename: kmod-usb-serial-ftdi_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11950
-MD5Sum: 75f2b54e7135362ce657140c08b7b4a4
-SHA256sum: 9a604d06efc2cb4a1282db6095d65b6c31904bd8513a6fb3da44d76ee8a15a7c
+Size: 11958
+MD5Sum: 62239fe25016d06a37aa07e517c758bb
+SHA256sum: 729fa3a063e93cabc493d39aec689c7bf5877967ecb81f75f6ade75380077475
 Description:  Kernel support for FTDI USB-to-Serial converters
 
 Package: kmod-usb-serial-option
@@ -3523,11 +3523,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6333
+Installed-Size: 6332
 Filename: kmod-usb-serial-option_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6296
-MD5Sum: 46b7754753480b472351cff10f3b6556
-SHA256sum: d57969c97daba605d7b9fc3cdd06378a43a71c37e66a8e2598a20368c9367def
+Size: 6323
+MD5Sum: 783a176009121aeb24b96eda5d69b8a3
+SHA256sum: dbe5afb957f56f085b92f56044f1e5ed7549159123f3f94efbc0b54c33b47047
 Description:  Kernel support for Option HSDPA modems
 
 Package: kmod-usb-serial-oti6858
@@ -3538,11 +3538,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4792
+Installed-Size: 4793
 Filename: kmod-usb-serial-oti6858_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5585
-MD5Sum: 8c4f559b3d9ab8587de58ae2067df822
-SHA256sum: 5b453e1cc9ef320ce4d19222f27503cd063ac2533dd80e7fc4e107dc162f23b9
+Size: 5582
+MD5Sum: 58c1c7434e595fe13d6d1973ddc6f8a5
+SHA256sum: e969b0d80e689e38ad2a8124c4ae365206d50c1ba87ccada03edbc7684f3868b
 Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converters
 
 Package: kmod-usb-serial-pl2303
@@ -3555,9 +3555,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 5261
 Filename: kmod-usb-serial-pl2303_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 6059
-MD5Sum: 1f1e1fb716788e4f0dad35b27fb323b8
-SHA256sum: 4fdfe455c81a4f0d73e7f3e227b6cea6ab8f8dab273ed8f638392359b7a2e7c7
+Size: 6060
+MD5Sum: 964541a504e5f3addaee0df5004162e7
+SHA256sum: 7f10b69c6a45a07efb863ab3edba7556dfd2cc97c6e7f5c47e6a9667b543075d
 Description:  Kernel support for Prolific PL2303 USB-to-Serial converters
 
 Package: kmod-usb-serial-qualcomm
@@ -3568,11 +3568,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2276
+Installed-Size: 2275
 Filename: kmod-usb-serial-qualcomm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3066
-MD5Sum: 511425c73ecf8a4b9d68ecdaa4096fb5
-SHA256sum: eaddfa34deea1d7e63da7c9234ba6c304470910471b52d4567982925d86e57d2
+Size: 3072
+MD5Sum: b7db2b9fed27ec0e833c55d829135c7f
+SHA256sum: e4e7cef427975750f237f8fb86bd4a3fc7813168a451714b1f8902e15dbb8f4e
 Description:  Kernel support for Qualcomm USB Serial devices (Gobi)
 
 Package: kmod-usb-serial-sierrawireless
@@ -3583,11 +3583,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5114
+Installed-Size: 5117
 Filename: kmod-usb-serial-sierrawireless_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5899
-MD5Sum: 3f755e05b15bc055bbb3f53883693cec
-SHA256sum: d02c0413e1f6409d22d7472582af1660970830b302881c1001e398973e0d16ba
+Size: 5896
+MD5Sum: 001a001d4bc15e7416d49f344f73a01f
+SHA256sum: 7ad17fd7bf73d1e94ce4b82c5bd95fc2515ac54e6621ffc329d217c02ba6091e
 Description:  Kernel support for Sierra Wireless devices
 
 Package: kmod-usb-serial-ti-usb
@@ -3600,9 +3600,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 8703
 Filename: kmod-usb-serial-ti-usb_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 9480
-MD5Sum: f1d38a3546f8713a05981d36b485ba08
-SHA256sum: 4cfb24f65c1062abb173eb45074179cd5304bde3798db1fbae8a95e067cdcae3
+Size: 9481
+MD5Sum: fe674ef2245a528b433bb149fa6ed773
+SHA256sum: 8f226f50f03d66a04c8e8c350234742b5a010810808700b384684d164d1e73df
 Description:  Kernel support for TI USB 3410/5052 devices
 
 Package: kmod-usb-serial-visor
@@ -3613,11 +3613,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4275
+Installed-Size: 4278
 Filename: kmod-usb-serial-visor_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5034
-MD5Sum: 439032a4346244a0821cba172d85ddb4
-SHA256sum: 96da217ca2e89d248cec3ec432fc5c14b3573ce567f408caf952d88e41fc9852
+Size: 5036
+MD5Sum: 7e7cb5f4df025938c798d1655b1033ab
+SHA256sum: 30d3df8056c40de7f9ad6d3a022ed11e34b5d9fdf294d64151ab414b795e1919
 Description:  Kernel support for Handspring Visor PDAs
 
 Package: kmod-usb-serial-wwan
@@ -3628,11 +3628,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4117
+Installed-Size: 4118
 Filename: kmod-usb-serial-wwan_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 4896
-MD5Sum: af7cd0b6f023170f857e4debbe6ce360
-SHA256sum: dc69c772a0b139b05a2ce8f83d9489afce91921494cd70ef2c7106c4599642d6
+Size: 4888
+MD5Sum: 2e2355246d24ec11f9fe448dd77f1c0a
+SHA256sum: f1eab2a1a92737f3482c2fd2e0a0a19fd892c315a15b896951521465a6021f9f
 Description:  Kernel support for USB GSM and CDMA modems
 
 Package: kmod-usb-serial
@@ -3645,9 +3645,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 14448
 Filename: kmod-usb-serial_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 15246
-MD5Sum: 1b83234dd0d576234da639b885464dd0
-SHA256sum: b9702e37775f79fd29b2fe30f7b1ddc2410aa403cec57c5040fb5c039381cfcd
+Size: 15240
+MD5Sum: 9f06553e4b237177e8140998ec2beab6
+SHA256sum: f0faaa3b8bf785d97b8be738eda4c6ea8aa28510a301210ae12542d9fd2c85b4
 Description:  Kernel support for USB-to-Serial converters
 
 Package: kmod-usb-storage-extras
@@ -3660,9 +3660,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 33300
 Filename: kmod-usb-storage-extras_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 34230
-MD5Sum: 365b7d7ac1d0d6a1651323b5851e2578
-SHA256sum: 2bfdd1d68f8d0b5287babab0a6884f8514dceb7839416f901c0d61347c5a78b2
+Size: 34217
+MD5Sum: 4eb71e361ca61ae17402b1f6528ac0c6
+SHA256sum: c2ab41d07c64a742eb4c2c8709ec7ebe881b961de8f823f1d21cbbc100ef6bc6
 Description:  Say Y here if you want to have some more drivers,
  such as for SmartMedia card readers
 
@@ -3674,11 +3674,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 22674
+Installed-Size: 22675
 Filename: kmod-usb-storage_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 23061
-MD5Sum: 2330532efb88b7717b0352c3d2051fca
-SHA256sum: 5892f9a2e8bc4d638530d328ad295381487297bacbd1bac866d4d6c70a055156
+Size: 23096
+MD5Sum: 18fb98ff2e3a5254e493a57a9459e163
+SHA256sum: 7a5efcf759f6aa6ec15848c2ddd16b15a0f766308b3cf41e5adfb1d93401bafa
 Description:  Kernel support for USB Mass Storage devices
 
 Package: kmod-usb-uas
@@ -3691,9 +3691,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 105
 Filename: kmod-usb-uas_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 826
-MD5Sum: 4900845aa3c900863420d89d2336e662
-SHA256sum: 4a7563a0a648af35e0f51f02277581201b0e8528fa6018beb81a55c33432c9f1
+Size: 828
+MD5Sum: e79857ce0f6413e4e7599fae8ef77b53
+SHA256sum: 6a17d853a0e7eefc23e2d1bf3998c735e3b9ad3cc1b5a0a5f17bf57f157b9c4e
 Description:  Kernel support for USB Attached SCSI devices
 
 Package: kmod-usb-wdm
@@ -3704,11 +3704,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6543
+Installed-Size: 6546
 Filename: kmod-usb-wdm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7373
-MD5Sum: 821df8ee9d0eb034ac3bb1e568f41c96
-SHA256sum: db1416f22b323cb2ce6841ec696fad75db4e882d04fdd87034d7c99b2a8986b1
+Size: 7376
+MD5Sum: 29c51bdfd61b665e699e2495ba60a1bc
+SHA256sum: 925464c7f993a85b557800fc2409e2745062b3b378284b75313111b3545c65ab
 Description:  USB Wireless Device Management support
 
 Package: kmod-usb2
@@ -3719,11 +3719,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 25185
+Installed-Size: 25189
 Filename: kmod-usb2_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 25934
-MD5Sum: a5d9a27f2e71cdd562872c453742ea9d
-SHA256sum: 1db56c94305bce1fa98b1101ca94cf88b4bf50bd22f5ccfed09e40425d4fda47
+Size: 25929
+MD5Sum: 361c41290ccff5ab1472fee099dd08d1
+SHA256sum: 2f9ae0b1c216b1ad723250a325a66a1aef4c32732982a7de0dec99df87625344
 Description:  Kernel support for USB2 (EHCI) controllers
 
 Package: kmod-usbip-client
@@ -3734,11 +3734,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 9276
+Installed-Size: 9275
 Filename: kmod-usbip-client_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10052
-MD5Sum: 61b972badcdfd017862060461c60743b
-SHA256sum: 362d03155379f338e349427b04589ee69c13a597b12984f209114218154d2c9f
+Size: 10064
+MD5Sum: 75ce816fc1bd20610ce8f02810815515
+SHA256sum: 4eef9643174b001efa9713b37c5b03a0c0f0784fafe61c42f2a8a8c734f7ccc3
 Description:  USB-over-IP client driver
 
 Package: kmod-usbip-server
@@ -3751,9 +3751,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 9537
 Filename: kmod-usbip-server_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 10319
-MD5Sum: de7621f5bc7dfe07c6eadfc7ae37d889
-SHA256sum: 71cd96502ed650057ced0737bcf44d24e36113f477b685b0815729a8f2070c23
+Size: 10314
+MD5Sum: d114f44b67d7875abf3cdf31903da71e
+SHA256sum: da039cfec053d088acd84b4d2608f6748ff067d41a1a598ef8f472a36572bc63
 Description:  USB-over-IP host driver
 
 Package: kmod-usbip
@@ -3764,11 +3764,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4614
+Installed-Size: 4612
 Filename: kmod-usbip_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5357
-MD5Sum: 5457a5a67e342a5ca05630594cc2d023
-SHA256sum: 6aa155d46ad024e8e53e9fb5c1718116de0eb37a1e417e25744048d14d18fe88
+Size: 5352
+MD5Sum: 527c1fb1533c27b53c0f789cf1098b87
+SHA256sum: 2049801e58657a9aef2931d87bba5b975d276cd8e88139b1966572bfdf099040
 Description:  USB-over-IP kernel support
 
 Package: kmod-usbmon
@@ -3779,11 +3779,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 12748
+Installed-Size: 12750
 Filename: kmod-usbmon_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 13516
-MD5Sum: 330a33bf75b35ce6828de41feb0e9427
-SHA256sum: 7d19c0789ca6f55ccb8a345b18a80fef2082b3fae714769b35d09abbc0ef1358
+Size: 13519
+MD5Sum: 5931cc9da1ecc55b26f3f97ca95199e5
+SHA256sum: 16ff0264b4b00bc49ff59b7d01bc5c5ec386635462c477a3931fb2adc801e308
 Description:  Kernel support for USB traffic monitoring
 
 Package: kmod-video-core
@@ -3794,11 +3794,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 58349
+Installed-Size: 58346
 Filename: kmod-video-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 58779
-MD5Sum: bc2a5ddc094dc0231e0ead5789a73050
-SHA256sum: 3283bb789d1a24c067f6ca8e6f02b051d665bc11693ffa95b2d48734f2e88d85
+Size: 58783
+MD5Sum: d022e4081f26194d9a8b337f2ecbd243
+SHA256sum: d06fc3f4eecb50a587cec7c83fffc188f45acf736cc3039af9fc3725c8fd9e44
 Description:  Kernel modules for Video4Linux support
 
 Package: kmod-video-gspca-core
@@ -3809,11 +3809,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 14824
+Installed-Size: 14823
 Filename: kmod-video-gspca-core_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 15663
-MD5Sum: 4c3e6aeb30889af007f9500306e9c1cc
-SHA256sum: dc952861e0d2bcc18a8e2a70d0e74a670a80fa4a44ed0da36fa29f453a0e1803
+Size: 15659
+MD5Sum: dba52b8c275a135c16daf9aaa584ca36
+SHA256sum: b0e1093e857723fcaf6696c1bb9b94342486279e86e57a755a0e5eb55555a4d1
 Description:  Kernel modules for supporting GSPCA based webcam devices. Note this is just
  the core of the driver, please select a submodule that supports your webcam.
 
@@ -3825,11 +3825,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 13547
+Installed-Size: 13548
 Filename: kmod-video-gspca-sn9c20x_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 14338
-MD5Sum: 18ba589573ce0ef1947fd7bd6c80496f
-SHA256sum: 057c87a21a9d3b18fdbf787c05d05fad852cc96926b6f1b7359843dbbffcad72
+Size: 14329
+MD5Sum: 87236380cb552fbfafcb6b34b50a3bd2
+SHA256sum: 1b3e5c0e1b641577e447b1faa548f4829902ec3937fce1160dfcb5d745f57f84
 Description:  The SN9C20X USB Camera Driver (sn9c20x) kernel module
 
 Package: kmod-video-gspca-sunplus
@@ -3840,11 +3840,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6546
+Installed-Size: 6544
 Filename: kmod-video-gspca-sunplus_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 7374
-MD5Sum: 8673147c14cd97029ca636ef4609461e
-SHA256sum: 22bf00be74f8aa179352f7c711bba8cf75ef8cf7eb271229409df80c5010cbe1
+Size: 7368
+MD5Sum: a428d8957aab17c2a5087324d898fbb6
+SHA256sum: da14047feaf81efea7e70a435ec27ba184b27784545b7a9c777db1b5fd108c0c
 Description:  The SUNPLUS USB Camera Driver (sunplus) kernel module
 
 Package: kmod-video-gspca-zc3xx
@@ -3855,11 +3855,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 17106
+Installed-Size: 17104
 Filename: kmod-video-gspca-zc3xx_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 17904
-MD5Sum: 4f64f86df84334dbebab57c65316cf1d
-SHA256sum: 29b68805ef7121e831757264e0ac21afe3bbd8d78ab22e440ab8d1a4de68867b
+Size: 17896
+MD5Sum: 67893e9a48a24f4c185941dd34f593fd
+SHA256sum: 0e4501f1a4fd5102c792ae3c4f251ace483c06a1a1435a7c374b5f207550b806
 Description:  The ZC3XX USB Camera Driver (zc3xx) kernel module
 
 Package: kmod-video-pwc
@@ -3870,11 +3870,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 23289
+Installed-Size: 23288
 Filename: kmod-video-pwc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 24033
-MD5Sum: 8a0adc61ab3b8681131cf47455325c3e
-SHA256sum: 7ed3421e1a56c5c017bf3bac2fc04bb7815291c6ae99dcdc4d24caceb67d2ec5
+Size: 24037
+MD5Sum: 3befb270bdd5e8957627a6de7730c863
+SHA256sum: a18fc7655ce3f717374a39bd99b15a72be2078beedad59cd5e4f8bb011c8dff0
 Description:  Kernel modules for supporting Philips USB based cameras
 
 Package: kmod-video-sn9c102
@@ -3885,11 +3885,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 104
+Installed-Size: 105
 Filename: kmod-video-sn9c102_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 838
-MD5Sum: e6153a1ad790cc361c966784a9d675bb
-SHA256sum: 31d10e3879569f1a44365f4d40e90306d313503bfa3a6c34278cc5a2c52400fc
+Size: 839
+MD5Sum: 9b506071ced8073eb90727ee748bf1bf
+SHA256sum: d8c399624162cba7d59877da8201fc1e76ff711dc33060f6db78ee0269fe373c
 Description:  Kernel modules for supporting SN9C102 camera chips
 
 Package: kmod-video-uvc
@@ -3900,11 +3900,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 40566
+Installed-Size: 40567
 Filename: kmod-video-uvc_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 41336
-MD5Sum: 4c50a0c93b3ccef23701832f658d7928
-SHA256sum: f780e0ac9da9eec81d438e6de31b308f49cbb5c2c06f141ac82a81a1b1308a7e
+Size: 41338
+MD5Sum: 9b64a4a44dddde27e368a1bf0d3737ce
+SHA256sum: 972706414c65e0e302d732d34ba95aab2138765f327328b920723e8546a695d8
 Description:  Kernel modules for supporting USB Video Class (UVC) devices
 
 Package: kmod-video-videobuf2
@@ -3917,9 +3917,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 19541
 Filename: kmod-video-videobuf2_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 20305
-MD5Sum: fc3a695e28a41ac87e0a42281f30ff4f
-SHA256sum: d9f29805d83052bced16c035c0e9de6dbb6f97b1cd087330e49f3308e3b6ff05
+Size: 20306
+MD5Sum: 850a66127822fd2e712e9048246f3968
+SHA256sum: 2fb426ef3c2a54cbbd0b9a1f7e6245829a136e7ff94b22561e22b82e40355dce
 Description:  Kernel modules that implements three basic types of media buffers.
 
 Package: kmod-w1-master-ds2482
@@ -3930,11 +3930,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2790
+Installed-Size: 2788
 Filename: kmod-w1-master-ds2482_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3629
-MD5Sum: baf442e0981de896b7c0cead1b01714b
-SHA256sum: 7175458a2b4f6befc80436cab45283ea84774111ae5f63ff107d7ca99f9c38f2
+Size: 3621
+MD5Sum: 486824d99c986e2189f75990f1730ed4
+SHA256sum: b8c0f2dc8de9bf127e996ae325f9c5ba7b253dee3b39ea551ba4149c244fa8bc
 Description:  Kernel module for the DS2482 i2c 1-wire bus master driver
  NOTE: Init with: echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-0/new_device
  or use owfs
@@ -3947,11 +3947,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5193
+Installed-Size: 5192
 Filename: kmod-w1-master-ds2490_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 5991
-MD5Sum: 9b19b1ca8242598d327ca2c89cbdd3d4
-SHA256sum: 43d335ec550a88c971887affdfc4684addb337038d3f56ffea5f437dae0a2171
+Size: 5989
+MD5Sum: 54c28ccdd26091512f0f5abdbecb56c8
+SHA256sum: dd24dccf9728908772a28f1c64cee0dcb8a01e8f072d4ed005c3453765538cd4
 Description:  Kernel module for the DS2490 usb 1-wire bus master driver
 
 Package: kmod-w1-master-gpio
@@ -3962,11 +3962,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1944
+Installed-Size: 1943
 Filename: kmod-w1-master-gpio_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2762
-MD5Sum: 98ff23891621541c4cd4d13a7a6b06ef
-SHA256sum: 1bbab78d020d7398bfa81a06289d92839da7780a879caf7611bc57c7cdb74625
+Size: 2758
+MD5Sum: c1cb39b05891fcc4face8a6bf292404b
+SHA256sum: d87bb0d880afda2daf91b2375824f158ca0287fe4e042ef84d54d6019d5db472
 Description:  Kernel module for the GPIO 1-wire bus master driver
 
 Package: kmod-w1-slave-ds2431
@@ -3977,11 +3977,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2414
+Installed-Size: 2416
 Filename: kmod-w1-slave-ds2431_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3187
-MD5Sum: e4547ac35c24295ab9ab154e724050d1
-SHA256sum: da56fde69d3b564f0592874ac7494247edf1a95e59b87a31f1b5222010dde1df
+Size: 3193
+MD5Sum: 222b8283bdff06915fb668bce0cef3bd
+SHA256sum: a095851dadb725305406176909d01bbd621f227dfe15762a67b2a736e89b6873
 Description:  Kernel module for 1-wire 1kb EEPROM (DS2431)
 
 Package: kmod-w1-slave-ds2433
@@ -3992,11 +3992,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1851
+Installed-Size: 1850
 Filename: kmod-w1-slave-ds2433_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 2662
-MD5Sum: 2927b2a23dce17449cded390f132ae75
-SHA256sum: e77b581b79b647414c3cab802b47f9adec7542a499e32ecc1f6ef3c73ba020e9
+Size: 2668
+MD5Sum: 925d4c7cf581e6ba6e149f38c491dfd4
+SHA256sum: ff67d62d082129b81961445bc6753e216982795e607812b7628718cc1d55e266
 Description:  Kernel module for 1-wire 4kb EEPROM (DS2433)
 
 Package: kmod-w1-slave-ds2760
@@ -4007,11 +4007,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2285
+Installed-Size: 2287
 Filename: kmod-w1-slave-ds2760_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3071
-MD5Sum: b94a790fbd8e6befa1dfbe05792773cf
-SHA256sum: 123118610e4211e020adccf747f0765e50338cceeef74049385b08c8b7a04bd4
+Size: 3070
+MD5Sum: 81da36f5eaec0e22c7a8c7560bb57a0f
+SHA256sum: 2923c37920f556134be1c6311d2639b19a4b086b7f1904f377067dc0dac277f5
 Description:  Kernel module for 1-wire DS2760 battery monitor chip support
 
 Package: kmod-w1-slave-smem
@@ -4024,9 +4024,9 @@ Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
 Installed-Size: 925
 Filename: kmod-w1-slave-smem_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 1744
-MD5Sum: af885af56c0aa9718673fcafaa5137ea
-SHA256sum: f34d8649e9720fdf14b5f10cddb1f4b161c8019dbec87c5c906fb5b8f52fd463
+Size: 1745
+MD5Sum: 00c981bc30d8f130fc0fe5b1eb9feeea
+SHA256sum: 2f5b3f3b5b8f63a88cb2244a65065dbc58f78f66670c32dd7ba06dfddb2fad92
 Description:  Kernel module for 1-wire simple 64bit memory rom(ds2401/ds2411/ds1990*)
 
 Package: kmod-w1-slave-therm
@@ -4037,11 +4037,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2671
+Installed-Size: 2672
 Filename: kmod-w1-slave-therm_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 3445
-MD5Sum: a742e303d1498d0453357076bcd58ea4
-SHA256sum: 1b60ba27c1ba47558cb9213efe6c921f1e3cb9b199cd79c041ce9ad16c4fa95f
+Size: 3442
+MD5Sum: 570f887cdf2cf0c20c04d8d3949c2e5f
+SHA256sum: 2c4656267cf07d83efbd317bd74190ca01f89e114cc07cd7ca7383d54ddac5f6
 Description:  Kernel module for 1-wire thermal sensors
 
 Package: kmod-w1
@@ -4052,11 +4052,11 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 12287
+Installed-Size: 12289
 Filename: kmod-w1_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 13002
-MD5Sum: aca688f2258de756568559d78561a1d4
-SHA256sum: cb0d41e7d8076de17a4e355a1baa9fa1a74d5166c087be0f422a6dcb987024db
+Size: 13009
+MD5Sum: 5278fc6b92b7020882e47dda7de042a2
+SHA256sum: 2442bef20f41bb0d264f635edeec7744c5a85325994b930cda56440a4971df38
 Description:  Kernel module for Dallas's 1-wire support
 
 Package: kmod-zram
@@ -4067,10 +4067,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 10477
+Installed-Size: 10476
 Filename: kmod-zram_3.14.79-1_mipsel_24kec_dsp.ipk
-Size: 11292
-MD5Sum: e47e828f2a1067a228d4940e241350c3
-SHA256sum: 9ddf4b66acb3340722e17548669e3c32bf19e6f01173889821db27c5a7de1757
+Size: 11295
+MD5Sum: 1bdb76b0f0c1731fc74ac8272f518847
+SHA256sum: c05e964fc4929d6b531e514cac1672809ac1d5046d4801f777309793cff8872d
 Description:  Compressed RAM block device support
 

@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 28644
+Installed-Size: 28643
 Description:  RAID Level 10 (Mirroring+Striping) driver module (raid10.ko)

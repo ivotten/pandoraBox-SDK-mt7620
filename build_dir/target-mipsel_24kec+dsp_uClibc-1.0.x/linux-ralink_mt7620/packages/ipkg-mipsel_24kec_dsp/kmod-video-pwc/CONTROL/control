@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 23289
+Installed-Size: 23288
 Description:  Kernel modules for supporting Philips USB based cameras

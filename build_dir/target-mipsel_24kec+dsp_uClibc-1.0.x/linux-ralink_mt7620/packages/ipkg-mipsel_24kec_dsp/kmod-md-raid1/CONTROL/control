@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 20437
+Installed-Size: 20436
 Description:  RAID Level 1 (Mirroring) driver (raid1.ko)

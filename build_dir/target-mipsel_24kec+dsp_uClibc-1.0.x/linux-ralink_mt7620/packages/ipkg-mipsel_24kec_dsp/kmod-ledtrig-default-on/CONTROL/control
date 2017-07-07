@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 241
+Installed-Size: 244
 Description:  Kernel module that allows LEDs to be initialised in the ON state

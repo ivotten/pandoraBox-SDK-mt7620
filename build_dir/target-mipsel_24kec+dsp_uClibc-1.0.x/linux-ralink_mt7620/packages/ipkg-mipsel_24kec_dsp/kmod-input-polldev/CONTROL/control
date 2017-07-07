@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2186
+Installed-Size: 2185
 Description:  Kernel module for support of polled input devices

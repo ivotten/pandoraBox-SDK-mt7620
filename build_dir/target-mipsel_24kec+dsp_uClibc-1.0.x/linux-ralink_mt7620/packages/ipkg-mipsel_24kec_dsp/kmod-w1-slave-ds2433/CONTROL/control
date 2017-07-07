@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1851
+Installed-Size: 1850
 Description:  Kernel module for 1-wire 4kb EEPROM (DS2433)

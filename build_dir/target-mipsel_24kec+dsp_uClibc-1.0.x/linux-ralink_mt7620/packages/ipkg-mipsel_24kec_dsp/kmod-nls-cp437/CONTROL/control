@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2304
+Installed-Size: 2306
 Description:  Kernel module for NLS Codepage 437 (United States, Canada)

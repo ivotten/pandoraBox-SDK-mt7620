@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 110387
+Installed-Size: 110388
 Description:  Kernel module for NFS kernel server support

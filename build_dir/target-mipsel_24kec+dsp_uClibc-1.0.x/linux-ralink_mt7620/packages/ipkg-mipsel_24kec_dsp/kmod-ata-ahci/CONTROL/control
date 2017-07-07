@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 19127
+Installed-Size: 19128
 Description:  Support for AHCI Serial ATA controllers

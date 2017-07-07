@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 4852
+Installed-Size: 4854
 Description:  CAN driver for several 'low cost' CAN interfaces that are attached
  via serial lines or via USB-to-serial adapters using the LAWICEL
  ASCII protocol.

@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 35257
+Installed-Size: 35252
 Description:  Netfilter core kernel modules
  Includes:
  - comment

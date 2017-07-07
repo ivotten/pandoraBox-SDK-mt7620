@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5114
+Installed-Size: 5117
 Description:  Kernel support for Sierra Wireless devices

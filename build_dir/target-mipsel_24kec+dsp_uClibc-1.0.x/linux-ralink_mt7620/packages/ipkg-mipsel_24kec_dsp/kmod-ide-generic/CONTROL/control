@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1888
+Installed-Size: 1883
 Description:  Kernel support for generic PCI IDE chipsets

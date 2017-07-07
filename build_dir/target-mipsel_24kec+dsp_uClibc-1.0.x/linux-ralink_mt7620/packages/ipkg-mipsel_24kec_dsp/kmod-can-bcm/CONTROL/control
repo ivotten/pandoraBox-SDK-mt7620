@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 8851
+Installed-Size: 8850
 Description:  The Broadcast Manager offers content filtering, timeout monitoring,
  sending of RTR frames, and cyclic CAN messages without permanent user
  interaction.

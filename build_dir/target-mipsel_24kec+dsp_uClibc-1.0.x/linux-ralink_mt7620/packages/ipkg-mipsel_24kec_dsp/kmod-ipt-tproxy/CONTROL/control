@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5549
+Installed-Size: 5550
 Description:  Kernel modules for Transparent Proxying

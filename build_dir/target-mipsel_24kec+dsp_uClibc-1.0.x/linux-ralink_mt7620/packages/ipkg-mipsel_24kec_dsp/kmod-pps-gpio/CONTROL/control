@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2177
+Installed-Size: 2175
 Description:  Support for a PPS source using GPIO. To be useful you must
  also register a platform device specifying the GPIO pin and
  other options, usually in your board setup.

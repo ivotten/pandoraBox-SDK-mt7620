@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 50706
+Installed-Size: 50704
 Description:  Kernel module for UDF filesystem support

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-WRAPPER_LIBDIR="${WRAPPER_LIBDIR:=-L${STAGING_DIR:-/home/lintel/PandoraBox-MT7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x}/lib/}"
+WRAPPER_LIBDIR="${WRAPPER_LIBDIR:=-L${STAGING_DIR:-/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x}/lib/}"
 
 WRAPPER_OPTIONS=""
 WRAPPER_LIBS="-lc -lgcc_s  "

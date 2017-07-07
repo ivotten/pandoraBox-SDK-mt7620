@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 2572
+Installed-Size: 2570
 Description:  Kernel module that allows LEDs to be controlled by gpio events

@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5723
+Installed-Size: 5727
 Description:  The CAN Gateway/Router is used to route (and modify) CAN frames.

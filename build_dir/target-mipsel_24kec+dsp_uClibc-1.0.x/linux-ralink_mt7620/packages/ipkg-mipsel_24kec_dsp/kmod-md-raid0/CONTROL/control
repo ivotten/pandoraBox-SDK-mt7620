@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6330
+Installed-Size: 6331
 Description:  RAID Level 0 (Striping) driver module (raid0.ko)

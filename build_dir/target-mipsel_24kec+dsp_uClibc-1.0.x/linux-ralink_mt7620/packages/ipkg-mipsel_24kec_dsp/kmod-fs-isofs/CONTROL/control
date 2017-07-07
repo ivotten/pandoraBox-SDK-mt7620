@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 15779
+Installed-Size: 15780
 Description:  Kernel module for ISO9660 filesystem support

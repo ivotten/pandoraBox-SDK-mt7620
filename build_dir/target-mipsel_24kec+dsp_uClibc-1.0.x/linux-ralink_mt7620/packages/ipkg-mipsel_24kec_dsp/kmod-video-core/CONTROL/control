@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 58349
+Installed-Size: 58346
 Description:  Kernel modules for Video4Linux support

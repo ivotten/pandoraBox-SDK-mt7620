@@ -6,7 +6,7 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 44542
+Installed-Size: 44548
 Description:  Netfilter (IPv4) kernel modules for connection tracking
  Includes:
  - conntrack

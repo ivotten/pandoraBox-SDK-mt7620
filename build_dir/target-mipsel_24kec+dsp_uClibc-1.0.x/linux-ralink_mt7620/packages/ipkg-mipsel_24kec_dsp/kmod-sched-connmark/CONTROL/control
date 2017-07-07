@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 1471
+Installed-Size: 1470
 Description:  Traffic shaper conntrack mark support

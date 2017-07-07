@@ -6,5 +6,5 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: mipsel_24kec_dsp
-Installed-Size: 3726
+Installed-Size: 3723
 Description:  RAID "Linear" or "Append" driver module (linear.ko)
