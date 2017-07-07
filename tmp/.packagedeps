@@ -1,5 +1,5 @@
 package-$(CONFIG_PACKAGE_fcgi) += feeds/packages/fcgi
-package-$(CONFIG_PACKAGE_fcgiwrap) += custom-package/fcgiwrap
+package-$(CONFIG_PACKAGE_fcgiwrap) += custom-package/fcgiwrap-1.10
 package-$(CONFIG_PACKAGE_fcgixx) += feeds/packages/fcgi
 package-$(CONFIG_PACKAGE_kmod-3c59x) += linux
 package-$(CONFIG_PACKAGE_kmod-6lowpan-iphc) += linux
@@ -622,7 +622,7 @@ package-$(CONFIG_PACKAGE_zlib) += feeds/base/zlib
 package-$(CONFIG_PACKAGE_zlib-dev) += feeds/base/zlib
 
 $(curdir)/feeds/packages/fcgi/compile += $(curdir)/feeds/base/gettext/compile $(curdir)/feeds/base/libiconv/compile $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_LIBSTDCXX),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_UCLIBCXX),$(curdir)/feeds/base/uclibc++/compile)
-$(curdir)/custom-package/fcgiwrap/compile += $(curdir)/feeds/packages/fcgi/compile $(curdir)/feeds/packages/spawn-fcgi/compile $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile)
+$(curdir)/custom-package/fcgiwrap-1.10/compile += $(curdir)/feeds/packages/fcgi/compile $(curdir)/feeds/packages/spawn-fcgi/compile $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile)
 $(curdir)/feeds/base/libiconv/compile += $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile)
 $(curdir)/feeds/base/gettext/compile += $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile)
 $(curdir)/feeds/base/mbedtls/compile += $(curdir)/toolchain/compile $(if $(CONFIG_SSP_SUPPORT),$(curdir)/toolchain/compile) $(if $(CONFIG_USE_GLIBC),$(curdir)/toolchain/compile)

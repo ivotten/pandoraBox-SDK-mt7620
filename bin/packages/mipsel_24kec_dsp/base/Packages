@@ -1,14 +1,14 @@
 Package: fcgiwrap
-Version: 1.03
+Version: 1.10
 Depends: libc, spawn-fcgi, fcgi
-Source: package/custom-package/fcgiwrap
+Source: package/custom-package/fcgiwrap-1.10
 Section: net
 Architecture: mipsel_24kec_dsp
-Installed-Size: 6459
-Filename: fcgiwrap_1.03_mipsel_24kec_dsp.ipk
-Size: 7136
-MD5Sum: 1d44aaa933308ddca8871d95535def84
-SHA256sum: 1a8ff4338e673d72950513bb07929ba31c20441fd19576afea511775eae01ad2
+Installed-Size: 7038
+Filename: fcgiwrap_1.10_mipsel_24kec_dsp.ipk
+Size: 7708
+MD5Sum: 6985f4553e7f14340c4f8ddec076b6c0
+SHA256sum: 5f918c26d412bb03bb0e379eb8493d2b60dd3bb3accbde695e0b0e26137e33c0
 Description:  Simple FastCGI wrapper for CGI scripts.
  extension Nginx support CGI(use spwan-cgi)
 

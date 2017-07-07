@@ -1,6 +1,6 @@
-Source-Makefile: package/custom-package/fcgiwrap/Makefile
+Source-Makefile: package/custom-package/fcgiwrap-1.10/Makefile
 Package: fcgiwrap
-Version: 1.03
+Version: 1.10
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +spawn-fcgi +fcgi
 Conflicts: 
 Menu-Depends: 
@@ -10,7 +10,7 @@ Category: Network
 Repository: base
 Title: a web based terminal emulator
 Maintainer: 
-Source: fcgiwrap-1.03.tar.gz
+Source: fcgiwrap-1.10.tar.gz
 Type: ipkg
 Description: 	Simple FastCGI wrapper for CGI scripts.
 	extension Nginx support CGI(use spwan-cgi)

@@ -1,5 +1,5 @@
 DEPS_package/linux/Makefile=modules/*.mk $(TOPDIR)/target/linux/*/modules.mk
-$(eval $(call PackageDir,custom-package_fcgiwrap,custom-package/fcgiwrap,))
+$(eval $(call PackageDir,custom-package_fcgiwrap-1.10,custom-package/fcgiwrap-1.10,))
 $(eval $(call PackageDir,custom-package_shadowsocksr-libev,custom-package/shadowsocksr-libev,))
 $(eval $(call PackageDir,linux,linux,))
 $(eval $(call PackageDir,toolchain,toolchain,))

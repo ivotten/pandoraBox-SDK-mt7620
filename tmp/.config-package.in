@@ -249,11 +249,11 @@ menu "Libraries"
 		tristate "zlib-dev.......................... Development files for the zlib library"
 		default y if DEFAULT_zlib-dev
 		default m if ALL
-		depends on PACKAGE_zlib
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_librt if USE_GLIBC
+		depends on PACKAGE_zlib
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 zlib is a lossless data-compression library.
 		  This package includes the development support files.
@@ -321,10 +321,10 @@ menu "SSL"
 		tristate "libmbedtls........................................ Embedded SSL (library)"
 		default y if DEFAULT_libmbedtls
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 The aim of the mbedtls project is to provide a quality, open-source
 		 cryptographic library written in C and targeted at embedded systems.
@@ -336,11 +336,11 @@ menu "SSL"
 		tristate "libopenssl........................... Open source SSL toolkit (libraries)"
 		default y if DEFAULT_libopenssl
 		default m if ALL
-		select PACKAGE_zlib if OPENSSL_WITH_COMPRESSION
 		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_zlib if OPENSSL_WITH_COMPRESSION
 		help
 		 The OpenSSL Project is a collaborative effort to develop a robust,
 		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure
@@ -359,10 +359,10 @@ endmenu
 		default y if DEFAULT_fcgi
 		default m if ALL
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libc
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		help
 		 FastCGI is a language independent, scalable, open extension to
 		  CGI that provides high performance without the limitations of
@@ -374,13 +374,13 @@ endmenu
 		tristate "fcgixx....................................... Shared library of FastCGI++"
 		default y if DEFAULT_fcgixx
 		default m if ALL
-		select PACKAGE_libstdcpp if USE_LIBSTDCXX
 		depends on PACKAGE_fcgi
 		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_uclibcxx if USE_UCLIBCXX
 		select PACKAGE_libc
+		select PACKAGE_libstdcpp if USE_LIBSTDCXX
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_uclibcxx if USE_UCLIBCXX
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 Shared library of FastCGI++
 		 http://www.fastcgi.com/
@@ -390,9 +390,9 @@ endmenu
 		tristate "libiconv"
 		default y if DEFAULT_libiconv
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 Tiny drop-in replacement for the GNU Character set conversion library
@@ -403,8 +403,8 @@ endmenu
 		default y if DEFAULT_libintl
 		default m if ALL
 		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
 		help
 		 Stub header for the GNU Internationalization library
@@ -414,9 +414,9 @@ endmenu
 		tristate "libpcre..................... A Perl Compatible Regular Expression library"
 		default y if DEFAULT_libpcre
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_librt if USE_GLIBC
 		help
 		 A Perl Compatible Regular Expression library
@@ -428,9 +428,9 @@ endmenu
 		default y if DEFAULT_libpcre16
 		default m if ALL
 		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 A Perl Compatible Regular Expression library (16bit support)
 		 http://www.pcre.org/
@@ -441,11 +441,11 @@ endmenu
 		default y if DEFAULT_libpcrecpp
 		default m if ALL
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libstdcpp
 		select PACKAGE_libpcre
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		help
 		 C++ wrapper for Perl Compatible Regular Expression library
 		 http://www.pcre.org/
@@ -455,10 +455,10 @@ endmenu
 		tristate "uclibcxx................................ C++ library for embedded systems"
 		default y if DEFAULT_uclibcxx
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 C++ library for embedded systems
 		 http://cxx.uclibc.org/src/
@@ -469,9 +469,9 @@ endmenu
 		default y if DEFAULT_zlib
 		default m if ALL
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 zlib is a lossless data-compression library.
 		  This package includes the shared library.
@@ -488,8 +488,8 @@ menu "Web Servers/Proxies"
 		default y if DEFAULT_spawn-fcgi
 		default m if ALL
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 spawn-fcgi is used to spawn fastcgi applications
@@ -501,12 +501,12 @@ endmenu
 		tristate "fcgiwrap................................... a web based terminal emulator"
 		default y if DEFAULT_fcgiwrap
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		select PACKAGE_fcgi
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_spawn-fcgi
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 Simple FastCGI wrapper for CGI scripts.
 		 	extension Nginx support CGI(use spwan-cgi)
@@ -518,13 +518,13 @@ endmenu
 		default y if DEFAULT_shadowsocksr-libev
 		default m if ALL
 		select PACKAGE_libpcre
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libopenssl
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_zlib
-		select PACKAGE_libpthread
 		select PACKAGE_libc
+		select PACKAGE_libopenssl
+		select PACKAGE_libpthread
+		select PACKAGE_zlib
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -534,13 +534,13 @@ endmenu
 		tristate "shadowsocksr-libev-mbedtls.... Lightweight Secured Socks5 Proxy (mbedTLS)"
 		default y if DEFAULT_shadowsocksr-libev-mbedtls
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libmbedtls
 		select PACKAGE_libpcre
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libmbedtls
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		select PACKAGE_libpthread
 		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
-		select PACKAGE_librt if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -550,13 +550,13 @@ endmenu
 		tristate "shadowsocksr-libev-polarssl.. Lightweight Secured Socks5 Proxy (PolarSSL)"
 		default y if DEFAULT_shadowsocksr-libev-polarssl
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libpcre
-		select PACKAGE_libpthread
-		select PACKAGE_libc
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpolarssl
+		select PACKAGE_libpcre
+		select PACKAGE_libpthread
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -566,14 +566,14 @@ endmenu
 		tristate "shadowsocksr-libev-server..... Lightweight Secured Socks5 Proxy (OpenSSL)"
 		default y if DEFAULT_shadowsocksr-libev-server
 		default m if ALL
-		select PACKAGE_zlib
-		select PACKAGE_libpthread
-		select PACKAGE_libc
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libopenssl
 		select PACKAGE_libpcre
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libopenssl
+		select PACKAGE_libpthread
+		select PACKAGE_zlib
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -583,12 +583,12 @@ endmenu
 		tristate "shadowsocksr-libev-server-mbedtls"
 		default y if DEFAULT_shadowsocksr-libev-server-mbedtls
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libmbedtls
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libpcre
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libmbedtls
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
@@ -599,13 +599,13 @@ endmenu
 		tristate "shadowsocksr-libev-server-polarssl"
 		default y if DEFAULT_shadowsocksr-libev-server-polarssl
 		default m if ALL
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpthread
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libpolarssl
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpcre
-		select PACKAGE_libpthread
-		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -675,11 +675,11 @@ menu "Utilities"
 		tristate "openssl-util........................... Open source SSL toolkit (utility)"
 		default y if DEFAULT_openssl-util
 		default m if ALL
-		select PACKAGE_libc
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libopenssl
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 The OpenSSL Project is a collaborative effort to develop a robust,
 		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure
