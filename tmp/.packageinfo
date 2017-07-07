@@ -11871,6 +11871,129 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 
+Source-Makefile: package/feeds/base/libtool/Makefile
+Package: libltdl
+Version: 2.4-2
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: A generic dynamic object loading library
+Maintainer: 
+Source: libtool-2.4.tar.xz
+License: GPL-2.0+
+LicenseFiles: COPYING
+Type: ipkg
+Description: A generic dynamic object loading library
+http://www.gnu.org/software/libtool/
+
+@@
+
+
+Source-Makefile: package/feeds/base/lua/Makefile
+Package: liblua
+Version: 5.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: libs
+Category: Libraries
+Repository: base
+Title: Lua programming language (libraries)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lua-5.1.5.tar.gz
+License: MIT
+LicenseFiles: COPYRIGHT
+Type: ipkg
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+http://www.lua.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: lua
+Submenu: Lua
+Version: 5.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: lang
+Category: Languages
+Repository: base
+Title: Lua programming language (interpreter)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lua-5.1.5.tar.gz
+License: MIT
+LicenseFiles: COPYRIGHT
+Type: ipkg
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+http://www.lua.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: luac
+Submenu: Lua
+Version: 5.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +liblua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: lang
+Category: Languages
+Repository: base
+Title: Lua programming language (compiler)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lua-5.1.5.tar.gz
+License: MIT
+LicenseFiles: COPYRIGHT
+Type: ipkg
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language compiler.
+http://www.lua.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: lua-examples
+Submenu: Lua
+Version: 5.1.5-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: lang
+Category: Languages
+Repository: base
+Title: Lua programming language (examples)
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: lua-5.1.5.tar.gz
+License: MIT
+LicenseFiles: COPYRIGHT
+Type: ipkg
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains Lua language examples.
+http://www.lua.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
 Source-Makefile: package/feeds/base/mbedtls/Makefile
 Package: libmbedtls
 Submenu: SSL
@@ -12055,6 +12178,124 @@ Type: ipkg
 Description: Shared library of FastCGI++
 http://www.fastcgi.com/
 Jacob Siverskog <jacob@teenageengineering.com>
+@@
+
+
+Source-Makefile: package/feeds/packages/libgd/Makefile
+Package: libgd
+Version: 2.1.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg +libpng
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: packages
+Title: The GD graphics library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: gd-2.1.1.tar.gz
+License: MIT
+Type: ipkg
+Description:   GD is an open source code library for the dynamic creation of images by
+  programmers. GD creates PNG, JPEG and GIF images, among other formats.
+http://www.libgd.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
+Source-Makefile: package/feeds/packages/libjpeg/Makefile
+Package: libjpeg
+Version: 9a-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libltdl
+Build-Types: host
+Section: libs
+Category: Libraries
+Repository: packages
+Title: The Independent JPEG Group's JPEG runtime library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: jpegsrc.v9a.tar.gz
+License: IJG
+LicenseFiles: README
+Type: ipkg
+Description: The Independent JPEG Group's JPEG runtime library
+http://www.ijg.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: jpeg-tools
+Submenu: Image Manipulation
+Version: 9a-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libjpeg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: libltdl
+Build-Types: host
+Section: utils
+Category: Utilities
+Repository: packages
+Title: The Independent JPEG Group's JPEG manipulation tools
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: jpegsrc.v9a.tar.gz
+License: IJG
+LicenseFiles: README
+Type: ipkg
+Description: The Independent JPEG Group's JPEG manipulation tools
+http://www.ijg.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
+Source-Makefile: package/feeds/packages/libpng/Makefile
+Package: libpng
+Version: 1.2.57-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Types: host
+Section: libs
+Category: Libraries
+Repository: packages
+Title: A PNG format files handling library
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: libpng-1.2.57.tar.xz
+License: Libpng GPL-2.0+ BSD-3-Clause
+Type: ipkg
+Description: A PNG format files handling library
+http://www.libpng.org/pub/png/libpng.html
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+
+Source-Makefile: package/feeds/packages/nginx/Makefile
+Package: nginx
+Menu: 1
+Submenu: Web Servers/Proxies
+Version: 1.10.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +NGINX_PCRE:libpcre +(NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC):libopenssl +NGINX_HTTP_GZIP:zlib +NGINX_LUA:liblua +libpthread + libgd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: packages
+Title: Nginx web server
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: nginx-1.10.2.tar.gz
+License: 2-clause BSD-like license
+Type: ipkg
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server,
+ written by Igor Sysoev.
+http://nginx.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+Config:
+  source "feeds/packages/net/nginx/Config.in"
 @@
 
 

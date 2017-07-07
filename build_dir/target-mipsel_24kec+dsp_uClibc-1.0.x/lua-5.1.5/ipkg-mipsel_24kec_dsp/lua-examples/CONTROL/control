@@ -1,0 +1,14 @@
+Package: lua-examples
+Version: 5.1.5-1
+Depends: libc, lua
+Source: feeds/base/package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5298
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains Lua language examples.

@@ -4,11 +4,11 @@ Depends: libc, spawn-fcgi, fcgi
 Source: package/custom-package/fcgiwrap-1.10
 Section: net
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7038
+Installed-Size: 7045
 Filename: fcgiwrap_1.10_mipsel_24kec_dsp.ipk
-Size: 7708
-MD5Sum: 6985f4553e7f14340c4f8ddec076b6c0
-SHA256sum: 5f918c26d412bb03bb0e379eb8493d2b60dd3bb3accbde695e0b0e26137e33c0
+Size: 7728
+MD5Sum: 4e3cbebd93e4ccb8d834acbba99572ea
+SHA256sum: a031a69369466aedf857b2ce36988ca1e62602459c20263ee83fc9f3ee883c1b
 Description:  Simple FastCGI wrapper for CGI scripts.
  extension Nginx support CGI(use spwan-cgi)
 
@@ -88,6 +88,40 @@ Size: 903
 MD5Sum: 2b9c7c886b50da2f3b6188a2dec88f63
 SHA256sum: ffc8bbabb2e9ff86087923e18e12473d9ae9549969ea6d93c53831742da198e8
 Description:  Stub header for the GNU Internationalization library
+
+Package: libltdl
+Version: 2.4-2
+Depends: libc
+Source: feeds/base/package/libs/libtool
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 12982
+Filename: libltdl_2.4-2_mipsel_24kec_dsp.ipk
+Size: 13694
+MD5Sum: 443a2ebf5ea51a287554b3158a9e227c
+SHA256sum: 20e7692891df1cc94595bcd86f56069944384f1678bb989398e4f845aff13da0
+Description:  A generic dynamic object loading library
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: feeds/base/package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 69429
+Filename: liblua_5.1.5-1_mipsel_24kec_dsp.ipk
+Size: 70175
+MD5Sum: 492301369c10b6954475c3e5b99ee138
+SHA256sum: 8af2f7ba6b308192f0671e1d8a70b5d9652b2771145c6b4d7e95f62ae29dbf40
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls
 Version: 2.4.2-1
@@ -185,6 +219,63 @@ Size: 913
 MD5Sum: 7c6fbe9c1adf433e194a525006954649
 SHA256sum: aa00c60346a7e95f3b9cd92f27c72cd6697081f3827ef13d1f10de46d12839bd
 Description:  POSIX thread library debugging support
+
+Package: lua-examples
+Version: 5.1.5-1
+Depends: libc, lua
+Source: feeds/base/package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5298
+Filename: lua-examples_5.1.5-1_mipsel_24kec_dsp.ipk
+Size: 6154
+MD5Sum: c7199cae8ad588bd37dd110d275d1b7d
+SHA256sum: 9862b13b2b0781e83766dc5b32243f7950fc2df280a08668dc79daad31ec895f
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains Lua language examples.
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: feeds/base/package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 4610
+Filename: lua_5.1.5-1_mipsel_24kec_dsp.ipk
+Size: 5443
+MD5Sum: 4968a8411d422188c45588ae4ace9a23
+SHA256sum: 0494e2e61f7bb8910253d1ee36fc0fda13da1ad6b59eccf3bd12e7befe3b68ef
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: luac
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: feeds/base/package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5639
+Filename: luac_5.1.5-1_mipsel_24kec_dsp.ipk
+Size: 6489
+MD5Sum: b32fccbdae2eb137e4cf76c5eb0f6eb0
+SHA256sum: 059d3702d2176b22f9bd5a5a99f15d3da46a0a857bdd913c0ae71bf64a0c161c
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language compiler.
 
 Package: openssl-util
 Version: 1.0.2k-1

@@ -1,0 +1,10 @@
+Package: libltdl
+Version: 2.4-2
+Depends: libc
+Source: feeds/base/package/libs/libtool
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Architecture: mipsel_24kec_dsp
+Installed-Size: 12982
+Description:  A generic dynamic object loading library

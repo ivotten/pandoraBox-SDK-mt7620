@@ -1,0 +1,13 @@
+/etc/nginx/fastcgi_params
+/etc/nginx/nginx.conf
+/etc/nginx/koi-win
+/etc/nginx/uwsgi_params
+/etc/nginx/vhost/owncloud.conf
+/etc/nginx/naxsi_core.rules
+/etc/nginx/koi-utf
+/etc/nginx/mime.types
+/etc/nginx/win-utf
+/etc/nginx/nginx.conf.default
+/etc/nginx/extra/rtmp.conf
+/etc/nginx/default_host.conf
+/etc/nginx/scgi_params

@@ -28,6 +28,54 @@ MD5Sum: aaaeba21f979b37a88cce981a97d9209
 SHA256sum: 08b12f8f8e1aabb8ee35b157513af40974120cda344f79b9951ac1c70eeaf46c
 Description:  Shared library of FastCGI++
 
+Package: jpeg-tools
+Version: 9a-1
+Depends: libc, libjpeg
+Source: feeds/packages/libs/libjpeg
+License: IJG
+LicenseFiles: README
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 30644
+Filename: jpeg-tools_9a-1_mipsel_24kec_dsp.ipk
+Size: 31358
+MD5Sum: 58f603d5ac9ac545c4c51009a5d8fc59
+SHA256sum: 2e867b48815ff4c13db461dc6fb9cc3416fb7f6a624340992c112215bc8efc2d
+Description:  The Independent JPEG Group's JPEG manipulation tools
+
+Package: libgd
+Version: 2.1.1-1
+Depends: libc, libjpeg, libpng
+Source: feeds/packages/libs/libgd
+License: MIT
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 102038
+Filename: libgd_2.1.1-1_mipsel_24kec_dsp.ipk
+Size: 101435
+MD5Sum: 9c48760e2fcf7d2b00252e1ad0c2b139
+SHA256sum: 6a3521d8cfeaaa9d5890bced36053717e461d542e5491e1523a19c96ed7050be
+Description:  GD is an open source code library for the dynamic creation of images by
+ programmers. GD creates PNG, JPEG and GIF images, among other formats.
+
+Package: libjpeg
+Version: 9a-1
+Depends: libc
+Source: feeds/packages/libs/libjpeg
+License: IJG
+LicenseFiles: README
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 98757
+Filename: libjpeg_9a-1_mipsel_24kec_dsp.ipk
+Size: 99361
+MD5Sum: 8603acd0f5a114b84c2724af9bb3a13f
+SHA256sum: 8b0be07fe6e8eb240ad293780588e7e774c5bb6355bb324359e96713c534350a
+Description:  The Independent JPEG Group's JPEG runtime library
+
 Package: libpcre16
 Version: 8.40-2
 Depends: libc
@@ -75,6 +123,37 @@ Size: 12153
 MD5Sum: b1b341e42c1ebfa56b6a9c3e573da704
 SHA256sum: 07834f3b2a9186c8ade43dcdad860ea764f642f9d4341b34917120b8925a0522
 Description:  C++ wrapper for Perl Compatible Regular Expression library
+
+Package: libpng
+Version: 1.2.57-1
+Depends: libc, zlib
+Source: feeds/packages/libs/libpng
+License: Libpng GPL-2.0+ BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 117746
+Filename: libpng_1.2.57-1_mipsel_24kec_dsp.ipk
+Size: 118435
+MD5Sum: 054f4e91c4fded0c52fee5cb0283f7d0
+SHA256sum: 2ffe07842a7376d0ef7d3e60b7b27c63c291c47a15667e4e6102b3dba49fa77e
+Description:  A PNG format files handling library
+
+Package: nginx
+Version: 1.10.2-1
+Depends: libc, libpcre, libopenssl, zlib, liblua, libpthread, libgd
+Source: feeds/packages/net/nginx
+License: 2-clause BSD-like license
+Section: net
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 662899
+Filename: nginx_1.10.2-1_mipsel_24kec_dsp.ipk
+Size: 641060
+MD5Sum: 60f9ccd070f91e1c7d58d466c707e1d7
+SHA256sum: e166689ca1dcb73dd06554490672a8b107f0599734011c9bccdf483f3a137006
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server,
+ written by Igor Sysoev.
 
 Package: spawn-fcgi
 Version: 1.6.4-1

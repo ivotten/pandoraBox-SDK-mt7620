@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: gd
+Description: GD graphics library
+Version: 2.1.1
+Cflags: -I${includedir}
+Libs.private: -ljpeg -lz  -L/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/lib -lpng12 
+Libs: -L${libdir} -lgd

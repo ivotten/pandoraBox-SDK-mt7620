@@ -249,11 +249,11 @@ menu "Libraries"
 		tristate "zlib-dev.......................... Development files for the zlib library"
 		default y if DEFAULT_zlib-dev
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
 		depends on PACKAGE_zlib
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
-		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 zlib is a lossless data-compression library.
 		  This package includes the development support files.
@@ -314,6 +314,63 @@ menu "Wireless Drivers"
 endmenu
 endmenu
 
+menu "Languages"
+
+menu "Lua"
+	config PACKAGE_lua
+		tristate "lua............................... Lua programming language (interpreter)"
+		default y if DEFAULT_lua
+		default m if ALL
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_liblua
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 Lua is a powerful light-weight programming language designed for extending 
+		  applications. Lua is also frequently used as a general-purpose, stand-alone 
+		  language. Lua is free software.
+		  This package contains the Lua language interpreter.
+		 http://www.lua.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
+	config PACKAGE_lua-examples
+		tristate "lua-examples......................... Lua programming language (examples)"
+		default y if DEFAULT_lua-examples
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		depends on PACKAGE_lua
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 Lua is a powerful light-weight programming language designed for extending 
+		  applications. Lua is also frequently used as a general-purpose, stand-alone 
+		  language. Lua is free software.
+		  This package contains Lua language examples.
+		 http://www.lua.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
+	config PACKAGE_luac
+		tristate "luac................................. Lua programming language (compiler)"
+		default y if DEFAULT_luac
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_liblua
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 Lua is a powerful light-weight programming language designed for extending 
+		  applications. Lua is also frequently used as a general-purpose, stand-alone 
+		  language. Lua is free software.
+		  This package contains the Lua language compiler.
+		 http://www.lua.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
+endmenu
+endmenu
+
 menu "Libraries"
 
 menu "SSL"
@@ -321,10 +378,10 @@ menu "SSL"
 		tristate "libmbedtls........................................ Embedded SSL (library)"
 		default y if DEFAULT_libmbedtls
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 The aim of the mbedtls project is to provide a quality, open-source
 		 cryptographic library written in C and targeted at embedded systems.
@@ -336,11 +393,11 @@ menu "SSL"
 		tristate "libopenssl........................... Open source SSL toolkit (libraries)"
 		default y if DEFAULT_libopenssl
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libc
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_zlib if OPENSSL_WITH_COMPRESSION
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
 		help
 		 The OpenSSL Project is a collaborative effort to develop a robust,
 		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure
@@ -358,11 +415,11 @@ endmenu
 		tristate "fcgi........................................... Shared library of FastCGI"
 		default y if DEFAULT_fcgi
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libpthread
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 FastCGI is a language independent, scalable, open extension to
 		  CGI that provides high performance without the limitations of
@@ -375,25 +432,41 @@ endmenu
 		default y if DEFAULT_fcgixx
 		default m if ALL
 		depends on PACKAGE_fcgi
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libc
-		select PACKAGE_libstdcpp if USE_LIBSTDCXX
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_uclibcxx if USE_UCLIBCXX
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libstdcpp if USE_LIBSTDCXX
+		select PACKAGE_libc
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 Shared library of FastCGI++
 		 http://www.fastcgi.com/
 		 Jacob Siverskog <jacob@teenageengineering.com>
 
+	config PACKAGE_libgd
+		tristate "libgd............................................ The GD graphics library"
+		default y if DEFAULT_libgd
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpng
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libjpeg
+		help
+		 GD is an open source code library for the dynamic creation of images by
+		   programmers. GD creates PNG, JPEG and GIF images, among other formats.
+		 http://www.libgd.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
 	config PACKAGE_libiconv
 		tristate "libiconv"
 		default y if DEFAULT_libiconv
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
 		help
 		 Tiny drop-in replacement for the GNU Character set conversion library
 		 Jo-Philipp Wich <jo@mein.io>
@@ -402,21 +475,63 @@ endmenu
 		tristate "libintl............. Stub header for the GNU Internationalization library"
 		default y if DEFAULT_libintl
 		default m if ALL
-		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 Stub header for the GNU Internationalization library
+		 Jo-Philipp Wich <jo@mein.io>
+
+	config PACKAGE_libjpeg
+		tristate "libjpeg................ The Independent JPEG Group's JPEG runtime library"
+		default y if DEFAULT_libjpeg
+		default m if ALL
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 The Independent JPEG Group's JPEG runtime library
+		 http://www.ijg.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
+	config PACKAGE_libltdl
+		tristate "libltdl......................... A generic dynamic object loading library"
+		default y if DEFAULT_libltdl
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 A generic dynamic object loading library
+		 http://www.gnu.org/software/libtool/
+		 
+
+	config PACKAGE_liblua
+		tristate "liblua.............................. Lua programming language (libraries)"
+		default y if DEFAULT_liblua
+		default m if ALL
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpthread if USE_GLIBC
+		help
+		 Lua is a powerful light-weight programming language designed for extending 
+		  applications. Lua is also frequently used as a general-purpose, stand-alone 
+		  language. Lua is free software.
+		  This package contains the Lua shared libraries, needed by other programs.
+		 http://www.lua.org/
 		 Jo-Philipp Wich <jo@mein.io>
 
 	config PACKAGE_libpcre
 		tristate "libpcre..................... A Perl Compatible Regular Expression library"
 		default y if DEFAULT_libpcre
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
 		help
 		 A Perl Compatible Regular Expression library
@@ -440,16 +555,30 @@ endmenu
 		tristate "libpcrecpp.... C++ wrapper for Perl Compatible Regular Expression library"
 		default y if DEFAULT_libpcrecpp
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libstdcpp
 		select PACKAGE_libpcre
-		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libstdcpp
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 C++ wrapper for Perl Compatible Regular Expression library
 		 http://www.pcre.org/
 		 Thomas Heil <heil@terminal-consulting.de>
+
+	config PACKAGE_libpng
+		tristate "libpng............................... A PNG format files handling library"
+		default y if DEFAULT_libpng
+		default m if ALL
+		select PACKAGE_zlib
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 A PNG format files handling library
+		 http://www.libpng.org/pub/png/libpng.html
+		 Jo-Philipp Wich <jo@mein.io>
 
 	config PACKAGE_uclibcxx
 		tristate "uclibcxx................................ C++ library for embedded systems"
@@ -457,8 +586,8 @@ endmenu
 		default m if ALL
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
-		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 C++ library for embedded systems
 		 http://cxx.uclibc.org/src/
@@ -468,10 +597,10 @@ endmenu
 		tristate "zlib................. Library implementing the deflate compression method"
 		default y if DEFAULT_zlib
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 zlib is a lossless data-compression library.
 		  This package includes the shared library.
@@ -483,14 +612,37 @@ endmenu
 menu "Network"
 
 menu "Web Servers/Proxies"
+	menuconfig PACKAGE_nginx
+		tristate "nginx................................................... Nginx web server"
+		default y if DEFAULT_nginx
+		default m if ALL
+		select PACKAGE_zlib if NGINX_HTTP_GZIP
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libpcre if NGINX_PCRE
+		select PACKAGE_libc
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_liblua if NGINX_LUA
+		select PACKAGE_libpthread
+		depends on PACKAGE_libgd
+		select PACKAGE_libopenssl if (NGINX_SSL||NGINX_HTTP_CACHE||NGINX_HTTP_AUTH_BASIC)
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 nginx is an HTTP and reverse proxy server, as well as a mail proxy server,
+		  written by Igor Sysoev.
+		 http://nginx.org/
+		 Thomas Heil <heil@terminal-consulting.de>
+
+
+	  source "feeds/packages/net/nginx/Config.in"
+
 	config PACKAGE_spawn-fcgi
 		tristate "spawn-fcgi............................ Tool to spawn fastcgi applications"
 		default y if DEFAULT_spawn-fcgi
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 spawn-fcgi is used to spawn fastcgi applications
 		 http://redmine.lighttpd.net/projects/spawn-fcgi
@@ -501,11 +653,11 @@ endmenu
 		tristate "fcgiwrap................................... a web based terminal emulator"
 		default y if DEFAULT_fcgiwrap
 		default m if ALL
+		select PACKAGE_fcgi
+		select PACKAGE_spawn-fcgi
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
-		select PACKAGE_fcgi
 		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_spawn-fcgi
 		select PACKAGE_librt if USE_GLIBC
 		help
 		 Simple FastCGI wrapper for CGI scripts.
@@ -517,14 +669,14 @@ endmenu
 		tristate "shadowsocksr-libev............ Lightweight Secured Socks5 Proxy (OpenSSL)"
 		default y if DEFAULT_shadowsocksr-libev
 		default m if ALL
-		select PACKAGE_libpcre
 		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
+		select PACKAGE_libpcre
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_zlib
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_libopenssl
 		select PACKAGE_libpthread
-		select PACKAGE_zlib
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -535,11 +687,11 @@ endmenu
 		default y if DEFAULT_shadowsocksr-libev-mbedtls
 		default m if ALL
 		select PACKAGE_libpcre
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libmbedtls
+		select PACKAGE_libpthread
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libc
-		select PACKAGE_libpthread
+		select PACKAGE_libmbedtls
+		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
@@ -550,13 +702,13 @@ endmenu
 		tristate "shadowsocksr-libev-polarssl.. Lightweight Secured Socks5 Proxy (PolarSSL)"
 		default y if DEFAULT_shadowsocksr-libev-polarssl
 		default m if ALL
-		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpolarssl
 		select PACKAGE_libpcre
 		select PACKAGE_libpthread
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libpolarssl
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_librt if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -566,14 +718,14 @@ endmenu
 		tristate "shadowsocksr-libev-server..... Lightweight Secured Socks5 Proxy (OpenSSL)"
 		default y if DEFAULT_shadowsocksr-libev-server
 		default m if ALL
-		select PACKAGE_libpcre
-		select PACKAGE_librt if USE_GLIBC
 		select PACKAGE_libc
-		select PACKAGE_libopenssl
-		select PACKAGE_libpthread
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libpcre
 		select PACKAGE_zlib
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libopenssl
+		select PACKAGE_libpthread
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -583,13 +735,13 @@ endmenu
 		tristate "shadowsocksr-libev-server-mbedtls"
 		default y if DEFAULT_shadowsocksr-libev-server-mbedtls
 		default m if ALL
-		select PACKAGE_libpcre
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libc
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libmbedtls
 		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libmbedtls
+		select PACKAGE_libc
 		select PACKAGE_libpthread
+		select PACKAGE_libpcre
+		select PACKAGE_libpthread if USE_GLIBC
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -599,13 +751,13 @@ endmenu
 		tristate "shadowsocksr-libev-server-polarssl"
 		default y if DEFAULT_shadowsocksr-libev-server-polarssl
 		default m if ALL
-		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libpcre
 		select PACKAGE_libpthread
-		select PACKAGE_libc
 		select PACKAGE_libpthread if USE_GLIBC
 		select PACKAGE_libpolarssl
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
 		select PACKAGE_librt if USE_GLIBC
-		select PACKAGE_libpcre
 		help
 		 ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 		 https://github.com/shadowsocksr/shadowsocksr-libev
@@ -615,6 +767,22 @@ endmenu
 
 menu "Utilities"
 
+menu "Image Manipulation"
+	config PACKAGE_jpeg-tools
+		tristate "jpeg-tools.......... The Independent JPEG Group's JPEG manipulation tools"
+		default y if DEFAULT_jpeg-tools
+		default m if ALL
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libjpeg
+		help
+		 The Independent JPEG Group's JPEG manipulation tools
+		 http://www.ijg.org/
+		 Jo-Philipp Wich <jo@mein.io>
+
+endmenu
 	config PACKAGE_ldconfig
 		tristate "ldconfig............................... Shared library path configuration"
 		default y if DEFAULT_ldconfig
@@ -675,11 +843,11 @@ menu "Utilities"
 		tristate "openssl-util........................... Open source SSL toolkit (utility)"
 		default y if DEFAULT_openssl-util
 		default m if ALL
-		select PACKAGE_libopenssl
-		select PACKAGE_libssp if SSP_SUPPORT
-		select PACKAGE_libpthread if USE_GLIBC
-		select PACKAGE_libc
 		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libc
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_libopenssl
 		help
 		 The OpenSSL Project is a collaborative effort to develop a robust,
 		 commercial-grade, full-featured, and Open Source toolkit implementing the Secure

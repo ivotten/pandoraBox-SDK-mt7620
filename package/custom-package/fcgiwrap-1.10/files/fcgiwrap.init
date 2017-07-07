@@ -38,15 +38,24 @@ stop_service(){
 	    SPID=${PID#* }
 	    echo -e "Kill $NAME (PID: $SPID)."
             kill -9 $SPID
-        else
-            echo -e "Warning: $NAME is not runing."
-            exit 1
+    	else
+       	    echo -e "Warning: $NAME is not runing."
 	fi
+	exit 0
 }
-restart_service(){
-	stop_service
+restart(){
+	PID=`pidof $NAME`
+	#因为脚本执行时，第一个pid是脚本的，所以要去除
+	if [ -n "`echo $PID | grep ' '`" ]; then
+	    SPID=${PID#* }
+	    echo -e "Kill $NAME (PID: $SPID)."
+            kill -9 $SPID
+    	else
+            echo -e "Warning: $NAME is not runing."
+	fi
 	start_service
 }
+
 
 
 

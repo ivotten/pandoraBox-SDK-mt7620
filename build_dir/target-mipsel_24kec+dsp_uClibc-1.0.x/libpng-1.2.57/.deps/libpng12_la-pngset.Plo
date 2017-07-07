@@ -1,0 +1,188 @@
+libpng12_la-pngset.lo: pngset.c png.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/include/zlib.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/include/zconf.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include/stddef.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include-fixed/limits.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include-fixed/syslimits.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/limits.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/features.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_config.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/cdefs.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix1_lim.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/local_lim.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/linux/limits.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_local_lim.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix2_lim.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/types.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/types.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/wordsize.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/typesizes.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/time.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/endian.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/endian.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/byteswap.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap-common.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap-16.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/select.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/select.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/sigset.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/time.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/sysmacros.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/pthreadtypes.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sgidefs.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include/stdarg.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/unistd.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix_opt.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_posix_opt.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/environments.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/confname.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/getopt.h \
+ pngconf.h config.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/stdio.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_stdio.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/wchar.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/wchar.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/stdio_lim.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/setjmp.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/setjmp.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/string.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/stdlib.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/waitflags.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/waitstatus.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/alloca.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/math.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_val.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_valf.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_vall.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/inf.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/nan.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/mathdef.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/mathcalls.h \
+ /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_clk_tck.h
+
+png.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/include/zlib.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/include/zconf.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include/stddef.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include-fixed/limits.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include-fixed/syslimits.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/limits.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/features.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_config.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/cdefs.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix1_lim.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/local_lim.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/linux/limits.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_local_lim.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix2_lim.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/types.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/types.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/wordsize.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/typesizes.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/time.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/endian.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/endian.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/byteswap.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap-common.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/byteswap-16.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/select.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/select.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/sigset.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/time.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sys/sysmacros.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/pthreadtypes.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/sgidefs.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/lib/gcc/mipsel-openwrt-linux-uclibc/4.8.3/include/stdarg.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/unistd.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/posix_opt.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_posix_opt.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/environments.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/confname.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/getopt.h:
+
+pngconf.h:
+
+config.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/stdio.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_stdio.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/wchar.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/wchar.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/stdio_lim.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/setjmp.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/setjmp.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/string.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/stdlib.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/waitflags.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/waitstatus.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/alloca.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/math.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_val.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_valf.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/huge_vall.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/inf.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/nan.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/mathdef.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/mathcalls.h:
+
+/home/guogh/work/pandorBox-SDK-mt7620/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-1.0.x/include/bits/uClibc_clk_tck.h:
