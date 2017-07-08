@@ -7,5 +7,5 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5959
+Installed-Size: 5920
 Description:  spawn-fcgi is used to spawn fastcgi applications

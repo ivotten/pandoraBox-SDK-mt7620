@@ -164,10 +164,10 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5959
+Installed-Size: 5920
 Filename: spawn-fcgi_1.6.4-1_mipsel_24kec_dsp.ipk
-Size: 6671
-MD5Sum: 12c38ff5fe0ef31af6e97f0de2521d12
-SHA256sum: 60b3e3200fec24b75e5b7b77e9780ee0e909ec5761093b4ddf2665cf304a7661
+Size: 6638
+MD5Sum: f60d9302f1d92f0c9e3efd28da5548a4
+SHA256sum: 7363c722fbdf8a36e8fb82a3c3035e67e5e1b2f80634a86355306c81e60c9771
 Description:  spawn-fcgi is used to spawn fastcgi applications
 
