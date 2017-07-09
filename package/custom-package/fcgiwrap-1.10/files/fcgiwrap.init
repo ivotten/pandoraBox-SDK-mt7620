@@ -2,7 +2,7 @@
 #by guogh
 
 USE_PROCD=1
-START=99
+START=50
 
 SPAWN_FCGI="/usr/bin/spawn-fcgi"
 DAEMON="/usr/sbin/fcgiwrap"
