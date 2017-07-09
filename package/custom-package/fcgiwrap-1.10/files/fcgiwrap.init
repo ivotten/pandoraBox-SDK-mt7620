@@ -11,14 +11,15 @@ NAME="fcgiwrap"
 PIDFILE="/var/run/$NAME.pid"
 
 FCGI_SOCKET="/tmp/$NAME.socket"
-FCGI_USER="www"
-FCGI_GROUP="www"
+FCGI_USER="root"
+FCGI_GROUP="root"
 FORK_NUM=2
+FCGI_MODE=666
 
 start_service() {
 	echo -e "Starting $NAME ..."
 	#procd_set_param command $SPAWN_FCGI -u $FCGI_USER -g $FCGI_GROUP -s $FCGI_SOCKET -P $PIDFILE -F $FORK_NUM -f $DAEMON
-	$SPAWN_FCGI -u $FCGI_USER -g $FCGI_GROUP -s $FCGI_SOCKET -P $PIDFILE -F $FORK_NUM -f $DAEMON
+	$SPAWN_FCGI -M $FCGI_MODE -u $FCGI_USER -g $FCGI_GROUP -s $FCGI_SOCKET -P $PIDFILE -F $FORK_NUM -f $DAEMON
 }
 
 stop_service(){
