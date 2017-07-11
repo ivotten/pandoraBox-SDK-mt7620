@@ -1,11 +1,11 @@
 Package: spawn-fcgi
 Version: 1.6.4-1
 Depends: libc
-Source: feeds/packages/net/spawn-fcgi
+Source: package/custom-package/spawn-fcgi
 License: BSD-3c
 LicenseFiles: COPYING
 Section: net
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 5920
+Installed-Size: 5918
 Description:  spawn-fcgi is used to spawn fastcgi applications

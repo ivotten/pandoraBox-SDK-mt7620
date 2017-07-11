@@ -147,11 +147,11 @@ License: 2-clause BSD-like license
 Section: net
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Architecture: mipsel_24kec_dsp
-Installed-Size: 662899
+Installed-Size: 634753
 Filename: nginx_1.10.2-1_mipsel_24kec_dsp.ipk
-Size: 641060
-MD5Sum: 60f9ccd070f91e1c7d58d466c707e1d7
-SHA256sum: e166689ca1dcb73dd06554490672a8b107f0599734011c9bccdf483f3a137006
+Size: 613232
+MD5Sum: e4db3223c990de22a0a8a54ca70ad49b
+SHA256sum: d1da1fc6588b405e3d3443092eeeaa17f0721e3bb8194b807149aad8b358c012
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server,
  written by Igor Sysoev.
 

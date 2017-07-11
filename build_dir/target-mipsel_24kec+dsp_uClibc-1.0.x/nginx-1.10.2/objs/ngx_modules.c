@@ -59,14 +59,12 @@ extern ngx_module_t  ngx_http_scgi_module;
 extern ngx_module_t  ngx_http_memcached_module;
 extern ngx_module_t  ngx_http_empty_gif_module;
 extern ngx_module_t  ngx_http_browser_module;
-extern ngx_module_t  ngx_http_secure_link_module;
 extern ngx_module_t  ngx_http_flv_module;
 extern ngx_module_t  ngx_http_mp4_module;
 extern ngx_module_t  ngx_http_upstream_hash_module;
 extern ngx_module_t  ngx_http_upstream_ip_hash_module;
 extern ngx_module_t  ngx_http_upstream_least_conn_module;
 extern ngx_module_t  ngx_http_upstream_keepalive_module;
-extern ngx_module_t  ngx_http_stub_status_module;
 extern ngx_module_t  ngx_http_naxsi_module;
 extern ngx_module_t  ngx_rtmp_stat_module;
 extern ngx_module_t  ngx_rtmp_control_module;
@@ -84,20 +82,11 @@ extern ngx_module_t  ngx_http_sub_filter_module;
 extern ngx_module_t  ngx_http_addition_filter_module;
 extern ngx_module_t  ngx_http_userid_filter_module;
 extern ngx_module_t  ngx_http_headers_filter_module;
-extern ngx_module_t  ngx_http_footer_filter_module;
 extern ngx_module_t  ngx_http_lua_module;
 extern ngx_module_t  ngx_http_subs_filter_module;
 extern ngx_module_t  ngx_http_copy_filter_module;
 extern ngx_module_t  ngx_http_range_body_filter_module;
 extern ngx_module_t  ngx_http_not_modified_filter_module;
-extern ngx_module_t  ngx_mail_module;
-extern ngx_module_t  ngx_mail_core_module;
-extern ngx_module_t  ngx_mail_ssl_module;
-extern ngx_module_t  ngx_mail_pop3_module;
-extern ngx_module_t  ngx_mail_imap_module;
-extern ngx_module_t  ngx_mail_smtp_module;
-extern ngx_module_t  ngx_mail_auth_http_module;
-extern ngx_module_t  ngx_mail_proxy_module;
 extern ngx_module_t  ngx_stream_module;
 extern ngx_module_t  ngx_stream_core_module;
 extern ngx_module_t  ngx_stream_proxy_module;
@@ -165,14 +154,12 @@ ngx_module_t *ngx_modules[] = {
     &ngx_http_memcached_module,
     &ngx_http_empty_gif_module,
     &ngx_http_browser_module,
-    &ngx_http_secure_link_module,
     &ngx_http_flv_module,
     &ngx_http_mp4_module,
     &ngx_http_upstream_hash_module,
     &ngx_http_upstream_ip_hash_module,
     &ngx_http_upstream_least_conn_module,
     &ngx_http_upstream_keepalive_module,
-    &ngx_http_stub_status_module,
     &ngx_http_naxsi_module,
     &ngx_rtmp_stat_module,
     &ngx_rtmp_control_module,
@@ -190,20 +177,11 @@ ngx_module_t *ngx_modules[] = {
     &ngx_http_addition_filter_module,
     &ngx_http_userid_filter_module,
     &ngx_http_headers_filter_module,
-    &ngx_http_footer_filter_module,
     &ngx_http_lua_module,
     &ngx_http_subs_filter_module,
     &ngx_http_copy_filter_module,
     &ngx_http_range_body_filter_module,
     &ngx_http_not_modified_filter_module,
-    &ngx_mail_module,
-    &ngx_mail_core_module,
-    &ngx_mail_ssl_module,
-    &ngx_mail_pop3_module,
-    &ngx_mail_imap_module,
-    &ngx_mail_smtp_module,
-    &ngx_mail_auth_http_module,
-    &ngx_mail_proxy_module,
     &ngx_stream_module,
     &ngx_stream_core_module,
     &ngx_stream_proxy_module,
@@ -273,14 +251,12 @@ char *ngx_module_names[] = {
     "ngx_http_memcached_module",
     "ngx_http_empty_gif_module",
     "ngx_http_browser_module",
-    "ngx_http_secure_link_module",
     "ngx_http_flv_module",
     "ngx_http_mp4_module",
     "ngx_http_upstream_hash_module",
     "ngx_http_upstream_ip_hash_module",
     "ngx_http_upstream_least_conn_module",
     "ngx_http_upstream_keepalive_module",
-    "ngx_http_stub_status_module",
     "ngx_http_naxsi_module",
     "ngx_rtmp_stat_module",
     "ngx_rtmp_control_module",
@@ -298,20 +274,11 @@ char *ngx_module_names[] = {
     "ngx_http_addition_filter_module",
     "ngx_http_userid_filter_module",
     "ngx_http_headers_filter_module",
-    "ngx_http_footer_filter_module",
     "ngx_http_lua_module",
     "ngx_http_subs_filter_module",
     "ngx_http_copy_filter_module",
     "ngx_http_range_body_filter_module",
     "ngx_http_not_modified_filter_module",
-    "ngx_mail_module",
-    "ngx_mail_core_module",
-    "ngx_mail_ssl_module",
-    "ngx_mail_pop3_module",
-    "ngx_mail_imap_module",
-    "ngx_mail_smtp_module",
-    "ngx_mail_auth_http_module",
-    "ngx_mail_proxy_module",
     "ngx_stream_module",
     "ngx_stream_core_module",
     "ngx_stream_proxy_module",

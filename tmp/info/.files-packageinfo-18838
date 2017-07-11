@@ -1,5 +1,6 @@
 custom-package/fcgiwrap-1.10
 custom-package/shadowsocksr-libev
+custom-package/spawn-fcgi
 linux
 toolchain
 feeds/base/gettext
@@ -16,4 +17,3 @@ feeds/packages/libjpeg
 feeds/packages/libpng
 feeds/packages/nginx
 feeds/packages/pcre
-feeds/packages/spawn-fcgi

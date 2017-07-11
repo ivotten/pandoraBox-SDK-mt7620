@@ -517,7 +517,7 @@ checking for AF_INET6
 ----------------------------------------
 checking for setproctitle()
 
-/tmp/ccEr6N85.o: In function `main':
+/tmp/cc6u1jR1.o: In function `main':
 autotest.c:(.text.startup.main+0xc): undefined reference to `setproctitle'
 collect2: error: ld returned 1 exit status
 ----------
@@ -546,7 +546,7 @@ checking for pwrite()
 ----------------------------------------
 checking for pwritev()
 
-/tmp/ccE2VBx8.o: In function `main':
+/tmp/ccl2Xzeb.o: In function `main':
 autotest.c:(.text.startup.main+0x24): undefined reference to `pwritev'
 collect2: error: ld returned 1 exit status
 ----------

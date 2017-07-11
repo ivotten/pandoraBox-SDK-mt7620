@@ -4,11 +4,11 @@ Depends: libc, spawn-fcgi, fcgi
 Source: package/custom-package/fcgiwrap-1.10
 Section: net
 Architecture: mipsel_24kec_dsp
-Installed-Size: 7045
+Installed-Size: 7067
 Filename: fcgiwrap_1.10_mipsel_24kec_dsp.ipk
-Size: 7728
-MD5Sum: 4e3cbebd93e4ccb8d834acbba99572ea
-SHA256sum: a031a69369466aedf857b2ce36988ca1e62602459c20263ee83fc9f3ee883c1b
+Size: 7731
+MD5Sum: 541dacb8a08b0ef39aba8fb557103c0f
+SHA256sum: 3fc7cdea3531ef10e152643bdbbeea6037971287018157d4c23f18d811cc3878
 Description:  Simple FastCGI wrapper for CGI scripts.
  extension Nginx support CGI(use spwan-cgi)
 
@@ -351,6 +351,22 @@ Size: 257403
 MD5Sum: be1d22501738a6d6493580c075cd3b55
 SHA256sum: 26214820abaed635c9c5892d8b29fa5b1dfc4f943db088e2be4b3ad4e622565b
 Description:  ShadowsocksR-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: spawn-fcgi
+Version: 1.6.4-1
+Depends: libc
+Source: package/custom-package/spawn-fcgi
+License: BSD-3c
+LicenseFiles: COPYING
+Section: net
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kec_dsp
+Installed-Size: 5918
+Filename: spawn-fcgi_1.6.4-1_mipsel_24kec_dsp.ipk
+Size: 6646
+MD5Sum: d351ef619a0aee51705933d94dc034eb
+SHA256sum: 1ffde3f40dab353246104409cbf582e249b2581f8b6a3b2be734e77ab7f9ccb2
+Description:  spawn-fcgi is used to spawn fastcgi applications
 
 Package: uclibcxx
 Version: 0.2.4-3

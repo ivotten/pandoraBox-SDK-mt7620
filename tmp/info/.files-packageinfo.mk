@@ -1,6 +1,7 @@
 DEPS_package/linux/Makefile=modules/*.mk $(TOPDIR)/target/linux/*/modules.mk
 $(eval $(call PackageDir,custom-package_fcgiwrap-1.10,custom-package/fcgiwrap-1.10,))
 $(eval $(call PackageDir,custom-package_shadowsocksr-libev,custom-package/shadowsocksr-libev,))
+$(eval $(call PackageDir,custom-package_spawn-fcgi,custom-package/spawn-fcgi,))
 $(eval $(call PackageDir,linux,linux,))
 $(eval $(call PackageDir,toolchain,toolchain,))
 $(eval $(call PackageDir,feeds_base_gettext,feeds/base/gettext,))
@@ -17,4 +18,3 @@ $(eval $(call PackageDir,feeds_packages_libjpeg,feeds/packages/libjpeg,))
 $(eval $(call PackageDir,feeds_packages_libpng,feeds/packages/libpng,))
 $(eval $(call PackageDir,feeds_packages_nginx,feeds/packages/nginx,))
 $(eval $(call PackageDir,feeds_packages_pcre,feeds/packages/pcre,))
-$(eval $(call PackageDir,feeds_packages_spawn-fcgi,feeds/packages/spawn-fcgi,))

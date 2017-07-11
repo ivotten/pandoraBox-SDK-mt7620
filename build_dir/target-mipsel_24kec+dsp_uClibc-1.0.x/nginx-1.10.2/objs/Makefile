@@ -17,7 +17,6 @@ ALL_INCS = -I src/core \
 	-I src/http/v2 \
 	-I /home/guogh/work/pandorBox-SDK-mt7620/staging_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/usr/include \
 	-I /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10 \
-	-I src/mail \
 	-I src/stream
 
 
@@ -117,16 +116,6 @@ HTTP_INCS = -I src/http \
 	-I /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10
 
 
-MAIL_DEPS = src/mail/ngx_mail.h \
-	src/mail/ngx_mail_ssl_module.h \
-	src/mail/ngx_mail_pop3_module.h \
-	src/mail/ngx_mail_imap_module.h \
-	src/mail/ngx_mail_smtp_module.h
-
-
-MAIL_INCS = -I src/mail
-
-
 STREAM_DEPS = src/stream/ngx_stream.h \
 	src/stream/ngx_stream_upstream.h \
 	src/stream/ngx_stream_upstream_round_robin.h \
@@ -136,7 +125,7 @@ STREAM_DEPS = src/stream/ngx_stream.h \
 STREAM_INCS = -I src/stream
 
 
-ADDON_DEPS = $(CORE_DEPS)               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ddebug.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_script.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_log.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_subrequest.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ndk.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_control.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_time.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_string.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_misc.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_variable.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_output.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_uri.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_req_body.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_args.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ctx.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_regex.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_common.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_directive.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers_out.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers_in.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_consts.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_exception.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_util.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_cache.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_contentby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_rewriteby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_accessby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_setby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_capturefilter.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_clfactory.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_pcrefix.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headerfilterby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_shdict.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_socket_tcp.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/api/ngx_http_lua_api.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_logby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_sleep.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_semaphore.h            /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_coroutine.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_bodyfilterby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_initby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_initworkerby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_socket_udp.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_req_method.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_phase.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_probe.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_uthread.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_timer.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_config.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_worker.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ssl_certby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_lex.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_balancer.h                                                                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_amf.h                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bandwidth.h                         /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_cmd_module.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_codec_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_eval.h                              /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp.h                                   /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_version.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_live_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_netcall_module.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_play_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_record_module.h                     /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_relay_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_streams.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bitop.h                             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_proxy_protocol.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/hls/ngx_rtmp_mpegts.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/dash/ngx_rtmp_mp4.h                                                                                            /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_amf.h                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bandwidth.h                         /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_cmd_module.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_codec_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_eval.h                              /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp.h                                   /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_version.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_live_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_netcall_module.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_play_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_record_module.h                     /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_relay_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_streams.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bitop.h                             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_proxy_protocol.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/hls/ngx_rtmp_mpegts.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/dash/ngx_rtmp_mp4.h                           $(HTTP_DEPS) $(MAIL_DEPS) $(STREAM_DEPS)
+ADDON_DEPS = $(CORE_DEPS)               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ddebug.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_script.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_log.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_subrequest.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ndk.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_control.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_time.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_string.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_misc.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_variable.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_output.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_uri.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_req_body.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_args.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ctx.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_regex.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_common.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_directive.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers_out.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headers_in.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_consts.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_exception.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_util.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_cache.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_contentby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_rewriteby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_accessby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_setby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_capturefilter.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_clfactory.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_pcrefix.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_headerfilterby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_shdict.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_socket_tcp.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/api/ngx_http_lua_api.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_logby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_sleep.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_semaphore.h            /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_coroutine.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_bodyfilterby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_initby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_initworkerby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_socket_udp.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_req_method.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_phase.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_probe.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_uthread.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_timer.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_config.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_worker.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_ssl_certby.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_lex.h             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_balancer.h                                                                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_amf.h                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bandwidth.h                         /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_cmd_module.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_codec_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_eval.h                              /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp.h                                   /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_version.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_live_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_netcall_module.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_play_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_record_module.h                     /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_relay_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_streams.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bitop.h                             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_proxy_protocol.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/hls/ngx_rtmp_mpegts.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/dash/ngx_rtmp_mp4.h                                                                                            /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_amf.h                               /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bandwidth.h                         /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_cmd_module.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_codec_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_eval.h                              /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp.h                                   /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_version.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_live_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_netcall_module.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_play_module.h                       /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_record_module.h                     /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_relay_module.h                      /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_streams.h                           /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_bitop.h                             /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/ngx_rtmp_proxy_protocol.h                    /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/hls/ngx_rtmp_mpegts.h                        /home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-rtmp-module-1.1.7.10/dash/ngx_rtmp_mp4.h                           $(HTTP_DEPS) $(STREAM_DEPS)
 
 
 build:	binary modules manpage
@@ -270,27 +259,12 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_memcached_module.o \
 	objs/src/http/modules/ngx_http_empty_gif_module.o \
 	objs/src/http/modules/ngx_http_browser_module.o \
-	objs/src/http/modules/ngx_http_secure_link_module.o \
 	objs/src/http/modules/ngx_http_flv_module.o \
 	objs/src/http/modules/ngx_http_mp4_module.o \
 	objs/src/http/modules/ngx_http_upstream_hash_module.o \
 	objs/src/http/modules/ngx_http_upstream_ip_hash_module.o \
 	objs/src/http/modules/ngx_http_upstream_least_conn_module.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
-	objs/src/http/modules/ngx_http_stub_status_module.o \
-	objs/src/mail/ngx_mail.o \
-	objs/src/mail/ngx_mail_core_module.o \
-	objs/src/mail/ngx_mail_handler.o \
-	objs/src/mail/ngx_mail_parse.o \
-	objs/src/mail/ngx_mail_ssl_module.o \
-	objs/src/mail/ngx_mail_pop3_module.o \
-	objs/src/mail/ngx_mail_pop3_handler.o \
-	objs/src/mail/ngx_mail_imap_module.o \
-	objs/src/mail/ngx_mail_imap_handler.o \
-	objs/src/mail/ngx_mail_smtp_module.o \
-	objs/src/mail/ngx_mail_smtp_handler.o \
-	objs/src/mail/ngx_mail_auth_http_module.o \
-	objs/src/mail/ngx_mail_proxy_module.o \
 	objs/src/stream/ngx_stream.o \
 	objs/src/stream/ngx_stream_handler.o \
 	objs/src/stream/ngx_stream_core_module.o \
@@ -365,7 +339,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/addon/src/ngx_http_lua_ssl_ocsp.o \
 	objs/addon/src/ngx_http_lua_lex.o \
 	objs/addon/src/ngx_http_lua_balancer.o \
-	objs/addon/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp_init.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp_handshake.o \
@@ -531,27 +504,12 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/http/modules/ngx_http_memcached_module.o \
 	objs/src/http/modules/ngx_http_empty_gif_module.o \
 	objs/src/http/modules/ngx_http_browser_module.o \
-	objs/src/http/modules/ngx_http_secure_link_module.o \
 	objs/src/http/modules/ngx_http_flv_module.o \
 	objs/src/http/modules/ngx_http_mp4_module.o \
 	objs/src/http/modules/ngx_http_upstream_hash_module.o \
 	objs/src/http/modules/ngx_http_upstream_ip_hash_module.o \
 	objs/src/http/modules/ngx_http_upstream_least_conn_module.o \
 	objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
-	objs/src/http/modules/ngx_http_stub_status_module.o \
-	objs/src/mail/ngx_mail.o \
-	objs/src/mail/ngx_mail_core_module.o \
-	objs/src/mail/ngx_mail_handler.o \
-	objs/src/mail/ngx_mail_parse.o \
-	objs/src/mail/ngx_mail_ssl_module.o \
-	objs/src/mail/ngx_mail_pop3_module.o \
-	objs/src/mail/ngx_mail_pop3_handler.o \
-	objs/src/mail/ngx_mail_imap_module.o \
-	objs/src/mail/ngx_mail_imap_handler.o \
-	objs/src/mail/ngx_mail_smtp_module.o \
-	objs/src/mail/ngx_mail_smtp_handler.o \
-	objs/src/mail/ngx_mail_auth_http_module.o \
-	objs/src/mail/ngx_mail_proxy_module.o \
 	objs/src/stream/ngx_stream.o \
 	objs/src/stream/ngx_stream_handler.o \
 	objs/src/stream/ngx_stream_core_module.o \
@@ -626,7 +584,6 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/addon/src/ngx_http_lua_ssl_ocsp.o \
 	objs/addon/src/ngx_http_lua_lex.o \
 	objs/addon/src/ngx_http_lua_balancer.o \
-	objs/addon/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp_init.o \
 	objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp_handshake.o \
@@ -1566,13 +1523,6 @@ objs/src/http/modules/ngx_http_browser_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
 		src/http/modules/ngx_http_browser_module.c
 
 
-objs/src/http/modules/ngx_http_secure_link_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
-	src/http/modules/ngx_http_secure_link_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
-		-o objs/src/http/modules/ngx_http_secure_link_module.o \
-		src/http/modules/ngx_http_secure_link_module.c
-
-
 objs/src/http/modules/ngx_http_flv_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
 	src/http/modules/ngx_http_flv_module.c
 	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
@@ -1613,104 +1563,6 @@ objs/src/http/modules/ngx_http_upstream_keepalive_module.o:	$(CORE_DEPS) $(HTTP_
 	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
 		-o objs/src/http/modules/ngx_http_upstream_keepalive_module.o \
 		src/http/modules/ngx_http_upstream_keepalive_module.c
-
-
-objs/src/http/modules/ngx_http_stub_status_module.o:	$(CORE_DEPS) $(HTTP_DEPS) \
-	src/http/modules/ngx_http_stub_status_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(HTTP_INCS) \
-		-o objs/src/http/modules/ngx_http_stub_status_module.o \
-		src/http/modules/ngx_http_stub_status_module.c
-
-
-objs/src/mail/ngx_mail.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail.o \
-		src/mail/ngx_mail.c
-
-
-objs/src/mail/ngx_mail_core_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_core_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_core_module.o \
-		src/mail/ngx_mail_core_module.c
-
-
-objs/src/mail/ngx_mail_handler.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_handler.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_handler.o \
-		src/mail/ngx_mail_handler.c
-
-
-objs/src/mail/ngx_mail_parse.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_parse.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_parse.o \
-		src/mail/ngx_mail_parse.c
-
-
-objs/src/mail/ngx_mail_ssl_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_ssl_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_ssl_module.o \
-		src/mail/ngx_mail_ssl_module.c
-
-
-objs/src/mail/ngx_mail_pop3_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_pop3_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_pop3_module.o \
-		src/mail/ngx_mail_pop3_module.c
-
-
-objs/src/mail/ngx_mail_pop3_handler.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_pop3_handler.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_pop3_handler.o \
-		src/mail/ngx_mail_pop3_handler.c
-
-
-objs/src/mail/ngx_mail_imap_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_imap_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_imap_module.o \
-		src/mail/ngx_mail_imap_module.c
-
-
-objs/src/mail/ngx_mail_imap_handler.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_imap_handler.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_imap_handler.o \
-		src/mail/ngx_mail_imap_handler.c
-
-
-objs/src/mail/ngx_mail_smtp_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_smtp_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_smtp_module.o \
-		src/mail/ngx_mail_smtp_module.c
-
-
-objs/src/mail/ngx_mail_smtp_handler.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_smtp_handler.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_smtp_handler.o \
-		src/mail/ngx_mail_smtp_handler.c
-
-
-objs/src/mail/ngx_mail_auth_http_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_auth_http_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_auth_http_module.o \
-		src/mail/ngx_mail_auth_http_module.c
-
-
-objs/src/mail/ngx_mail_proxy_module.o:	$(CORE_DEPS) $(MAIL_DEPS) \
-	src/mail/ngx_mail_proxy_module.c
-	$(CC) -c $(CFLAGS) $(CORE_INCS) $(MAIL_INCS) \
-		-o objs/src/mail/ngx_mail_proxy_module.o \
-		src/mail/ngx_mail_proxy_module.c
 
 
 objs/src/stream/ngx_stream.o:	$(CORE_DEPS) $(STREAM_DEPS) \
@@ -2229,13 +2081,6 @@ objs/addon/src/ngx_http_lua_balancer.o:	$(ADDON_DEPS) \
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/src/ngx_http_lua_balancer.o \
 		/home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/lua-nginx/src/ngx_http_lua_balancer.c
-
-
-objs/addon/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.o:	$(ADDON_DEPS) \
-	/home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.o \
-		/home/guogh/work/pandorBox-SDK-mt7620/build_dir/target-mipsel_24kec+dsp_uClibc-1.0.x/nginx-1.10.2/module/nginx-http-footer-filter-1.2.2/ngx_http_footer_filter_module.c
 
 
 objs/addon/nginx-rtmp-module-1.1.7.10/ngx_rtmp.o:	$(ADDON_DEPS) \
